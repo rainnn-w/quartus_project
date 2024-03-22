@@ -1,0 +1,49 @@
+|register-8
+Q7 <= register-4:inst.Q3
+PC => register-4:inst.PC
+PC => register-4:inst1.PC
+D7 => register-4:inst.D3
+D6 => register-4:inst.D2
+D5 => register-4:inst.D1
+D4 => register-4:inst.D0
+Q6 <= register-4:inst.Q2
+Q5 <= register-4:inst.Q1
+Q4 <= register-4:inst.Q0
+Q3 <= register-4:inst1.Q3
+D3 => register-4:inst1.D3
+D2 => register-4:inst1.D2
+D1 => register-4:inst1.D1
+D0 => register-4:inst1.D0
+Q2 <= register-4:inst1.Q2
+Q1 <= register-4:inst1.Q1
+Q0 <= register-4:inst1.Q0
+
+
+|register-8|register-4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
+|register-8|register-4:inst1
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+

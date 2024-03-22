@@ -1,0 +1,187 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 18:43:10  March 24, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		machine_alpha_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY machine_alpha
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:43:10  MARCH 24, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS OUTPUT DRIVING GROUND"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS OUTPUT DRIVING AN UNSPECIFIED SIGNAL"
+set_global_assignment -name MISC_FILE "D:/dev/quartus/machine_alpha/machine_alpha.dpf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name BDF_FILE 24_decoder.bdf
+set_global_assignment -name BDF_FILE 38_decoder.bdf
+set_global_assignment -name BDF_FILE adder_8b.bdf
+set_global_assignment -name BDF_FILE ALU_3_in_1.bdf
+set_global_assignment -name BDF_FILE ALU_parallel_8b.bdf
+set_global_assignment -name BDF_FILE counter_8b_with_input.bdf
+set_global_assignment -name BDF_FILE double_selector_8b.bdf
+set_global_assignment -name BDF_FILE quarter_selector_8b.bdf
+set_global_assignment -name BDF_FILE register_4x.bdf
+set_global_assignment -name BDF_FILE register_8b.bdf
+set_global_assignment -name BDF_FILE register_8b_premium.bdf
+set_global_assignment -name BDF_FILE register_8b_with_switch.bdf
+set_global_assignment -name BDF_FILE shifter_8b.bdf
+set_global_assignment -name BDF_FILE start_circuit.bdf
+set_global_assignment -name BDF_FILE triple_selector_8b.bdf
+set_global_assignment -name BDF_FILE machine_alpha.bdf
+set_global_assignment -name BDF_FILE MDR_8b.bdf
+set_global_assignment -name BDF_FILE micro_address_generator.bdf
+set_global_assignment -name BDF_FILE cp_selector.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_168 -to RAM_A0
+set_location_assignment PIN_169 -to RAM_A1
+set_location_assignment PIN_170 -to RAM_A2
+set_location_assignment PIN_171 -to RAM_A3
+set_location_assignment PIN_173 -to RAM_A4
+set_location_assignment PIN_175 -to RAM_A5
+set_location_assignment PIN_176 -to RAM_A6
+set_location_assignment PIN_179 -to RAM_A7
+set_location_assignment PIN_192 -to RAM_D0
+set_location_assignment PIN_193 -to RAM_D1
+set_location_assignment PIN_195 -to RAM_D2
+set_location_assignment PIN_197 -to RAM_D3
+set_location_assignment PIN_198 -to RAM_D4
+set_location_assignment PIN_199 -to RAM_D5
+set_location_assignment PIN_200 -to RAM_D6
+set_location_assignment PIN_201 -to RAM_D7
+set_location_assignment PIN_180 -to uA0
+set_location_assignment PIN_181 -to uA1
+set_location_assignment PIN_182 -to uA2
+set_location_assignment PIN_185 -to uA3
+set_location_assignment PIN_187 -to uA4
+set_location_assignment PIN_188 -to uA5
+set_location_assignment PIN_189 -to uA6
+set_location_assignment PIN_191 -to uA7
+set_location_assignment PIN_89 -to uIR0
+set_location_assignment PIN_90 -to uIR1
+set_location_assignment PIN_92 -to uIR2
+set_location_assignment PIN_95 -to uIR4
+set_location_assignment PIN_96 -to uIR5
+set_location_assignment PIN_97 -to uIR6
+set_location_assignment PIN_99 -to uIR7
+set_location_assignment PIN_101 -to uIR8
+set_location_assignment PIN_102 -to uIR9
+set_location_assignment PIN_103 -to uIR10
+set_location_assignment PIN_104 -to uIR11
+set_location_assignment PIN_105 -to uIR12
+set_location_assignment PIN_106 -to uIR13
+set_location_assignment PIN_108 -to uIR14
+set_location_assignment PIN_110 -to uIR15
+set_location_assignment PIN_112 -to uIR16
+set_location_assignment PIN_113 -to uIR17
+set_location_assignment PIN_64 -to WR_N
+set_location_assignment PIN_63 -to RD_N
+set_location_assignment PIN_5 -to FLG_C
+set_location_assignment PIN_6 -to FLG_V
+set_location_assignment PIN_8 -to FLG_N
+set_location_assignment PIN_10 -to FLG_Z
+set_location_assignment PIN_77 -to CLR
+set_location_assignment PIN_132 -to CK_Single
+set_location_assignment PIN_61 -to CP_uIR
+set_location_assignment PIN_60 -to uRD_N
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name FMAX_REQUIREMENT "10 kHz"
+set_instance_assignment -name NOT_A_CLOCK ON -to uIR4
+set_instance_assignment -name NOT_A_CLOCK ON -to uIR5
+set_instance_assignment -name NOT_A_CLOCK ON -to uIR6
+set_location_assignment PIN_114 -to uIR18
+set_location_assignment PIN_115 -to uIR19
+set_instance_assignment -name NOT_A_CLOCK ON -to uIR8
+set_instance_assignment -name NOT_A_CLOCK ON -to uIR9
+set_global_assignment -name BDF_FILE nano_selector.bdf
+set_location_assignment PIN_151 -to L0
+set_location_assignment PIN_152 -to L1
+set_location_assignment PIN_160 -to L2
+set_location_assignment PIN_161 -to L3
+set_location_assignment PIN_162 -to L4
+set_location_assignment PIN_163 -to L5
+set_location_assignment PIN_164 -to L6
+set_location_assignment PIN_165 -to L7
+set_global_assignment -name MISC_FILE "D:/projects/quartus/machine_alpha/machine_alpha.dpf"
+set_location_assignment PIN_128 -to Z0
+set_location_assignment PIN_133 -to Z1
+set_location_assignment PIN_134 -to Z2
+set_location_assignment PIN_135 -to Z3
+set_location_assignment PIN_137 -to Z4
+set_location_assignment PIN_138 -to Z5
+set_location_assignment PIN_139 -to Z6
+set_location_assignment PIN_141 -to Z7
+set_location_assignment PIN_11 -to MDR0
+set_location_assignment PIN_12 -to MDR1
+set_location_assignment PIN_13 -to MDR2
+set_location_assignment PIN_14 -to MDR3
+set_location_assignment PIN_15 -to MDR4
+set_location_assignment PIN_30 -to MDR5
+set_location_assignment PIN_31 -to MDR6
+set_location_assignment PIN_33 -to MDR7
+set_location_assignment PIN_142 -to PC_OUT0
+set_location_assignment PIN_143 -to PC_OUT1
+set_location_assignment PIN_144 -to PC_OUT2
+set_location_assignment PIN_145 -to PC_OUT3
+set_location_assignment PIN_146 -to PC_OUT4
+set_location_assignment PIN_147 -to PC_OUT5
+set_location_assignment PIN_149 -to PC_OUT6
+set_location_assignment PIN_150 -to PC_OUT7
+set_location_assignment PIN_80 -to Consistant_EN
+set_location_assignment PIN_81 -to Circuit2_EN
+set_location_assignment PIN_131 -to CK_Consistant
+set_location_assignment PIN_34 -to Rj_0
+set_location_assignment PIN_35 -to Rj_1
+set_location_assignment PIN_37 -to Rj_2
+set_location_assignment PIN_39 -to Rj_3
+set_location_assignment PIN_40 -to Rj_4
+set_location_assignment PIN_41 -to Rj_5
+set_location_assignment PIN_43 -to Rj_6
+set_location_assignment PIN_44 -to Rj_7
+set_location_assignment PIN_94 -to uIR3
+set_global_assignment -name BDF_FILE print1.bdf
+set_global_assignment -name BDF_FILE print2.bdf
+set_global_assignment -name BDF_FILE print3.bdf
+set_global_assignment -name BDF_FILE print4.bdf
+set_global_assignment -name BDF_FILE print5.bdf
