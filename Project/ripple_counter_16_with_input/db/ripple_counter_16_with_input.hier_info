@@ -1,0 +1,16 @@
+|ripple_counter_16_with_input
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst2.ACLR
+CLR => inst3.ACLR
+CLR => inst10.ACLR
+CLK => inst.CLK
+D0 => inst4.IN0
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst8.IN0
+Q2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst9.IN0
+Q3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst12.IN0
+
+

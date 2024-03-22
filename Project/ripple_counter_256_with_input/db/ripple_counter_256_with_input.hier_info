@@ -1,0 +1,54 @@
+|ripple_counter_256_with_input
+Q0 <= ripple_counter_16_with_input:inst.Q0
+D3 => ripple_counter_16_with_input:inst.D3
+D2 => ripple_counter_16_with_input:inst.D2
+D1 => ripple_counter_16_with_input:inst.D1
+D0 => ripple_counter_16_with_input:inst.D0
+CLK => ripple_counter_16_with_input:inst.CLK
+CLR => ripple_counter_16_with_input:inst.CLR
+CLR => ripple_counter_16_with_input:inst7.CLR
+Q1 <= ripple_counter_16_with_input:inst.Q1
+Q2 <= ripple_counter_16_with_input:inst.Q2
+Q3 <= ripple_counter_16_with_input:inst.Q3
+Q4 <= ripple_counter_16_with_input:inst7.Q0
+D7 => ripple_counter_16_with_input:inst7.D3
+D6 => ripple_counter_16_with_input:inst7.D2
+D5 => ripple_counter_16_with_input:inst7.D1
+D4 => ripple_counter_16_with_input:inst7.D0
+Q5 <= ripple_counter_16_with_input:inst7.Q1
+Q6 <= ripple_counter_16_with_input:inst7.Q2
+Q7 <= ripple_counter_16_with_input:inst7.Q3
+
+
+|ripple_counter_256_with_input|ripple_counter_16_with_input:inst
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst2.ACLR
+CLR => inst3.ACLR
+CLR => inst10.ACLR
+CLK => inst.CLK
+D0 => inst4.IN0
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst8.IN0
+Q2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst9.IN0
+Q3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst12.IN0
+
+
+|ripple_counter_256_with_input|ripple_counter_16_with_input:inst7
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst2.ACLR
+CLR => inst3.ACLR
+CLR => inst10.ACLR
+CLK => inst.CLK
+D0 => inst4.IN0
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst8.IN0
+Q2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst9.IN0
+Q3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst12.IN0
+
+

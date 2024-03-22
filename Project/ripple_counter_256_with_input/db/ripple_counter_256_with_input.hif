@@ -1,0 +1,66 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ripple_counter_16_with_input
+# storage
+db|ripple_counter_256_with_input.(1).cnf
+db|ripple_counter_256_with_input.(1).cnf
+# case_insensitive
+# source_file
+ripple_counter_16_with_input.bdf
+e8b25c79f4b8831c3f56b7fbddbf2f37
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ripple_counter_16_with_input:inst
+ripple_counter_16_with_input:inst7
+}
+# macro_sequence
+
+# end
+# entity
+ripple_counter_256_with_input
+# storage
+db|ripple_counter_256_with_input.(0).cnf
+db|ripple_counter_256_with_input.(0).cnf
+# case_insensitive
+# source_file
+ripple_counter_256_with_input.bdf
+15af153352de78803f72a3df9bc53fb0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
