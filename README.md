@@ -43,6 +43,3 @@ quartus、ComputerOrganizationCourseDesign-master都是前辈们的，可以做�
 ### shifter_4
 
 移位器（4位）
-### 3-bit shifter
-
-3位逻辑移位器
