@@ -70,7 +70,7 @@ set_location_assignment PIN_74 -to B5
 set_location_assignment PIN_75 -to B6
 set_location_assignment PIN_76 -to B7
 set_location_assignment PIN_129 -to C0
-set_location_assignment PIN_128 -to C8
+set_location_assignment PIN_142 -to C8
 set_location_assignment PIN_34 -to F0
 set_location_assignment PIN_35 -to F1
 set_location_assignment PIN_37 -to F2
