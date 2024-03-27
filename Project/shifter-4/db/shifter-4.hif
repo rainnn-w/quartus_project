@@ -1,6 +1,6 @@
 Version 8.1 Build 163 10/28/2008 SJ Web Edition
 11
-920
+945
 OFF
 OFF
 OFF
@@ -29,7 +29,7 @@ db|shifter-4.(0).cnf
 # case_insensitive
 # source_file
 shifter-4.bdf
-d4cad6b09f5ab464cfcdc87dec45bc4c
+65966211f841f41f704a70ffbc559679
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

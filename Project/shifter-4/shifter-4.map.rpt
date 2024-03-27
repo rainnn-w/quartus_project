@@ -1,5 +1,5 @@
 Analysis & Synthesis report for shifter-4
-Sat Mar 23 00:09:20 2024
+Tue Mar 26 21:54:15 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,13 +39,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 23 00:09:20 2024   ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 26 21:54:15 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; shifter-4                               ;
 ; Top-level Entity Name              ; shifter-4                               ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 6                                       ;
-;     Total combinational functions  ; 6                                       ;
+; Total logic elements               ; 9                                       ;
+;     Total combinational functions  ; 9                                       ;
 ;     Dedicated logic registers      ; 0                                       ;
 ; Total registers                    ; 0                                       ;
 ; Total pins                         ; 11                                      ;
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                         ; Setting            ; Default Value      ;
 +----------------------------------------------------------------+--------------------+--------------------+
-; Device                                                         ; EP2C5Q208C8        ;                    ;
+; Device                                                         ; EP2C8Q208C8        ;                    ;
 ; Top-level entity name                                          ; shifter-4          ; shifter-4          ;
 ; Family name                                                    ; Cyclone II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                        ; Off                ;                    ;
@@ -132,13 +132,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+
-; shifter-4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/xxx/quartus_project/Project/shifter-4/shifter-4.bdf ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                           ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------+
+; shifter-4.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/xxx/quartus_project/Project/shifter-4/shifter-4.bdf ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -146,16 +146,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 6     ;
+; Estimated Total logic elements              ; 9     ;
 ;                                             ;       ;
-; Total combinational functions               ; 6     ;
+; Total combinational functions               ; 9     ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 4     ;
+;     -- 4 input functions                    ; 6     ;
 ;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- <=2 input functions                  ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 6     ;
+;     -- normal mode                          ; 9     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
@@ -164,9 +164,9 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; I/O pins                                    ; 11    ;
 ; Maximum fan-out node                        ; DM    ;
-; Maximum fan-out                             ; 4     ;
-; Total fan-out                               ; 26    ;
-; Average fan-out                             ; 1.53  ;
+; Maximum fan-out                             ; 6     ;
+; Total fan-out                               ; 36    ;
+; Average fan-out                             ; 1.80  ;
 +---------------------------------------------+-------+
 
 
@@ -175,7 +175,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |shifter-4                 ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |shifter-4          ; work         ;
+; |shifter-4                 ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |shifter-4          ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -201,19 +201,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Mar 23 00:09:20 2024
+    Info: Processing started: Tue Mar 26 21:54:14 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off shifter-4 -c shifter-4
-Info: Found 1 design units, including 1 entities, in source file shifter-4.bdf
+Info: Found 1 design units, including 1 entities, in source file ../shifter-3/shifter-3.bdf
+    Info: Found entity 1: shifter-3
+Warning: Using design file shifter-4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: shifter-4
 Info: Elaborating entity "shifter-4" for the top level hierarchy
-Info: Implemented 17 device resources after synthesis - the final resource count might be different
+Info: Implemented 20 device resources after synthesis - the final resource count might be different
     Info: Implemented 7 input pins
     Info: Implemented 4 output pins
-    Info: Implemented 6 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Implemented 9 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 227 megabytes
-    Info: Processing ended: Sat Mar 23 00:09:20 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Mar 26 21:54:15 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
