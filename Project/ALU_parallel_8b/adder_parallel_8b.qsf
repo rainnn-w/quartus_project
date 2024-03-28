@@ -86,3 +86,4 @@ set_location_assignment PIN_27 -to S2
 set_location_assignment PIN_28 -to S3
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_global_assignment -name MISC_FILE "D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/quartus/ALU_parallel_8b/adder_parallel_8b.dpf"
+set_global_assignment -name MISC_FILE "D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ALU_parallel_8b/adder_parallel_8b.dpf"
