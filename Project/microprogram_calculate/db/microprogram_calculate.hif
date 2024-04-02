@@ -22,26 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-microprogram_calculate
-# storage
-db|microprogram_calculate.(0).cnf
-db|microprogram_calculate.(0).cnf
-# case_insensitive
-# source_file
-microprogram_calculate.bdf
-a2268bc9d6a633d5b26161b8fdb6a839
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 ripple_counter_256_advanced
 # storage
 db|microprogram_calculate.(1).cnf
@@ -57,193 +37,6 @@ AUTO
 }
 # hierarchies {
 ripple_counter_256_advanced:inst
-}
-# macro_sequence
-
-# end
-# entity
-74161
-# storage
-db|microprogram_calculate.(2).cnf
-db|microprogram_calculate.(2).cnf
-# case_insensitive
-# source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
-8ae87de328fa01839f5a524a1a9ba
-7
-# user_parameter {
-DEVICE_FAMILY
-Cyclone II
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-RCO
--1
-3
-QD
--1
-3
-QC
--1
-3
-QB
--1
-3
-QA
--1
-3
-ENT
--1
-3
-ENP
--1
-3
-D
--1
-3
-CLRN
--1
-3
-CLK
--1
-3
-C
--1
-3
-B
--1
-3
-A
--1
-3
-}
-# include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
-ba79644cade9dcbd5df4af72a9b02986
-}
-# hierarchies {
-ripple_counter_256_advanced:inst|74161:inst1
-}
-# macro_sequence
-
-# end
-# entity
-f74161
-# storage
-db|microprogram_calculate.(3).cnf
-db|microprogram_calculate.(3).cnf
-# case_insensitive
-# source_file
-e:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
-408d3815988dee8ef0f04d17774959
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ripple_counter_256_advanced:inst|74161:inst1|f74161:sub
-ripple_counter_256_advanced:inst|74161:inst|f74161:sub
-}
-# macro_sequence
-
-# end
-# entity
-74161
-# storage
-db|microprogram_calculate.(4).cnf
-db|microprogram_calculate.(4).cnf
-# case_insensitive
-# source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
-8ae87de328fa01839f5a524a1a9ba
-7
-# user_parameter {
-DEVICE_FAMILY
-Cyclone II
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-QD
--1
-3
-QC
--1
-3
-QB
--1
-3
-QA
--1
-3
-LDN
--1
-3
-ENT
--1
-3
-ENP
--1
-3
-D
--1
-3
-CLRN
--1
-3
-CLK
--1
-3
-C
--1
-3
-B
--1
-3
-A
--1
-3
-}
-# include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
-ba79644cade9dcbd5df4af72a9b02986
-}
-# hierarchies {
-ripple_counter_256_advanced:inst|74161:inst
 }
 # macro_sequence
 
@@ -316,13 +109,260 @@ ALU_parallel_8b:inst3
 
 # end
 # entity
+shifter-8
+# storage
+db|microprogram_calculate.(10).cnf
+db|microprogram_calculate.(10).cnf
+# case_insensitive
+# source_file
+shifter-8.bdf
+dbd9169680e0ad1fae292a82c011017
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter-8:inst11
+}
+# macro_sequence
+
+# end
+# entity
+complement-shifter-4
+# storage
+db|microprogram_calculate.(11).cnf
+db|microprogram_calculate.(11).cnf
+# case_insensitive
+# source_file
+complement-shifter-4.bdf
+cb8f28e1507a9c3e29e39b5c18254a7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter-8:inst11|complement-shifter-4:inst1
+}
+# macro_sequence
+
+# end
+# entity
+shifter-3
+# storage
+db|microprogram_calculate.(12).cnf
+db|microprogram_calculate.(12).cnf
+# case_insensitive
+# source_file
+shifter-3.bdf
+726c5988549e5c7f0946ea71bb4f8a5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+shifter-8:inst11|shifter-3:inst
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|microprogram_calculate.(2).cnf
+db|microprogram_calculate.(2).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+ENT
+-1
+3
+ENP
+-1
+3
+D
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+C
+-1
+3
+B
+-1
+3
+A
+-1
+3
+}
+# include_file {
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# hierarchies {
+ripple_counter_256_advanced:inst|74161:inst1
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|microprogram_calculate.(3).cnf
+db|microprogram_calculate.(3).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ripple_counter_256_advanced:inst|74161:inst1|f74161:sub
+ripple_counter_256_advanced:inst|74161:inst|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|microprogram_calculate.(4).cnf
+db|microprogram_calculate.(4).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+ENT
+-1
+3
+ENP
+-1
+3
+D
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+C
+-1
+3
+B
+-1
+3
+A
+-1
+3
+}
+# include_file {
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+ba79644cade9dcbd5df4af72a9b02986
+}
+# hierarchies {
+ripple_counter_256_advanced:inst|74161:inst
+}
+# macro_sequence
+
+# end
+# entity
 74181
 # storage
 db|microprogram_calculate.(8).cnf
 db|microprogram_calculate.(8).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
 5a7a42864d75db2f39a1f2da31e3e53
 26
 # internal_option {
@@ -343,7 +383,7 @@ db|microprogram_calculate.(9).cnf
 db|microprogram_calculate.(9).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
 7e848f93ad7899d68043667228e561f6
 26
 # internal_option {
@@ -352,6 +392,26 @@ AUTO
 }
 # hierarchies {
 ALU_parallel_8b:inst3|74182:inst2
+}
+# macro_sequence
+
+# end
+# entity
+microprogram_calculate
+# storage
+db|microprogram_calculate.(0).cnf
+db|microprogram_calculate.(0).cnf
+# case_insensitive
+# source_file
+microprogram_calculate.bdf
+5f85bcfabf013c63c1ee6de9ae865
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

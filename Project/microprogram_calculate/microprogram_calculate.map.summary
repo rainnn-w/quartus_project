@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Mar 28 22:38:33 2024
+Analysis & Synthesis Status : Successful - Sat Mar 30 17:17:54 2024
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : microprogram_calculate
 Top-level Entity Name : microprogram_calculate
 Family : Cyclone II
-Total logic elements : 47
-    Total combinational functions : 47
+Total logic elements : 63
+    Total combinational functions : 63
     Dedicated logic registers : 32
 Total registers : 32
-Total pins : 37
+Total pins : 56
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

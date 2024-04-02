@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Mar 30 14:09:45 2024
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : register-4_with_CLR
+Top-level Entity Name : register-4_with_CLR
+Family : Cyclone II
+Device : EP2C8Q208C8
+Timing Models : Final
+Total logic elements : 4 / 8,256 ( < 1 % )
+    Total combinational functions : 0 / 8,256 ( 0 % )
+    Dedicated logic registers : 4 / 8,256 ( < 1 % )
+Total registers : 4
+Total pins : 10 / 138 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 165,888 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

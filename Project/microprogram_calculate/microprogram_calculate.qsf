@@ -39,37 +39,36 @@ set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_142 -to A0
-set_location_assignment PIN_143 -to A1
-set_location_assignment PIN_144 -to A2
-set_location_assignment PIN_145 -to A3
-set_location_assignment PIN_146 -to A4
-set_location_assignment PIN_147 -to A5
-set_location_assignment PIN_149 -to A6
-set_location_assignment PIN_150 -to A7
-set_location_assignment PIN_89 -to C0
+set_location_assignment PIN_180 -to A0
+set_location_assignment PIN_181 -to A1
+set_location_assignment PIN_182 -to A2
+set_location_assignment PIN_185 -to A3
+set_location_assignment PIN_187 -to A4
+set_location_assignment PIN_188 -to A5
+set_location_assignment PIN_189 -to A6
+set_location_assignment PIN_191 -to A7
+set_location_assignment PIN_90 -to C0
 set_location_assignment PIN_132 -to CLK
 set_location_assignment PIN_206 -to CLR
 set_location_assignment PIN_99 -to CPR0
 set_location_assignment PIN_97 -to CPR1
 set_location_assignment PIN_96 -to CPR2
 set_location_assignment PIN_61 -to CPuIR
-set_location_assignment PIN_104 -to M
-set_location_assignment PIN_105 -to S0
-set_location_assignment PIN_106 -to S1
-set_location_assignment PIN_108 -to S2
-set_location_assignment PIN_110 -to S3
-set_location_assignment PIN_127 -to u0
-set_location_assignment PIN_118 -to u1
-set_location_assignment PIN_117 -to u2
-set_location_assignment PIN_116 -to u3
-set_location_assignment PIN_115 -to u4
-set_location_assignment PIN_114 -to u5
-set_location_assignment PIN_113 -to u6
-set_location_assignment PIN_112 -to u7
+set_location_assignment PIN_101 -to M
+set_location_assignment PIN_102 -to S0
+set_location_assignment PIN_103 -to S1
+set_location_assignment PIN_104 -to S2
+set_location_assignment PIN_105 -to S3
+set_location_assignment PIN_112 -to u0
+set_location_assignment PIN_113 -to u1
+set_location_assignment PIN_114 -to u2
+set_location_assignment PIN_115 -to u3
+set_location_assignment PIN_116 -to u4
+set_location_assignment PIN_117 -to u5
+set_location_assignment PIN_118 -to u6
+set_location_assignment PIN_127 -to u7
 set_location_assignment PIN_60 -to uRD
 set_location_assignment PIN_151 -to Q0
 set_location_assignment PIN_152 -to Q1
@@ -79,3 +78,27 @@ set_location_assignment PIN_162 -to Q4
 set_location_assignment PIN_163 -to Q5
 set_location_assignment PIN_164 -to Q6
 set_location_assignment PIN_165 -to Q7
+set_location_assignment PIN_94 -to DM
+set_location_assignment PIN_95 -to LM
+set_location_assignment PIN_92 -to RM
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS PROGRAMMING PIN"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name MISC_FILE "G:/Project/microprogram_calculate/microprogram_calculate.dpf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_location_assignment PIN_37 -to up3
+set_location_assignment PIN_39 -to up4
+set_location_assignment PIN_40 -to up5
+set_location_assignment PIN_41 -to up6
+set_location_assignment PIN_43 -to up7
+set_location_assignment PIN_44 -to up8
+set_location_assignment PIN_34 -to Uq1
+set_location_assignment PIN_35 -to uq2
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_128 -to ro0
+set_location_assignment PIN_133 -to ro1
+set_location_assignment PIN_134 -to ro2
+set_location_assignment PIN_135 -to ro3
+set_location_assignment PIN_137 -to ro4
+set_location_assignment PIN_138 -to ro5
+set_location_assignment PIN_139 -to ro6
+set_location_assignment PIN_141 -to ro7
