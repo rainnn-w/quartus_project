@@ -79,3 +79,4 @@ set_location_assignment PIN_162 -to Q4
 set_location_assignment PIN_163 -to Q5
 set_location_assignment PIN_164 -to Q6
 set_location_assignment PIN_165 -to Q7
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

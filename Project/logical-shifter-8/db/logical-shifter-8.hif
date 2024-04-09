@@ -22,26 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-logical-shifter-8
-# storage
-db|logical-shifter-8.(0).cnf
-db|logical-shifter-8.(0).cnf
-# case_insensitive
-# source_file
-logical-shifter-8.bdf
-8e1b88e0bc1e3aa065ffcebb4774f712
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 shifter-4
 # storage
 db|logical-shifter-8.(1).cnf
@@ -55,9 +35,46 @@ db|logical-shifter-8.(1).cnf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+logical-shifter-8
+# storage
+db|logical-shifter-8.(0).cnf
+db|logical-shifter-8.(0).cnf
+# case_insensitive
+# source_file
+logical-shifter-8.bdf
+e6ede17b11e3876a7d73dfbfbc4b9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-shifter-4:inst
-shifter-4:inst1
+|
+}
+# macro_sequence
+
+# end
+# entity
+complement-shifter-4
+# storage
+db|logical-shifter-8.(2).cnf
+db|logical-shifter-8.(2).cnf
+# case_insensitive
+# source_file
+..|complement-shifter-4|complement-shifter-4.bdf
+3c73ce6dbf7146ea5867d56327b1694b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+complement-shifter-4:inst
+complement-shifter-4:inst1
 }
 # macro_sequence
 

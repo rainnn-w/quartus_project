@@ -1,5 +1,5 @@
 Flow report for logical-shifter-8
-Wed Mar 27 20:57:09 2024
+Tue Apr 09 20:55:27 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +------------------------------------+-----------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 27 20:57:09 2024   ;
+; Flow Status                        ; Successful - Tue Apr 09 20:55:27 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; logical-shifter-8                       ;
 ; Top-level Entity Name              ; logical-shifter-8                       ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                             ; EP2C5Q208C8                             ;
 ; Timing Models                      ; Final                                   ;
 ; Met timing requirements            ; Yes                                     ;
-; Total logic elements               ; 16 / 4,608 ( < 1 % )                    ;
-;     Total combinational functions  ; 16 / 4,608 ( < 1 % )                    ;
+; Total logic elements               ; 17 / 4,608 ( < 1 % )                    ;
+;     Total combinational functions  ; 17 / 4,608 ( < 1 % )                    ;
 ;     Dedicated logic registers      ; 0 / 4,608 ( 0 % )                       ;
 ; Total registers                    ; 0                                       ;
 ; Total pins                         ; 19 / 142 ( 13 % )                       ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/27/2024 20:57:06 ;
+; Start date & time ; 04/09/2024 20:55:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; logical-shifter-8   ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589194.171154422504700                                         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 48599039626657.171266732413540                                         ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                                      ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D:/xxx/quartus_project/Project/logical-shifter-8/logical-shifter-8.dpf ; --            ; --          ; --             ;
@@ -89,9 +89,9 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 224 MB              ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 224 MB              ; 00:00:00                           ;
 ; Fitter                  ; 00:00:00     ; 1.0                     ; 251 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 216 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 215 MB              ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 179 MB              ; 00:00:00                           ;
 ; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+

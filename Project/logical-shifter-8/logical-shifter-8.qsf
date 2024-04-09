@@ -30,10 +30,8 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:08:43  MARCH 23, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name BDF_FILE "../shifter-4/shifter-4.bdf"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name BDF_FILE "logical-shifter-8.bdf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -62,3 +60,6 @@ set_location_assignment PIN_147 -to D5
 set_location_assignment PIN_149 -to D6
 set_location_assignment PIN_150 -to D7
 set_global_assignment -name MISC_FILE "D:/xxx/quartus_project/Project/logical-shifter-8/logical-shifter-8.dpf"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name BDF_FILE "../complement-shifter-4/complement-shifter-4.bdf"
+set_global_assignment -name BDF_FILE "logical-shifter-8.bdf"

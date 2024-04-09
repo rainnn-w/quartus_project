@@ -63,3 +63,4 @@ set_location_assignment PIN_146 -to D4
 set_location_assignment PIN_147 -to D5
 set_location_assignment PIN_149 -to D6
 set_location_assignment PIN_150 -to D7
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

@@ -1,29 +1,31 @@
 |logical-shifter-8
-D7 <= shifter-4:inst.Q3
-A7 => shifter-4:inst.A3
-A6 => shifter-4:inst.A2
-A5 => shifter-4:inst.A1
-A4 => shifter-4:inst.A0
-LM => shifter-4:inst.LM
-LM => shifter-4:inst1.LM
-DM => shifter-4:inst.DM
-DM => shifter-4:inst1.DM
-RM => shifter-4:inst.RM
-RM => shifter-4:inst1.RM
-D6 <= shifter-4:inst.Q2
-D5 <= shifter-4:inst.Q1
-D4 <= shifter-4:inst.Q0
-D3 <= shifter-4:inst1.Q3
-A3 => shifter-4:inst1.A3
-A2 => shifter-4:inst1.A2
-A1 => shifter-4:inst1.A1
-A0 => shifter-4:inst1.A0
-D2 <= shifter-4:inst1.Q2
-D1 <= shifter-4:inst1.Q1
-D0 <= shifter-4:inst1.Q0
+D7 <= complement-shifter-4:inst.Q3
+A7 => complement-shifter-4:inst.A3
+A6 => complement-shifter-4:inst.A2
+A5 => complement-shifter-4:inst.A1
+A4 => complement-shifter-4:inst.A0
+A4 => complement-shifter-4:inst1.RI
+LM => complement-shifter-4:inst.LM
+LM => complement-shifter-4:inst1.LM
+DM => complement-shifter-4:inst.DM
+DM => complement-shifter-4:inst1.DM
+RM => complement-shifter-4:inst.RM
+RM => complement-shifter-4:inst1.RM
+A3 => complement-shifter-4:inst.LI
+A3 => complement-shifter-4:inst1.A3
+D6 <= complement-shifter-4:inst.Q2
+D5 <= complement-shifter-4:inst.Q1
+D4 <= complement-shifter-4:inst.Q0
+D3 <= complement-shifter-4:inst1.Q3
+A2 => complement-shifter-4:inst1.A2
+A1 => complement-shifter-4:inst1.A1
+A0 => complement-shifter-4:inst1.A0
+D2 <= complement-shifter-4:inst1.Q2
+D0 <= complement-shifter-4:inst1.Q0
+D1 <= complement-shifter-4:inst1.Q1
 
 
-|logical-shifter-8|shifter-4:inst
+|logical-shifter-8|complement-shifter-4:inst
 Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 A3 => inst1.IN0
 A3 => inst5.IN0
@@ -36,6 +38,7 @@ DM => inst28.IN1
 RM => inst18.IN0
 RM => inst32.IN0
 RM => inst29.IN1
+RI => inst2.IN0
 A2 => inst.IN0
 A2 => inst4.IN0
 A2 => inst8.IN0
@@ -47,9 +50,10 @@ Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 A0 => inst6.IN0
 A0 => inst10.IN0
 Q0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+LI => inst9.IN0
 
 
-|logical-shifter-8|shifter-4:inst1
+|logical-shifter-8|complement-shifter-4:inst1
 Q3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 A3 => inst1.IN0
 A3 => inst5.IN0
@@ -62,6 +66,7 @@ DM => inst28.IN1
 RM => inst18.IN0
 RM => inst32.IN0
 RM => inst29.IN1
+RI => inst2.IN0
 A2 => inst.IN0
 A2 => inst4.IN0
 A2 => inst8.IN0
@@ -73,5 +78,6 @@ Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 A0 => inst6.IN0
 A0 => inst10.IN0
 Q0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+LI => inst9.IN0
 
 

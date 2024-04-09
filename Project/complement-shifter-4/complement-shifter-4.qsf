@@ -55,3 +55,4 @@ set_location_assignment PIN_143 -to Q1
 set_location_assignment PIN_144 -to Q2
 set_location_assignment PIN_145 -to Q3
 set_global_assignment -name MISC_FILE "D:/xxx/quartus_project/Project/complement-shifter-4/complement-shifter-4.dpf"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

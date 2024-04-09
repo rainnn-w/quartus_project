@@ -1,5 +1,5 @@
 Fitter report for logical-shifter-8
-Wed Mar 27 20:57:07 2024
+Tue Apr 09 20:55:25 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -61,15 +61,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +------------------------------------+-----------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 27 20:57:07 2024   ;
+; Fitter Status                      ; Successful - Tue Apr 09 20:55:25 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; logical-shifter-8                       ;
 ; Top-level Entity Name              ; logical-shifter-8                       ;
 ; Family                             ; Cyclone II                              ;
 ; Device                             ; EP2C5Q208C8                             ;
 ; Timing Models                      ; Final                                   ;
-; Total logic elements               ; 16 / 4,608 ( < 1 % )                    ;
-;     Total combinational functions  ; 16 / 4,608 ( < 1 % )                    ;
+; Total logic elements               ; 17 / 4,608 ( < 1 % )                    ;
+;     Total combinational functions  ; 17 / 4,608 ( < 1 % )                    ;
 ;     Dedicated logic registers      ; 0 / 4,608 ( 0 % )                       ;
 ; Total registers                    ; 0                                       ;
 ; Total pins                         ; 19 / 142 ( 13 % )                       ;
@@ -137,8 +137,8 @@ applicable agreement for further details.
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 35 ( 0.00 % )  ;
-;     -- Achieved         ; 0 / 35 ( 0.00 % )  ;
+;     -- Requested        ; 0 / 36 ( 0.00 % )  ;
+;     -- Achieved         ; 0 / 36 ( 0.00 % )  ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -160,7 +160,7 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 35      ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 36      ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -175,26 +175,26 @@ The pin-out file can be found in D:/xxx/quartus_project/Project/logical-shifter-
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 16 / 4,608 ( < 1 % ) ;
-;     -- Combinational with no register       ; 16                   ;
+; Total logic elements                        ; 17 / 4,608 ( < 1 % ) ;
+;     -- Combinational with no register       ; 17                   ;
 ;     -- Register only                        ; 0                    ;
 ;     -- Combinational with a register        ; 0                    ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 12                   ;
-;     -- 3 input functions                    ; 4                    ;
-;     -- <=2 input functions                  ; 0                    ;
+;     -- 4 input functions                    ; 14                   ;
+;     -- 3 input functions                    ; 2                    ;
+;     -- <=2 input functions                  ; 1                    ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 16                   ;
+;     -- normal mode                          ; 17                   ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers*                            ; 0 / 5,010 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 4,608 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 402 ( 0 % )      ;
 ;                                             ;                      ;
-; Total LABs:  partially or completely used   ; 1 / 288 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 2 / 288 ( < 1 % )    ;
 ; User inserted logic elements                ; 0                    ;
 ; Virtual pins                                ; 0                    ;
 ; I/O pins                                    ; 19 / 142 ( 13 % )    ;
@@ -211,12 +211,12 @@ The pin-out file can be found in D:/xxx/quartus_project/Project/logical-shifter-
 ; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%         ;
-; Maximum fan-out node                        ; LM                   ;
-; Maximum fan-out                             ; 8                    ;
-; Highest non-global fan-out signal           ; LM                   ;
-; Highest non-global fan-out                  ; 8                    ;
-; Total fan-out                               ; 68                   ;
-; Average fan-out                             ; 1.79                 ;
+; Maximum fan-out node                        ; RM                   ;
+; Maximum fan-out                             ; 9                    ;
+; Highest non-global fan-out signal           ; RM                   ;
+; Highest non-global fan-out                  ; 9                    ;
+; Total fan-out                               ; 72                   ;
+; Average fan-out                             ; 1.85                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -230,14 +230,14 @@ The pin-out file can be found in D:/xxx/quartus_project/Project/logical-shifter-
 ; A0   ; 77    ; 4        ; 14           ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A1   ; 80    ; 4        ; 17           ; 0            ; 3           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A2   ; 81    ; 4        ; 17           ; 0            ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; A3   ; 82    ; 4        ; 17           ; 0            ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; A4   ; 84    ; 4        ; 17           ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; A3   ; 82    ; 4        ; 17           ; 0            ; 1           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; A4   ; 84    ; 4        ; 17           ; 0            ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A5   ; 86    ; 4        ; 19           ; 0            ; 3           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A6   ; 87    ; 4        ; 19           ; 0            ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; A7   ; 88    ; 4        ; 19           ; 0            ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; DM   ; 68    ; 4        ; 7            ; 0            ; 1           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; LM   ; 67    ; 4        ; 7            ; 0            ; 2           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; RM   ; 69    ; 4        ; 7            ; 0            ; 0           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; DM   ; 68    ; 4        ; 7            ; 0            ; 1           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; LM   ; 67    ; 4        ; 7            ; 0            ; 2           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; RM   ; 69    ; 4        ; 7            ; 0            ; 0           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -523,15 +523,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                          ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------+--------------+
-; |logical-shifter-8         ; 16 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; |logical-shifter-8                 ; work         ;
-;    |shifter-4:inst1|       ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |logical-shifter-8|shifter-4:inst1 ; work         ;
-;    |shifter-4:inst|        ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; |logical-shifter-8|shifter-4:inst  ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                          ;
++---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                           ; Library Name ;
++---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+--------------+
+; |logical-shifter-8              ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |logical-shifter-8                            ; work         ;
+;    |complement-shifter-4:inst1| ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |logical-shifter-8|complement-shifter-4:inst1 ; work         ;
+;    |complement-shifter-4:inst|  ; 9 (9)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; |logical-shifter-8|complement-shifter-4:inst  ; work         ;
++---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -546,118 +546,124 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; D4   ; Output   ; --            ; --            ; --                    ; --  ;
 ; D3   ; Output   ; --            ; --            ; --                    ; --  ;
 ; D2   ; Output   ; --            ; --            ; --                    ; --  ;
-; D1   ; Output   ; --            ; --            ; --                    ; --  ;
 ; D0   ; Output   ; --            ; --            ; --                    ; --  ;
+; D1   ; Output   ; --            ; --            ; --                    ; --  ;
 ; A7   ; Input    ; 6             ; 6             ; --                    ; --  ;
-; A6   ; Input    ; 6             ; 6             ; --                    ; --  ;
+; RM   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; LM   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; DM   ; Input    ; 6             ; 6             ; --                    ; --  ;
-; RM   ; Input    ; 6             ; 6             ; --                    ; --  ;
+; A6   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; A5   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; A4   ; Input    ; 6             ; 6             ; --                    ; --  ;
-; A2   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; A3   ; Input    ; 6             ; 6             ; --                    ; --  ;
+; A2   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; A1   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; A0   ; Input    ; 6             ; 6             ; --                    ; --  ;
 +------+----------+---------------+---------------+-----------------------+-----+
 
 
-+----------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                 ;
-+----------------------------------+-------------------+---------+
-; Source Pin / Fanout              ; Pad To Core Index ; Setting ;
-+----------------------------------+-------------------+---------+
-; A7                               ;                   ;         ;
-;      - shifter-4:inst|inst12     ; 0                 ; 6       ;
-;      - shifter-4:inst|inst13~37  ; 0                 ; 6       ;
-; A6                               ;                   ;         ;
-;      - shifter-4:inst|inst12     ; 0                 ; 6       ;
-;      - shifter-4:inst|inst13~38  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst14~37  ; 0                 ; 6       ;
-; LM                               ;                   ;         ;
-;      - shifter-4:inst|inst~5     ; 0                 ; 6       ;
-;      - shifter-4:inst|inst28     ; 0                 ; 6       ;
-;      - shifter-4:inst|inst33~36  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst13~37  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst14~37  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst11~5   ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst14~37 ; 0                 ; 6       ;
-; DM                               ;                   ;         ;
-;      - shifter-4:inst|inst~5     ; 1                 ; 6       ;
-;      - shifter-4:inst|inst28     ; 1                 ; 6       ;
-;      - shifter-4:inst|inst33~36  ; 1                 ; 6       ;
-;      - shifter-4:inst|inst13~38  ; 1                 ; 6       ;
-;      - shifter-4:inst|inst14~38  ; 1                 ; 6       ;
-;      - shifter-4:inst|inst11~5   ; 1                 ; 6       ;
-;      - shifter-4:inst1|inst13~38 ; 1                 ; 6       ;
-;      - shifter-4:inst1|inst14~38 ; 1                 ; 6       ;
-; RM                               ;                   ;         ;
-;      - shifter-4:inst|inst~5     ; 0                 ; 6       ;
-;      - shifter-4:inst|inst28     ; 0                 ; 6       ;
-;      - shifter-4:inst|inst33~36  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst13~37  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst14~37  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst11~5   ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst14~37 ; 0                 ; 6       ;
-; A5                               ;                   ;         ;
-;      - shifter-4:inst|inst13~37  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst14~38  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst15     ; 0                 ; 6       ;
-; A4                               ;                   ;         ;
-;      - shifter-4:inst|inst14~37  ; 0                 ; 6       ;
-;      - shifter-4:inst|inst15     ; 0                 ; 6       ;
-; A2                               ;                   ;         ;
-;      - shifter-4:inst1|inst12    ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst13~38 ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst14~37 ; 0                 ; 6       ;
-; A3                               ;                   ;         ;
-;      - shifter-4:inst1|inst12    ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
-; A1                               ;                   ;         ;
-;      - shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst14~38 ; 0                 ; 6       ;
-;      - shifter-4:inst1|inst15    ; 0                 ; 6       ;
-; A0                               ;                   ;         ;
-;      - shifter-4:inst1|inst14~37 ; 1                 ; 6       ;
-;      - shifter-4:inst1|inst15    ; 1                 ; 6       ;
-+----------------------------------+-------------------+---------+
++---------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                            ;
++---------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                         ; Pad To Core Index ; Setting ;
++---------------------------------------------+-------------------+---------+
+; A7                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst12     ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst13~37  ; 0                 ; 6       ;
+; RM                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst12     ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst33~39  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst13~37  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst14~37  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst15~37  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst12~37 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst11~11 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst14~37 ; 0                 ; 6       ;
+; LM                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst12~15  ; 1                 ; 6       ;
+;      - complement-shifter-4:inst|inst12     ; 1                 ; 6       ;
+;      - complement-shifter-4:inst|inst33~39  ; 1                 ; 6       ;
+;      - complement-shifter-4:inst|inst13~37  ; 1                 ; 6       ;
+;      - complement-shifter-4:inst|inst14~37  ; 1                 ; 6       ;
+;      - complement-shifter-4:inst|inst15~37  ; 1                 ; 6       ;
+;      - complement-shifter-4:inst1|inst12~37 ; 1                 ; 6       ;
+;      - complement-shifter-4:inst1|inst13~37 ; 1                 ; 6       ;
+;      - complement-shifter-4:inst1|inst14~37 ; 1                 ; 6       ;
+; DM                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst12~15  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst33~39  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst13~38  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst14~38  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst15~38  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst12~38 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst13~38 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst15    ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst14~38 ; 0                 ; 6       ;
+; A6                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst12~15  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst13~38  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst14~37  ; 0                 ; 6       ;
+; A5                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst13~37  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst14~38  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst15~37  ; 0                 ; 6       ;
+; A4                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst14~37  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst|inst15~38  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst12~37 ; 0                 ; 6       ;
+; A3                                          ;                   ;         ;
+;      - complement-shifter-4:inst|inst15~37  ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst12~38 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
+; A2                                          ;                   ;         ;
+;      - complement-shifter-4:inst1|inst12~37 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst13~38 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst14~37 ; 0                 ; 6       ;
+; A1                                          ;                   ;         ;
+;      - complement-shifter-4:inst1|inst13~37 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst11~11 ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst14~38 ; 0                 ; 6       ;
+; A0                                          ;                   ;         ;
+;      - complement-shifter-4:inst1|inst15    ; 0                 ; 6       ;
+;      - complement-shifter-4:inst1|inst14~37 ; 0                 ; 6       ;
++---------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------+
-; Non-Global High Fan-Out Signals     ;
-+---------------------------+---------+
-; Name                      ; Fan-Out ;
-+---------------------------+---------+
-; RM                        ; 8       ;
-; DM                        ; 8       ;
-; LM                        ; 8       ;
-; shifter-4:inst|inst33~36  ; 4       ;
-; shifter-4:inst|inst28     ; 4       ;
-; A1                        ; 3       ;
-; A2                        ; 3       ;
-; A5                        ; 3       ;
-; A6                        ; 3       ;
-; A0                        ; 2       ;
-; A3                        ; 2       ;
-; A4                        ; 2       ;
-; A7                        ; 2       ;
-; shifter-4:inst|inst11~5   ; 2       ;
-; shifter-4:inst|inst~5     ; 2       ;
-; shifter-4:inst1|inst15    ; 1       ;
-; shifter-4:inst1|inst14~38 ; 1       ;
-; shifter-4:inst1|inst14~37 ; 1       ;
-; shifter-4:inst1|inst13~38 ; 1       ;
-; shifter-4:inst1|inst13~37 ; 1       ;
-; shifter-4:inst1|inst12    ; 1       ;
-; shifter-4:inst|inst15     ; 1       ;
-; shifter-4:inst|inst14~38  ; 1       ;
-; shifter-4:inst|inst14~37  ; 1       ;
-; shifter-4:inst|inst13~38  ; 1       ;
-; shifter-4:inst|inst13~37  ; 1       ;
-; shifter-4:inst|inst12     ; 1       ;
-+---------------------------+---------+
++------------------------------------------------+
+; Non-Global High Fan-Out Signals                ;
++--------------------------------------+---------+
+; Name                                 ; Fan-Out ;
++--------------------------------------+---------+
+; DM                                   ; 9       ;
+; LM                                   ; 9       ;
+; RM                                   ; 9       ;
+; complement-shifter-4:inst|inst33~39  ; 7       ;
+; A1                                   ; 3       ;
+; A2                                   ; 3       ;
+; A3                                   ; 3       ;
+; A4                                   ; 3       ;
+; A5                                   ; 3       ;
+; A6                                   ; 3       ;
+; A0                                   ; 2       ;
+; A7                                   ; 2       ;
+; complement-shifter-4:inst1|inst14~38 ; 1       ;
+; complement-shifter-4:inst1|inst14~37 ; 1       ;
+; complement-shifter-4:inst1|inst15    ; 1       ;
+; complement-shifter-4:inst1|inst11~11 ; 1       ;
+; complement-shifter-4:inst1|inst13~38 ; 1       ;
+; complement-shifter-4:inst1|inst13~37 ; 1       ;
+; complement-shifter-4:inst1|inst12~38 ; 1       ;
+; complement-shifter-4:inst1|inst12~37 ; 1       ;
+; complement-shifter-4:inst|inst15~38  ; 1       ;
+; complement-shifter-4:inst|inst15~37  ; 1       ;
+; complement-shifter-4:inst|inst14~38  ; 1       ;
+; complement-shifter-4:inst|inst14~37  ; 1       ;
+; complement-shifter-4:inst|inst13~38  ; 1       ;
+; complement-shifter-4:inst|inst13~37  ; 1       ;
+; complement-shifter-4:inst|inst12     ; 1       ;
+; complement-shifter-4:inst|inst12~15  ; 1       ;
++--------------------------------------+---------+
 
 
 +----------------------------------------------------+
@@ -665,23 +671,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-----------------------+
 ; Interconnect Resource Type ; Usage                 ;
 +----------------------------+-----------------------+
-; Block interconnects        ; 23 / 15,666 ( < 1 % ) ;
-; C16 interconnects          ; 4 / 812 ( < 1 % )     ;
-; C4 interconnects           ; 32 / 11,424 ( < 1 % ) ;
-; Direct links               ; 0 / 15,666 ( 0 % )    ;
+; Block interconnects        ; 27 / 15,666 ( < 1 % ) ;
+; C16 interconnects          ; 3 / 812 ( < 1 % )     ;
+; C4 interconnects           ; 31 / 11,424 ( < 1 % ) ;
+; Direct links               ; 2 / 15,666 ( < 1 % )  ;
 ; Global clocks              ; 0 / 8 ( 0 % )         ;
-; Local interconnects        ; 8 / 4,608 ( < 1 % )   ;
-; R24 interconnects          ; 4 / 652 ( < 1 % )     ;
-; R4 interconnects           ; 23 / 13,328 ( < 1 % ) ;
+; Local interconnects        ; 6 / 4,608 ( < 1 % )   ;
+; R24 interconnects          ; 3 / 652 ( < 1 % )     ;
+; R4 interconnects           ; 33 / 13,328 ( < 1 % ) ;
 +----------------------------+-----------------------+
 
 
++--------------------------------------------------------------------------+
+; LAB Logic Elements                                                       ;
++--------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 8.50) ; Number of LABs  (Total = 2) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 1                           ;
+; 2                                          ; 0                           ;
+; 3                                          ; 0                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 0                           ;
+; 6                                          ; 0                           ;
+; 7                                          ; 0                           ;
+; 8                                          ; 0                           ;
+; 9                                          ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 0                           ;
+; 12                                         ; 0                           ;
+; 13                                         ; 0                           ;
+; 14                                         ; 0                           ;
+; 15                                         ; 0                           ;
+; 16                                         ; 1                           ;
++--------------------------------------------+-----------------------------+
+
+
 +---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
+; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 16.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 8.50) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
+; 0                                           ; 0                           ;
+; 1                                           ; 1                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
@@ -700,38 +731,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-----------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 16.00) ; Number of LABs  (Total = 1) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
-
-
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 8.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 4.50) ; Number of LABs  (Total = 2) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
+; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
@@ -742,24 +748,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------+-----------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 11.00) ; Number of LABs  (Total = 1) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
++---------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 7.00) ; Number of LABs  (Total = 2) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 1                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -817,24 +824,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Auto Fit Point 1 - Fit Attempt 1                                 ; ff         ;
 ; Mid Wire Use - Fit Attempt 1                                     ; 0          ;
 ; Mid Slack - Fit Attempt 1                                        ; 2147483639 ;
-; Internal Atom Count - Fit Attempt 1                              ; 17         ;
-; LE/ALM Count - Fit Attempt 1                                     ; 17         ;
-; LAB Count - Fit Attempt 1                                        ; 2          ;
-; Outputs per Lab - Fit Attempt 1                                  ; 4.000      ;
-; Inputs per LAB - Fit Attempt 1                                   ; 5.500      ;
+; Internal Atom Count - Fit Attempt 1                              ; 18         ;
+; LE/ALM Count - Fit Attempt 1                                     ; 18         ;
+; LAB Count - Fit Attempt 1                                        ; 3          ;
+; Outputs per Lab - Fit Attempt 1                                  ; 3.000      ;
+; Inputs per LAB - Fit Attempt 1                                   ; 4.667      ;
 ; Global Inputs per LAB - Fit Attempt 1                            ; 0.000      ;
-; LAB Constraint 'non-global clock + sync load' - Fit Attempt 1    ; 0:2        ;
-; LAB Constraint 'non-global controls' - Fit Attempt 1             ; 0:2        ;
-; LAB Constraint 'non-global + aclr' - Fit Attempt 1               ; 0:2        ;
-; LAB Constraint 'global non-clock non-aclr' - Fit Attempt 1       ; 0:2        ;
-; LAB Constraint 'global controls' - Fit Attempt 1                 ; 0:2        ;
-; LAB Constraint 'deterministic LABSMUXA/LABXMUXB' - Fit Attempt 1 ; 0:2        ;
-; LAB Constraint 'deterministic LABSMUXC/LABXMUXD' - Fit Attempt 1 ; 0:2        ;
-; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1      ; 0:2        ;
-; LAB Constraint 'aclr constraint' - Fit Attempt 1                 ; 0:2        ;
-; LAB Constraint 'true sload_sclear pair' - Fit Attempt 1          ; 0:2        ;
-; LAB Constraint 'constant sload_sclear pair' - Fit Attempt 1      ; 0:2        ;
-; LAB Constraint 'has placement constraint' - Fit Attempt 1        ; 0:2        ;
+; LAB Constraint 'non-global clock + sync load' - Fit Attempt 1    ; 0:3        ;
+; LAB Constraint 'non-global controls' - Fit Attempt 1             ; 0:3        ;
+; LAB Constraint 'non-global + aclr' - Fit Attempt 1               ; 0:3        ;
+; LAB Constraint 'global non-clock non-aclr' - Fit Attempt 1       ; 0:3        ;
+; LAB Constraint 'global controls' - Fit Attempt 1                 ; 0:3        ;
+; LAB Constraint 'deterministic LABSMUXA/LABXMUXB' - Fit Attempt 1 ; 0:3        ;
+; LAB Constraint 'deterministic LABSMUXC/LABXMUXD' - Fit Attempt 1 ; 0:3        ;
+; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1      ; 0:3        ;
+; LAB Constraint 'aclr constraint' - Fit Attempt 1                 ; 0:3        ;
+; LAB Constraint 'true sload_sclear pair' - Fit Attempt 1          ; 0:3        ;
+; LAB Constraint 'constant sload_sclear pair' - Fit Attempt 1      ; 0:3        ;
+; LAB Constraint 'has placement constraint' - Fit Attempt 1        ; 0:3        ;
 ; LEs in Chains - Fit Attempt 1                                    ; 0          ;
 ; LEs in Long Chains - Fit Attempt 1                               ; 0          ;
 ; LABs with Chains - Fit Attempt 1                                 ; 0          ;
@@ -876,7 +883,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+-------------+
 ; Early Slack - Fit Attempt 1        ; 2147483639  ;
 ; Early Wire Use - Fit Attempt 1     ; 0           ;
-; Peak Regional Wire - Fit Attempt 1 ; 0           ;
+; Peak Regional Wire - Fit Attempt 1 ; 1           ;
 ; Mid Slack - Fit Attempt 1          ; 2147483639  ;
 ; Late Slack - Fit Attempt 1         ; -2147483648 ;
 ; Late Wire Use - Fit Attempt 1      ; 0           ;
@@ -890,7 +897,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Mar 27 20:57:07 2024
+    Info: Processing started: Tue Apr 09 20:55:25 2024
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off logical-shifter-8 -c logical-shifter-8
 Info: Selected device EP2C5Q208C8 for design "logical-shifter-8"
 Info: Low junction temperature is 0 degrees C
@@ -937,13 +944,13 @@ Warning: Found 8 output pins without output pin load capacitance assignment
     Info: Pin "D4" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "D3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "D2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "D1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "D0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "D1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
 Info: Quartus II Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Wed Mar 27 20:57:07 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 266 megabytes
+    Info: Processing ended: Tue Apr 09 20:55:26 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
