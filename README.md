@@ -40,6 +40,14 @@ quartus、ComputerOrganizationCourseDesign-master都是前辈们的，可以做�
 
 异步模256加1计数器（有预置初值的扩展版）
 
+### register-4_with CLR
+
+有清零开关的4位寄存器
+
+### register-8_with CLR
+
+有清零开关的8位寄存器
+
 ### shifter_4
 
 移位器（4位）
@@ -59,3 +67,10 @@ quartus、ComputerOrganizationCourseDesign-master都是前辈们的，可以做�
 ### logical-shifter-8
 
 8位移位器，仅实现逻辑移位
+
+### microprogram_calculate
+
+微指令运算器
+
+可以输入24位微指令
+

@@ -1,0 +1,219 @@
+Classic Timing Analyzer report for start_stop
+Sun Apr 07 21:17:48 2024
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Clock Setup: 'START'
+  6. Clock Setup: 'MACHONG'
+  7. tco
+  8. tpd
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                      ;
++------------------------------+-------+---------------+------------------------------------------------+-------+-------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From  ; To    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+-------+-------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 9.986 ns                                       ; inst5 ; CP    ; START      ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 11.360 ns                                      ; HALT  ; CP    ; --         ; --       ; 0            ;
+; Clock Setup: 'MACHONG'       ; N/A   ; None          ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; inst5 ; inst5 ; MACHONG    ; MACHONG  ; 0            ;
+; Clock Setup: 'START'         ; N/A   ; None          ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; inst5 ; inst5 ; START      ; START    ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;       ;       ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+-------+-------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP2C8Q208C8        ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; START           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; MACHONG         ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'START'                                                                                                                                                               ;
++-------+------------------------------------------------+-------+-------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From  ; To    ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+-------+-------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; inst5 ; inst5 ; START      ; START    ; None                        ; None                      ; 0.501 ns                ;
++-------+------------------------------------------------+-------+-------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'MACHONG'                                                                                                                                                             ;
++-------+------------------------------------------------+-------+-------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From  ; To    ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+-------+-------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 360.10 MHz ( period = 2.777 ns ) ; inst5 ; inst5 ; MACHONG    ; MACHONG  ; None                        ; None                      ; 0.501 ns                ;
++-------+------------------------------------------------+-------+-------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------+
+; tco                                                         ;
++-------+--------------+------------+-------+----+------------+
+; Slack ; Required tco ; Actual tco ; From  ; To ; From Clock ;
++-------+--------------+------------+-------+----+------------+
+; N/A   ; None         ; 9.986 ns   ; inst5 ; CP ; START      ;
+; N/A   ; None         ; 8.402 ns   ; inst5 ; CP ; MACHONG    ;
++-------+--------------+------------+-------+----+------------+
+
+
++---------------------------------------------------------+
+; tpd                                                     ;
++-------+-------------------+-----------------+------+----+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To ;
++-------+-------------------+-----------------+------+----+
+; N/A   ; None              ; 11.360 ns       ; HALT ; CP ;
++-------+-------------------+-----------------+------+----+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Sun Apr 07 21:17:48 2024
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off start_stop -c start_stop --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "START" is an undefined clock
+    Info: Assuming node "MACHONG" is an undefined clock
+Warning: Found 2 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "inst3" as buffer
+    Info: Detected gated clock "inst2" as buffer
+Info: Clock "START" Internal fmax is restricted to 360.1 MHz between source register "inst5" and destination register "inst5"
+    Info: fmax restricted to clock pin edge rate 2.777 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 0.501 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+            Info: 2: + IC(0.000 ns) + CELL(0.393 ns) = 0.393 ns; Loc. = LCCOMB_X1_Y8_N0; Fanout = 1; COMB Node = 'inst5~2'
+            Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 0.501 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+            Info: Total cell delay = 0.501 ns ( 100.00 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "START" to destination register is 4.890 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.985 ns) = 0.985 ns; Loc. = PIN_35; Fanout = 1; CLK Node = 'START'
+                Info: 2: + IC(1.313 ns) + CELL(0.970 ns) = 3.268 ns; Loc. = LCFF_X1_Y8_N29; Fanout = 1; REG Node = 'inst3'
+                Info: 3: + IC(0.430 ns) + CELL(0.206 ns) = 3.904 ns; Loc. = LCCOMB_X1_Y8_N30; Fanout = 1; COMB Node = 'inst2'
+                Info: 4: + IC(0.320 ns) + CELL(0.666 ns) = 4.890 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+                Info: Total cell delay = 2.827 ns ( 57.81 % )
+                Info: Total interconnect delay = 2.063 ns ( 42.19 % )
+            Info: - Longest clock path from clock "START" to source register is 4.890 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.985 ns) = 0.985 ns; Loc. = PIN_35; Fanout = 1; CLK Node = 'START'
+                Info: 2: + IC(1.313 ns) + CELL(0.970 ns) = 3.268 ns; Loc. = LCFF_X1_Y8_N29; Fanout = 1; REG Node = 'inst3'
+                Info: 3: + IC(0.430 ns) + CELL(0.206 ns) = 3.904 ns; Loc. = LCCOMB_X1_Y8_N30; Fanout = 1; COMB Node = 'inst2'
+                Info: 4: + IC(0.320 ns) + CELL(0.666 ns) = 4.890 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+                Info: Total cell delay = 2.827 ns ( 57.81 % )
+                Info: Total interconnect delay = 2.063 ns ( 42.19 % )
+        Info: + Micro clock to output delay of source is 0.304 ns
+        Info: + Micro setup delay of destination is -0.040 ns
+Info: Clock "MACHONG" Internal fmax is restricted to 360.1 MHz between source register "inst5" and destination register "inst5"
+    Info: fmax restricted to clock pin edge rate 2.777 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 0.501 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+            Info: 2: + IC(0.000 ns) + CELL(0.393 ns) = 0.393 ns; Loc. = LCCOMB_X1_Y8_N0; Fanout = 1; COMB Node = 'inst5~2'
+            Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 0.501 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+            Info: Total cell delay = 0.501 ns ( 100.00 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "MACHONG" to destination register is 3.306 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.985 ns) = 0.985 ns; Loc. = PIN_30; Fanout = 1; CLK Node = 'MACHONG'
+                Info: 2: + IC(0.969 ns) + CELL(0.366 ns) = 2.320 ns; Loc. = LCCOMB_X1_Y8_N30; Fanout = 1; COMB Node = 'inst2'
+                Info: 3: + IC(0.320 ns) + CELL(0.666 ns) = 3.306 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+                Info: Total cell delay = 2.017 ns ( 61.01 % )
+                Info: Total interconnect delay = 1.289 ns ( 38.99 % )
+            Info: - Longest clock path from clock "MACHONG" to source register is 3.306 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.985 ns) = 0.985 ns; Loc. = PIN_30; Fanout = 1; CLK Node = 'MACHONG'
+                Info: 2: + IC(0.969 ns) + CELL(0.366 ns) = 2.320 ns; Loc. = LCCOMB_X1_Y8_N30; Fanout = 1; COMB Node = 'inst2'
+                Info: 3: + IC(0.320 ns) + CELL(0.666 ns) = 3.306 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+                Info: Total cell delay = 2.017 ns ( 61.01 % )
+                Info: Total interconnect delay = 1.289 ns ( 38.99 % )
+        Info: + Micro clock to output delay of source is 0.304 ns
+        Info: + Micro setup delay of destination is -0.040 ns
+Info: tco from clock "START" to destination pin "CP" through register "inst5" is 9.986 ns
+    Info: + Longest clock path from clock "START" to source register is 4.890 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.985 ns) = 0.985 ns; Loc. = PIN_35; Fanout = 1; CLK Node = 'START'
+        Info: 2: + IC(1.313 ns) + CELL(0.970 ns) = 3.268 ns; Loc. = LCFF_X1_Y8_N29; Fanout = 1; REG Node = 'inst3'
+        Info: 3: + IC(0.430 ns) + CELL(0.206 ns) = 3.904 ns; Loc. = LCCOMB_X1_Y8_N30; Fanout = 1; COMB Node = 'inst2'
+        Info: 4: + IC(0.320 ns) + CELL(0.666 ns) = 4.890 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+        Info: Total cell delay = 2.827 ns ( 57.81 % )
+        Info: Total interconnect delay = 2.063 ns ( 42.19 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Longest register to pin delay is 4.792 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X1_Y8_N1; Fanout = 2; REG Node = 'inst5'
+        Info: 2: + IC(0.433 ns) + CELL(0.624 ns) = 1.057 ns; Loc. = LCCOMB_X1_Y8_N26; Fanout = 1; COMB Node = 'inst7'
+        Info: 3: + IC(0.639 ns) + CELL(3.096 ns) = 4.792 ns; Loc. = PIN_31; Fanout = 0; PIN Node = 'CP'
+        Info: Total cell delay = 3.720 ns ( 77.63 % )
+        Info: Total interconnect delay = 1.072 ns ( 22.37 % )
+Info: Longest tpd from source pin "HALT" to destination pin "CP" is 11.360 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.014 ns) = 1.014 ns; Loc. = PIN_207; Fanout = 1; PIN Node = 'HALT'
+    Info: 2: + IC(6.292 ns) + CELL(0.319 ns) = 7.625 ns; Loc. = LCCOMB_X1_Y8_N26; Fanout = 1; COMB Node = 'inst7'
+    Info: 3: + IC(0.639 ns) + CELL(3.096 ns) = 11.360 ns; Loc. = PIN_31; Fanout = 0; PIN Node = 'CP'
+    Info: Total cell delay = 4.429 ns ( 38.99 % )
+    Info: Total interconnect delay = 6.931 ns ( 61.01 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 183 megabytes
+    Info: Processing ended: Sun Apr 07 21:17:48 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
