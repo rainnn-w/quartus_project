@@ -1,5 +1,5 @@
 Fitter report for microprogram_calculate
-Sat Mar 30 17:17:57 2024
+Tue Apr 09 21:34:24 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +------------------------------------+-----------------------------------------+
-; Fitter Status                      ; Successful - Sat Mar 30 17:17:57 2024   ;
+; Fitter Status                      ; Successful - Tue Apr 09 21:34:24 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; microprogram_calculate                  ;
 ; Top-level Entity Name              ; microprogram_calculate                  ;
@@ -167,11 +167,10 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
-
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in G:/Project/microprogram_calculate/microprogram_calculate.pin.
+The pin-out file can be found in D:/xxx/quartus_project/Project/microprogram_calculate/microprogram_calculate.pin.
 
 
 +--------------------------------------------------------------------+
@@ -659,7 +658,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------------+---------------+-----------------------+-----+
 
 
-
 +--------------------------------------------------------------------------------------------------+
 ; Pad To Core Delay Chain Fanout                                                                   ;
 +--------------------------------------------------------------------+-------------------+---------+
@@ -847,6 +845,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LM                                                           ; 7       ;
 ; shifter-8:inst11|shifter-3:inst|inst33~52                    ; 7       ;
 ; ripple_counter_256_advanced:inst|74161:inst1|f74161:sub|9    ; 6       ;
+; CLK                                                          ; 5       ;
 ; ripple_counter_256_advanced:inst|74161:inst1|f74161:sub|99   ; 5       ;
 ; ripple_counter_256_advanced:inst|74161:inst1|f74161:sub|87   ; 5       ;
 ; ALU_parallel_8b:inst3|74181:inst|45~17                       ; 4       ;
@@ -1067,10 +1066,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Setting                   ; Value  ;
 +---------------------------+--------+
 ; Nominal Core Voltage      ; 1.20 V ;
-; Low Junction Temperature  ; 0 ï¿½C   ;
-; High Junction Temperature ; 85 ï¿½C  ;
+; Low Junction Temperature  ; 0 °C   ;
+; High Junction Temperature ; 85 °C  ;
 +---------------------------+--------+
-
 
 
 +------------------------------------------------------------+
@@ -1174,7 +1172,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Mar 30 17:17:55 2024
+    Info: Processing started: Tue Apr 09 21:34:23 2024
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off microprogram_calculate -c microprogram_calculate
 Info: Selected device EP2C8Q208C8 for design "microprogram_calculate"
 Info: Low junction temperature is 0 degrees C
@@ -1277,9 +1275,9 @@ Warning: Found 34 output pins without output pin load capacitance assignment
     Info: Pin "ro7" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
 Info: Quartus II Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 215 megabytes
-    Info: Processing ended: Sat Mar 30 17:17:58 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 277 megabytes
+    Info: Processing ended: Tue Apr 09 21:34:24 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

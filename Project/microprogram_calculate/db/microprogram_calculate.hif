@@ -169,13 +169,33 @@ shifter-8:inst11|shifter-3:inst
 
 # end
 # entity
+microprogram_calculate
+# storage
+db|microprogram_calculate.(0).cnf
+db|microprogram_calculate.(0).cnf
+# case_insensitive
+# source_file
+microprogram_calculate.bdf
+5f85bcfabf013c63c1ee6de9ae865
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 74161
 # storage
 db|microprogram_calculate.(2).cnf
 db|microprogram_calculate.(2).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+..|..|..|..|program files|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -242,7 +262,7 @@ A
 3
 }
 # include_file {
-c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+..|..|..|..|program files|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -258,7 +278,7 @@ db|microprogram_calculate.(3).cnf
 db|microprogram_calculate.(3).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
+..|..|..|..|program files|quartus|libraries|others|maxplus2|f74161.bdf
 408d3815988dee8ef0f04d17774959
 26
 # internal_option {
@@ -279,7 +299,7 @@ db|microprogram_calculate.(4).cnf
 db|microprogram_calculate.(4).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+..|..|..|..|program files|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -346,7 +366,7 @@ A
 3
 }
 # include_file {
-c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+..|..|..|..|program files|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -362,7 +382,7 @@ db|microprogram_calculate.(8).cnf
 db|microprogram_calculate.(8).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+..|..|..|..|program files|quartus|libraries|others|maxplus2|74181.bdf
 5a7a42864d75db2f39a1f2da31e3e53
 26
 # internal_option {
@@ -383,7 +403,7 @@ db|microprogram_calculate.(9).cnf
 db|microprogram_calculate.(9).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
+..|..|..|..|program files|quartus|libraries|others|maxplus2|74182.bdf
 7e848f93ad7899d68043667228e561f6
 26
 # internal_option {
@@ -396,25 +416,5 @@ ALU_parallel_8b:inst3|74182:inst2
 # macro_sequence
 
 # end
-# entity
-microprogram_calculate
-# storage
-db|microprogram_calculate.(0).cnf
-db|microprogram_calculate.(0).cnf
-# case_insensitive
-# source_file
-microprogram_calculate.bdf
-5f85bcfabf013c63c1ee6de9ae865
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
 # complete
-
+

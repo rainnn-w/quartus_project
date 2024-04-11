@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for microprogram_calculate
-Sat Mar 30 17:18:05 2024
+Tue Apr 09 21:34:27 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -778,7 +778,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Mar 30 17:18:03 2024
+    Info: Processing started: Tue Apr 09 21:34:26 2024
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off microprogram_calculate -c microprogram_calculate --timing_analysis_only
 Warning: Found pins functioning as undefined clocks and/or memory enables
     Info: Assuming node "CLK" is an undefined clock
@@ -887,9 +887,9 @@ Info: th for register "register-8_with_CLR:inst5|register-4_with_CLR:inst2|inst"
         Info: Total cell delay = 1.435 ns ( 18.53 % )
         Info: Total interconnect delay = 6.310 ns ( 81.47 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 158 megabytes
-    Info: Processing ended: Sat Mar 30 17:18:05 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 196 megabytes
+    Info: Processing ended: Tue Apr 09 21:34:27 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

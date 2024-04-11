@@ -60,3 +60,4 @@ set_location_assignment PIN_150 -to Q7
 set_global_assignment -name MISC_FILE "G:/Project/register-8_with_CLR/register-8_with_CLR.dpf"
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

@@ -1,0 +1,98 @@
+|MBR-with-tri
+Q7 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLR => register-8_with_CLR:inst.CLR
+PC => register-8_with_CLR:inst.PC
+D7 => register-8_with_CLR:inst.D7
+D6 => register-8_with_CLR:inst.D6
+D5 => register-8_with_CLR:inst.D5
+D4 => register-8_with_CLR:inst.D4
+D3 => register-8_with_CLR:inst.D3
+D2 => register-8_with_CLR:inst.D2
+D1 => register-8_with_CLR:inst.D1
+D0 => register-8_with_CLR:inst.D0
+EN => inst1.OE
+EN => inst2.OE
+EN => inst3.OE
+EN => inst4.OE
+EN => inst5.OE
+EN => inst6.OE
+EN => inst8.OE
+EN => inst7.OE
+Q6 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q5 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MBR-with-tri|register-8_with_CLR:inst
+Q7 <= register-4_with_CLR:inst2.Q3
+CLR => register-4_with_CLR:inst2.CLR
+CLR => register-4_with_CLR:inst.CLR
+PC => register-4_with_CLR:inst2.PC
+PC => register-4_with_CLR:inst.PC
+D7 => register-4_with_CLR:inst2.D3
+D6 => register-4_with_CLR:inst2.D2
+D5 => register-4_with_CLR:inst2.D1
+D4 => register-4_with_CLR:inst2.D0
+Q6 <= register-4_with_CLR:inst2.Q2
+Q5 <= register-4_with_CLR:inst2.Q1
+Q4 <= register-4_with_CLR:inst2.Q0
+Q3 <= register-4_with_CLR:inst.Q3
+D3 => register-4_with_CLR:inst.D3
+D2 => register-4_with_CLR:inst.D2
+D1 => register-4_with_CLR:inst.D1
+D0 => register-4_with_CLR:inst.D0
+Q2 <= register-4_with_CLR:inst.Q2
+Q1 <= register-4_with_CLR:inst.Q1
+Q0 <= register-4_with_CLR:inst.Q0
+
+
+|MBR-with-tri|register-8_with_CLR:inst|register-4_with_CLR:inst2
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst.PRESET
+CLR => inst2.ACLR
+CLR => inst2.PRESET
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+PC => inst.CLK
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
+|MBR-with-tri|register-8_with_CLR:inst|register-4_with_CLR:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst.PRESET
+CLR => inst2.ACLR
+CLR => inst2.PRESET
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+PC => inst.CLK
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
