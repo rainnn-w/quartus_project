@@ -345,7 +345,7 @@ db|microprogram-access.(0).cnf
 # case_insensitive
 # source_file
 microprogram-access.bdf
-e41761f1cf85a75556199628286af89
+692664b9479481aab639f542a5efb3c
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

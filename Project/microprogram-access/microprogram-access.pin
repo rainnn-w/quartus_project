@@ -209,17 +209,17 @@ RESERVED_INPUT               : 138       :        :                   :         
 RESERVED_INPUT               : 139       :        :                   :         : 3         :                
 GND                          : 140       : gnd    :                   :         :           :                
 RESERVED_INPUT               : 141       :        :                   :         : 3         :                
-RESERVED_INPUT               : 142       :        :                   :         : 3         :                
-RESERVED_INPUT               : 143       :        :                   :         : 3         :                
-RESERVED_INPUT               : 144       :        :                   :         : 3         :                
-RESERVED_INPUT               : 145       :        :                   :         : 3         :                
-RESERVED_INPUT               : 146       :        :                   :         : 3         :                
-RESERVED_INPUT               : 147       :        :                   :         : 3         :                
+MBR-Q0                       : 142       : output : 3.3-V LVTTL       :         : 3         : Y              
+MBR-Q1                       : 143       : output : 3.3-V LVTTL       :         : 3         : Y              
+MBR-Q2                       : 144       : output : 3.3-V LVTTL       :         : 3         : Y              
+MBR-Q3                       : 145       : output : 3.3-V LVTTL       :         : 3         : Y              
+MBR-Q4                       : 146       : output : 3.3-V LVTTL       :         : 3         : Y              
+MBR-Q5                       : 147       : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 148       : power  :                   : 3.3V    : 3         :                
-RESERVED_INPUT               : 149       :        :                   :         : 3         :                
-RESERVED_INPUT               : 150       :        :                   :         : 3         :                
-RESERVED_INPUT               : 151       :        :                   :         : 3         :                
-RESERVED_INPUT               : 152       :        :                   :         : 3         :                
+MBR-Q6                       : 149       : output : 3.3-V LVTTL       :         : 3         : Y              
+MBR-Q7                       : 150       : output : 3.3-V LVTTL       :         : 3         : Y              
+PC-Q0                        : 151       : output : 3.3-V LVTTL       :         : 3         : Y              
+PC-Q1                        : 152       : output : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : 153       : gnd    :                   :         :           :                
 GND_PLL2                     : 154       : gnd    :                   :         :           :                
 VCCD_PLL2                    : 155       : power  :                   : 1.2V    :           :                
@@ -227,12 +227,12 @@ GND_PLL2                     : 156       : gnd    :                   :         
 VCCA_PLL2                    : 157       : power  :                   : 1.2V    :           :                
 GNDA_PLL2                    : 158       : gnd    :                   :         :           :                
 GND                          : 159       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 160       :        :                   :         : 2         :                
-RESERVED_INPUT               : 161       :        :                   :         : 2         :                
-RESERVED_INPUT               : 162       :        :                   :         : 2         :                
-RESERVED_INPUT               : 163       :        :                   :         : 2         :                
-RESERVED_INPUT               : 164       :        :                   :         : 2         :                
-RESERVED_INPUT               : 165       :        :                   :         : 2         :                
+PC-Q2                        : 160       : output : 3.3-V LVTTL       :         : 2         : Y              
+PC-Q3                        : 161       : output : 3.3-V LVTTL       :         : 2         : Y              
+PC-Q4                        : 162       : output : 3.3-V LVTTL       :         : 2         : Y              
+PC-Q5                        : 163       : output : 3.3-V LVTTL       :         : 2         : Y              
+PC-Q6                        : 164       : output : 3.3-V LVTTL       :         : 2         : Y              
+PC-Q7                        : 165       : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 166       : power  :                   : 3.3V    : 2         :                
 GND                          : 167       : gnd    :                   :         :           :                
 Y0                           : 168       : output : 3.3-V LVTTL       :         : 2         : Y              
