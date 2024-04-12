@@ -112,3 +112,4 @@ set_location_assignment PIN_163 -to LR_A5
 set_location_assignment PIN_164 -to LR_A6
 set_location_assignment PIN_165 -to LR_A7
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name MISC_FILE "D:/xxx/quartus_project/quartus/microprogram_ram/microprogram_ram.dpf"

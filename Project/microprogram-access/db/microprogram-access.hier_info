@@ -1,0 +1,524 @@
+|microprogram-access
+uRD <= start_stop:inst.CP
+HALT => start_stop:inst.HALT
+CP-Constant => start_stop:inst.MACHONG
+CP-Single => start_stop:inst.START
+CLR => start_stop:inst.CLR
+CLR => ripple_counter_256_advanced:inst2.CLR
+CLR => ripple_counter_256_advanced:inst3.CLR
+CLR => register-8_with_CLR:inst4.CLR
+CLR => MBR-with-tri:inst5.CLR
+cp_uIR <= start_stop:inst.CP
+M_RD <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+RD => inst18.IN0
+upc_Q4 <= ripple_counter_256_advanced:inst2.Q4
+D4 => ripple_counter_256_advanced:inst2.D4
+D5 => ripple_counter_256_advanced:inst2.D5
+D6 => ripple_counter_256_advanced:inst2.D6
+D7 => ripple_counter_256_advanced:inst2.D7
+D0 => ripple_counter_256_advanced:inst2.D0
+D1 => ripple_counter_256_advanced:inst2.D1
+D2 => ripple_counter_256_advanced:inst2.D2
+D3 => ripple_counter_256_advanced:inst2.D3
+upc_Q5 <= ripple_counter_256_advanced:inst2.Q5
+upc_Q6 <= ripple_counter_256_advanced:inst2.Q6
+upc_Q7 <= ripple_counter_256_advanced:inst2.Q7
+upc_Q0 <= ripple_counter_256_advanced:inst2.Q0
+upc_Q1 <= ripple_counter_256_advanced:inst2.Q1
+upc_Q2 <= ripple_counter_256_advanced:inst2.Q2
+upc_Q3 <= ripple_counter_256_advanced:inst2.Q3
+Y7 <= mux2-8:inst1.Y7
+pc_D4 => ripple_counter_256_advanced:inst3.D4
+pc_D5 => ripple_counter_256_advanced:inst3.D5
+pc_D6 => ripple_counter_256_advanced:inst3.D6
+pc_D7 => ripple_counter_256_advanced:inst3.D7
+cpPC => inst11.IN0
+pc_D0 => ripple_counter_256_advanced:inst3.D0
+pc_D1 => ripple_counter_256_advanced:inst3.D1
+pc_D2 => ripple_counter_256_advanced:inst3.D2
+pc_D3 => ripple_counter_256_advanced:inst3.D3
+cpMAR => inst12.IN0
+C7 <= MBR-with-tri:inst5.Q7
+C6 <= MBR-with-tri:inst5.Q6
+C5 <= MBR-with-tri:inst5.Q5
+C4 <= MBR-with-tri:inst5.Q4
+C3 <= MBR-with-tri:inst5.Q3
+C2 <= MBR-with-tri:inst5.Q2
+C1 <= MBR-with-tri:inst5.Q1
+C0 <= MBR-with-tri:inst5.Q0
+mux-A => mux2-8:inst1.AY
+mux-B => mux2-8:inst1.BY
+Y6 <= mux2-8:inst1.Y6
+Y5 <= mux2-8:inst1.Y5
+Y4 <= mux2-8:inst1.Y4
+Y3 <= mux2-8:inst1.Y3
+Y2 <= mux2-8:inst1.Y2
+Y1 <= mux2-8:inst1.Y1
+Y0 <= mux2-8:inst1.Y0
+M_WR <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+EN-MBR => inst17.IN0
+EN-MBR => MBR-with-tri:inst5.EN
+cpMBR => inst13.IN0
+
+
+|microprogram-access|start_stop:inst
+CP <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+HALT => inst.IN0
+CLR => inst5.ACLR
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst5.PRESET
+MACHONG => inst2.IN0
+START => inst3.CLK
+
+
+|microprogram-access|ripple_counter_256_advanced:inst2
+Q0 <= 74161:inst1.QA
+CLR => 74161:inst1.CLRN
+CLR => 74161:inst.CLRN
+CLK => 74161:inst1.CLK
+CLK => 74161:inst.CLK
+EP => 74161:inst1.ENP
+D0 => 74161:inst1.A
+D3 => 74161:inst1.D
+ET => 74161:inst1.ENT
+D1 => 74161:inst1.B
+D2 => 74161:inst1.C
+Q1 <= 74161:inst1.QB
+Q2 <= 74161:inst1.QC
+Q3 <= 74161:inst1.QD
+Q4 <= 74161:inst.QA
+LOAD => 74161:inst.LDN
+D4 => 74161:inst.A
+D7 => 74161:inst.D
+D5 => 74161:inst.B
+D6 => 74161:inst.C
+Q5 <= 74161:inst.QB
+Q6 <= 74161:inst.QC
+Q7 <= 74161:inst.QD
+
+
+|microprogram-access|ripple_counter_256_advanced:inst2|74161:inst1
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|microprogram-access|ripple_counter_256_advanced:inst2|74161:inst1|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|microprogram-access|ripple_counter_256_advanced:inst2|74161:inst
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|microprogram-access|ripple_counter_256_advanced:inst2|74161:inst|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|microprogram-access|mux2-8:inst1
+Y7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+B7 => inst3.IN0
+BY => inst3.IN1
+BY => inst5.IN1
+BY => inst6.IN1
+BY => inst11.IN1
+BY => inst15.IN1
+BY => inst17.IN1
+BY => inst21.IN1
+BY => inst23.IN1
+A7 => inst.IN0
+AY => inst.IN1
+AY => inst4.IN1
+AY => inst9.IN1
+AY => inst10.IN1
+AY => inst14.IN1
+AY => inst16.IN1
+AY => inst20.IN1
+AY => inst22.IN1
+Y6 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+B6 => inst5.IN0
+A6 => inst4.IN0
+Y5 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B5 => inst6.IN0
+A5 => inst9.IN0
+Y4 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst11.IN0
+A4 => inst10.IN0
+Y3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+B3 => inst15.IN0
+A3 => inst14.IN0
+Y2 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+B2 => inst17.IN0
+A2 => inst16.IN0
+Y1 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+B1 => inst21.IN0
+A1 => inst20.IN0
+Y0 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+B0 => inst23.IN0
+A0 => inst22.IN0
+
+
+|microprogram-access|ripple_counter_256_advanced:inst3
+Q0 <= 74161:inst1.QA
+CLR => 74161:inst1.CLRN
+CLR => 74161:inst.CLRN
+CLK => 74161:inst1.CLK
+CLK => 74161:inst.CLK
+EP => 74161:inst1.ENP
+D0 => 74161:inst1.A
+D3 => 74161:inst1.D
+ET => 74161:inst1.ENT
+D1 => 74161:inst1.B
+D2 => 74161:inst1.C
+Q1 <= 74161:inst1.QB
+Q2 <= 74161:inst1.QC
+Q3 <= 74161:inst1.QD
+Q4 <= 74161:inst.QA
+LOAD => 74161:inst.LDN
+D4 => 74161:inst.A
+D7 => 74161:inst.D
+D5 => 74161:inst.B
+D6 => 74161:inst.C
+Q5 <= 74161:inst.QB
+Q6 <= 74161:inst.QC
+Q7 <= 74161:inst.QD
+
+
+|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst1
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst1|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|microprogram-access|register-8_with_CLR:inst4
+Q7 <= register-4_with_CLR:inst2.Q3
+CLR => register-4_with_CLR:inst2.CLR
+CLR => register-4_with_CLR:inst.CLR
+PC => register-4_with_CLR:inst2.PC
+PC => register-4_with_CLR:inst.PC
+D7 => register-4_with_CLR:inst2.D3
+D6 => register-4_with_CLR:inst2.D2
+D5 => register-4_with_CLR:inst2.D1
+D4 => register-4_with_CLR:inst2.D0
+Q6 <= register-4_with_CLR:inst2.Q2
+Q5 <= register-4_with_CLR:inst2.Q1
+Q4 <= register-4_with_CLR:inst2.Q0
+Q3 <= register-4_with_CLR:inst.Q3
+D3 => register-4_with_CLR:inst.D3
+D2 => register-4_with_CLR:inst.D2
+D1 => register-4_with_CLR:inst.D1
+D0 => register-4_with_CLR:inst.D0
+Q2 <= register-4_with_CLR:inst.Q2
+Q1 <= register-4_with_CLR:inst.Q1
+Q0 <= register-4_with_CLR:inst.Q0
+
+
+|microprogram-access|register-8_with_CLR:inst4|register-4_with_CLR:inst2
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst.PRESET
+CLR => inst2.ACLR
+CLR => inst2.PRESET
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+PC => inst.CLK
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
+|microprogram-access|register-8_with_CLR:inst4|register-4_with_CLR:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst.PRESET
+CLR => inst2.ACLR
+CLR => inst2.PRESET
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+PC => inst.CLK
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
+|microprogram-access|MBR-with-tri:inst5
+Q7 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLR => register-8_with_CLR:inst.CLR
+PC => register-8_with_CLR:inst.PC
+D7 => register-8_with_CLR:inst.D7
+D6 => register-8_with_CLR:inst.D6
+D5 => register-8_with_CLR:inst.D5
+D4 => register-8_with_CLR:inst.D4
+D3 => register-8_with_CLR:inst.D3
+D2 => register-8_with_CLR:inst.D2
+D1 => register-8_with_CLR:inst.D1
+D0 => register-8_with_CLR:inst.D0
+EN => inst1.OE
+EN => inst2.OE
+EN => inst3.OE
+EN => inst4.OE
+EN => inst5.OE
+EN => inst6.OE
+EN => inst8.OE
+EN => inst7.OE
+Q6 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q5 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|microprogram-access|MBR-with-tri:inst5|register-8_with_CLR:inst
+Q7 <= register-4_with_CLR:inst2.Q3
+CLR => register-4_with_CLR:inst2.CLR
+CLR => register-4_with_CLR:inst.CLR
+PC => register-4_with_CLR:inst2.PC
+PC => register-4_with_CLR:inst.PC
+D7 => register-4_with_CLR:inst2.D3
+D6 => register-4_with_CLR:inst2.D2
+D5 => register-4_with_CLR:inst2.D1
+D4 => register-4_with_CLR:inst2.D0
+Q6 <= register-4_with_CLR:inst2.Q2
+Q5 <= register-4_with_CLR:inst2.Q1
+Q4 <= register-4_with_CLR:inst2.Q0
+Q3 <= register-4_with_CLR:inst.Q3
+D3 => register-4_with_CLR:inst.D3
+D2 => register-4_with_CLR:inst.D2
+D1 => register-4_with_CLR:inst.D1
+D0 => register-4_with_CLR:inst.D0
+Q2 <= register-4_with_CLR:inst.Q2
+Q1 <= register-4_with_CLR:inst.Q1
+Q0 <= register-4_with_CLR:inst.Q0
+
+
+|microprogram-access|MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst2
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst.PRESET
+CLR => inst2.ACLR
+CLR => inst2.PRESET
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+PC => inst.CLK
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
+|microprogram-access|MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst.PRESET
+CLR => inst2.ACLR
+CLR => inst2.PRESET
+CLR => inst3.ACLR
+CLR => inst3.PRESET
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+PC => inst.CLK
+PC => inst2.CLK
+PC => inst3.CLK
+PC => inst1.CLK
+D3 => inst.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst3.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+
+
