@@ -46,8 +46,8 @@ C3 <= MBR-with-tri:MBR.Q3
 C2 <= MBR-with-tri:MBR.Q2
 C1 <= MBR-with-tri:MBR.Q1
 C0 <= MBR-with-tri:MBR.Q0
-mux-A => mux2-8:inst1.AY
-mux-B => mux2-8:inst1.BY
+mux-A => 24_decoder:inst3.I0
+mux-B => 24_decoder:inst3.I1
 Y6 <= mux2-8:inst1.Y6
 Y5 <= mux2-8:inst1.Y5
 Y4 <= mux2-8:inst1.Y4
@@ -78,7 +78,7 @@ cpMBR => inst13.IN0
 
 
 |microprogram-access|start_stop:inst
-CP <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+CP <= inst.DB_MAX_OUTPUT_PORT_TYPE
 HALT => inst6.IN0
 MACHONG => inst9.IN1
 CLR => inst1.ACLR
@@ -436,6 +436,19 @@ Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 D0 => inst3.DATAIN
 Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 D2 => inst1.DATAIN
+
+
+|microprogram-access|24_decoder:inst3
+Y0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst.IN0
+I0 => inst5.IN0
+I0 => inst7.IN0
+I1 => inst2.IN0
+I1 => inst6.IN0
+I1 => inst7.IN1
+Y1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |microprogram-access|MBR-with-tri:MBR

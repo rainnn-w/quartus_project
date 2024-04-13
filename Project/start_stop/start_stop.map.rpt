@@ -1,5 +1,5 @@
 Analysis & Synthesis report for start_stop
-Sat Apr 13 13:26:47 2024
+Sat Apr 13 15:18:30 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 13 13:26:47 2024   ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 13 15:18:30 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; start_stop                              ;
 ; Top-level Entity Name              ; start_stop                              ;
@@ -201,7 +201,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Apr 13 13:26:47 2024
+    Info: Processing started: Sat Apr 13 15:18:29 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off start_stop -c start_stop
 Info: Found 1 design units, including 1 entities, in source file start_stop.bdf
     Info: Found entity 1: start_stop
@@ -212,8 +212,8 @@ Info: Implemented 7 device resources after synthesis - the final resource count 
     Info: Implemented 2 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 225 megabytes
-    Info: Processing ended: Sat Apr 13 13:26:47 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sat Apr 13 15:18:30 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

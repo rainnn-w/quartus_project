@@ -1,0 +1,86 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mux2-8
+# storage
+db|mux4-8.(1).cnf
+db|mux4-8.(1).cnf
+# case_insensitive
+# source_file
+mux2-8.bdf
+68f056e9b8cc49e9394a577b7e3afc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux2-8:inst2
+mux2-8:inst
+}
+# macro_sequence
+
+# end
+# entity
+24_decoder
+# storage
+db|mux4-8.(2).cnf
+db|mux4-8.(2).cnf
+# case_insensitive
+# source_file
+24_decoder.bdf
+14a2851d9dac95c8219e1e5fba31223
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+24_decoder:inst1
+}
+# macro_sequence
+
+# end
+# entity
+mux4-8
+# storage
+db|mux4-8.(0).cnf
+db|mux4-8.(0).cnf
+# case_insensitive
+# source_file
+mux4-8.bdf
+8d6f05fa55b11ab51a9e75d138d017
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

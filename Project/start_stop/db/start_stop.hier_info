@@ -1,5 +1,5 @@
 |start_stop
-CP <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+CP <= inst.DB_MAX_OUTPUT_PORT_TYPE
 HALT => inst6.IN0
 MACHONG => inst9.IN1
 CLR => inst1.ACLR

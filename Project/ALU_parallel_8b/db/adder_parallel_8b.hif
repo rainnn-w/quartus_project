@@ -1,0 +1,86 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ALU_parallel_8b
+# storage
+db|adder_parallel_8b.(0).cnf
+db|adder_parallel_8b.(0).cnf
+# case_insensitive
+# source_file
+ALU_parallel_8b.bdf
+47acc855f46c8c3b7f8c4c2c77fda75b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|adder_parallel_8b.(1).cnf
+db|adder_parallel_8b.(1).cnf
+# case_insensitive
+# source_file
+e:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74181:inst
+74181:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74182
+# storage
+db|adder_parallel_8b.(2).cnf
+db|adder_parallel_8b.(2).cnf
+# case_insensitive
+# source_file
+e:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
+7e848f93ad7899d68043667228e561f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74182:inst2
+}
+# macro_sequence
+
+# end
+# complete
+

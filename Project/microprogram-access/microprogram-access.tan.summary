@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.737 ns
+Actual Time    : 16.875 ns
 From           : ripple_counter_256_advanced:PC|74161:inst|f74161:sub|9
 To             : Y4
 From Clock     : CP-Single
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.733 ns
+Actual Time    : 13.829 ns
 From           : mux-B
-To             : Y7
+To             : Y4
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,7 +35,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 1.408 ns
+Actual Time    : 1.455 ns
 From           : C2
 To             : MBR-with-tri:MBR|register-8_with_CLR:inst|register-4_with_CLR:inst|inst1
 From Clock     : --
@@ -66,7 +66,7 @@ Type           : Clock Setup: 'cpPC'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
-From           : ripple_counter_256_advanced:PC|74161:inst1|f74161:sub|87
+From           : ripple_counter_256_advanced:PC|74161:inst|f74161:sub|87
 To             : ripple_counter_256_advanced:PC|74161:inst|f74161:sub|110
 From Clock     : cpPC
 To Clock       : cpPC
