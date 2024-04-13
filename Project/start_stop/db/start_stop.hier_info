@@ -1,11 +1,9 @@
 |start_stop
-CP <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-HALT => inst.IN0
-CLR => inst5.ACLR
-CLR => inst3.ACLR
-CLR => inst3.PRESET
-CLR => inst5.PRESET
-MACHONG => inst2.IN0
-START => inst3.CLK
+CP <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+HALT => inst6.IN0
+MACHONG => inst9.IN1
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+START => inst1.CLK
 
 

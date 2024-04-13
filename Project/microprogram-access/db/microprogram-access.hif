@@ -22,26 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-start_stop
-# storage
-db|microprogram-access.(1).cnf
-db|microprogram-access.(1).cnf
-# case_insensitive
-# source_file
-..|start_stop|start_stop.bdf
-87fbdef3be42c4c56d3e28ef5b2512a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-start_stop:inst
-}
-# macro_sequence
-
-# end
-# entity
 ripple_counter_256_advanced
 # storage
 db|microprogram-access.(2).cnf
@@ -57,7 +37,131 @@ AUTO
 }
 # hierarchies {
 ripple_counter_256_advanced:inst2
-ripple_counter_256_advanced:inst3
+ripple_counter_256_advanced:PC
+}
+# macro_sequence
+
+# end
+# entity
+mux2-8
+# storage
+db|microprogram-access.(6).cnf
+db|microprogram-access.(6).cnf
+# case_insensitive
+# source_file
+..|mux2-8|mux2-8.bdf
+68f056e9b8cc49e9394a577b7e3afc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux2-8:inst1
+}
+# macro_sequence
+
+# end
+# entity
+register-8_with_CLR
+# storage
+db|microprogram-access.(7).cnf
+db|microprogram-access.(7).cnf
+# case_insensitive
+# source_file
+..|register-8_with_CLR|register-8_with_CLR.bdf
+2f8e1d5a9743ec6fa072b3bc6ea8ecf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register-8_with_CLR:MAR
+MBR-with-tri:MBR|register-8_with_CLR:inst
+}
+# macro_sequence
+
+# end
+# entity
+register-4_with_CLR
+# storage
+db|microprogram-access.(8).cnf
+db|microprogram-access.(8).cnf
+# case_insensitive
+# source_file
+..|register-8_with_CLR|register-4_with_CLR.bdf
+c7363426bbe8ca05b8dca60fd3cfa78
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register-8_with_CLR:MAR|register-4_with_CLR:inst2
+register-8_with_CLR:MAR|register-4_with_CLR:inst
+MBR-with-tri:MBR|register-8_with_CLR:inst|register-4_with_CLR:inst2
+MBR-with-tri:MBR|register-8_with_CLR:inst|register-4_with_CLR:inst
+}
+# macro_sequence
+
+# end
+# entity
+MBR-with-tri
+# storage
+db|microprogram-access.(9).cnf
+db|microprogram-access.(9).cnf
+# case_insensitive
+# source_file
+..|MBR-with-tri|MBR-with-tri.bdf
+41986ef2275aae37b41b751ed7cf9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MBR-with-tri:MBR
+}
+# macro_sequence
+
+# end
+# entity
+microprogram-access
+# storage
+db|microprogram-access.(0).cnf
+db|microprogram-access.(0).cnf
+# case_insensitive
+# source_file
+microprogram-access.bdf
+6f8ee7ac64e6f5bca51dfd5f553bd30
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+start_stop
+# storage
+db|microprogram-access.(1).cnf
+db|microprogram-access.(1).cnf
+# case_insensitive
+# source_file
+..|start_stop|start_stop.bdf
+5b77f329bec9884c7b66fd02f7afe9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+start_stop:inst
 }
 # macro_sequence
 
@@ -69,7 +173,7 @@ db|microprogram-access.(3).cnf
 db|microprogram-access.(3).cnf
 # case_insensitive
 # source_file
-..|..|..|..|program files|quartus|libraries|others|maxplus2|74161.tdf
+e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -136,12 +240,12 @@ A
 3
 }
 # include_file {
-..|..|..|..|program files|quartus|libraries|megafunctions|aglobal.inc
+e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
 ripple_counter_256_advanced:inst2|74161:inst1
-ripple_counter_256_advanced:inst3|74161:inst1
+ripple_counter_256_advanced:PC|74161:inst1
 }
 # macro_sequence
 
@@ -153,7 +257,7 @@ db|microprogram-access.(4).cnf
 db|microprogram-access.(4).cnf
 # case_insensitive
 # source_file
-..|..|..|..|program files|quartus|libraries|others|maxplus2|f74161.bdf
+e:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
 408d3815988dee8ef0f04d17774959
 26
 # internal_option {
@@ -163,8 +267,8 @@ AUTO
 # hierarchies {
 ripple_counter_256_advanced:inst2|74161:inst1|f74161:sub
 ripple_counter_256_advanced:inst2|74161:inst|f74161:sub
-ripple_counter_256_advanced:inst3|74161:inst1|f74161:sub
-ripple_counter_256_advanced:inst3|74161:inst|f74161:sub
+ripple_counter_256_advanced:PC|74161:inst1|f74161:sub
+ripple_counter_256_advanced:PC|74161:inst|f74161:sub
 }
 # macro_sequence
 
@@ -176,7 +280,7 @@ db|microprogram-access.(5).cnf
 db|microprogram-access.(5).cnf
 # case_insensitive
 # source_file
-..|..|..|..|program files|quartus|libraries|others|maxplus2|74161.tdf
+e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -243,116 +347,12 @@ A
 3
 }
 # include_file {
-..|..|..|..|program files|quartus|libraries|megafunctions|aglobal.inc
+e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
 ripple_counter_256_advanced:inst2|74161:inst
-ripple_counter_256_advanced:inst3|74161:inst
-}
-# macro_sequence
-
-# end
-# entity
-mux2-8
-# storage
-db|microprogram-access.(6).cnf
-db|microprogram-access.(6).cnf
-# case_insensitive
-# source_file
-..|mux2-8|mux2-8.bdf
-68f056e9b8cc49e9394a577b7e3afc
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-mux2-8:inst1
-}
-# macro_sequence
-
-# end
-# entity
-register-8_with_CLR
-# storage
-db|microprogram-access.(7).cnf
-db|microprogram-access.(7).cnf
-# case_insensitive
-# source_file
-..|register-8_with_CLR|register-8_with_CLR.bdf
-2f8e1d5a9743ec6fa072b3bc6ea8ecf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-register-8_with_CLR:inst4
-MBR-with-tri:inst5|register-8_with_CLR:inst
-}
-# macro_sequence
-
-# end
-# entity
-register-4_with_CLR
-# storage
-db|microprogram-access.(8).cnf
-db|microprogram-access.(8).cnf
-# case_insensitive
-# source_file
-..|register-8_with_CLR|register-4_with_CLR.bdf
-c7363426bbe8ca05b8dca60fd3cfa78
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-register-8_with_CLR:inst4|register-4_with_CLR:inst2
-register-8_with_CLR:inst4|register-4_with_CLR:inst
-MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst2
-MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst
-}
-# macro_sequence
-
-# end
-# entity
-MBR-with-tri
-# storage
-db|microprogram-access.(9).cnf
-db|microprogram-access.(9).cnf
-# case_insensitive
-# source_file
-..|MBR-with-tri|MBR-with-tri.bdf
-41986ef2275aae37b41b751ed7cf9b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-MBR-with-tri:inst5
-}
-# macro_sequence
-
-# end
-# entity
-microprogram-access
-# storage
-db|microprogram-access.(0).cnf
-db|microprogram-access.(0).cnf
-# case_insensitive
-# source_file
-microprogram-access.bdf
-692664b9479481aab639f542a5efb3c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
+ripple_counter_256_advanced:PC|74161:inst
 }
 # macro_sequence
 

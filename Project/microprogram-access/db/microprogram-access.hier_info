@@ -5,9 +5,9 @@ CP-Constant => start_stop:inst.MACHONG
 CP-Single => start_stop:inst.START
 CLR => start_stop:inst.CLR
 CLR => ripple_counter_256_advanced:inst2.CLR
-CLR => ripple_counter_256_advanced:inst3.CLR
-CLR => register-8_with_CLR:inst4.CLR
-CLR => MBR-with-tri:inst5.CLR
+CLR => ripple_counter_256_advanced:PC.CLR
+CLR => register-8_with_CLR:MAR.CLR
+CLR => MBR-with-tri:MBR.CLR
 cp_uIR <= start_stop:inst.CP
 M_RD <= inst18.DB_MAX_OUTPUT_PORT_TYPE
 RD => inst18.IN0
@@ -28,24 +28,24 @@ upc_Q1 <= ripple_counter_256_advanced:inst2.Q1
 upc_Q2 <= ripple_counter_256_advanced:inst2.Q2
 upc_Q3 <= ripple_counter_256_advanced:inst2.Q3
 Y7 <= mux2-8:inst1.Y7
-pc_D4 => ripple_counter_256_advanced:inst3.D4
-pc_D5 => ripple_counter_256_advanced:inst3.D5
-pc_D6 => ripple_counter_256_advanced:inst3.D6
-pc_D7 => ripple_counter_256_advanced:inst3.D7
+pc_D4 => ripple_counter_256_advanced:PC.D4
+pc_D5 => ripple_counter_256_advanced:PC.D5
+pc_D6 => ripple_counter_256_advanced:PC.D6
+pc_D7 => ripple_counter_256_advanced:PC.D7
 cpPC => inst11.IN0
-pc_D0 => ripple_counter_256_advanced:inst3.D0
-pc_D1 => ripple_counter_256_advanced:inst3.D1
-pc_D2 => ripple_counter_256_advanced:inst3.D2
-pc_D3 => ripple_counter_256_advanced:inst3.D3
+pc_D0 => ripple_counter_256_advanced:PC.D0
+pc_D1 => ripple_counter_256_advanced:PC.D1
+pc_D2 => ripple_counter_256_advanced:PC.D2
+pc_D3 => ripple_counter_256_advanced:PC.D3
 cpMAR => inst12.IN0
-C7 <= MBR-with-tri:inst5.Q7
-C6 <= MBR-with-tri:inst5.Q6
-C5 <= MBR-with-tri:inst5.Q5
-C4 <= MBR-with-tri:inst5.Q4
-C3 <= MBR-with-tri:inst5.Q3
-C2 <= MBR-with-tri:inst5.Q2
-C1 <= MBR-with-tri:inst5.Q1
-C0 <= MBR-with-tri:inst5.Q0
+C7 <= MBR-with-tri:MBR.Q7
+C6 <= MBR-with-tri:MBR.Q6
+C5 <= MBR-with-tri:MBR.Q5
+C4 <= MBR-with-tri:MBR.Q4
+C3 <= MBR-with-tri:MBR.Q3
+C2 <= MBR-with-tri:MBR.Q2
+C1 <= MBR-with-tri:MBR.Q1
+C0 <= MBR-with-tri:MBR.Q0
 mux-A => mux2-8:inst1.AY
 mux-B => mux2-8:inst1.BY
 Y6 <= mux2-8:inst1.Y6
@@ -57,7 +57,7 @@ Y1 <= mux2-8:inst1.Y1
 Y0 <= mux2-8:inst1.Y0
 M_WR <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 EN-MBR => inst17.IN0
-EN-MBR => MBR-with-tri:inst5.EN
+EN-MBR => MBR-with-tri:MBR.EN
 MBR-Q7 <= C7~0.DB_MAX_OUTPUT_PORT_TYPE
 MBR-Q6 <= C6~0.DB_MAX_OUTPUT_PORT_TYPE
 MBR-Q5 <= C5~0.DB_MAX_OUTPUT_PORT_TYPE
@@ -78,14 +78,12 @@ cpMBR => inst13.IN0
 
 
 |microprogram-access|start_stop:inst
-CP <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-HALT => inst.IN0
-CLR => inst5.ACLR
-CLR => inst3.ACLR
-CLR => inst3.PRESET
-CLR => inst5.PRESET
-MACHONG => inst2.IN0
-START => inst3.CLK
+CP <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+HALT => inst6.IN0
+MACHONG => inst9.IN1
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+START => inst1.CLK
 
 
 |microprogram-access|ripple_counter_256_advanced:inst2
@@ -251,7 +249,7 @@ B0 => inst23.IN0
 A0 => inst22.IN0
 
 
-|microprogram-access|ripple_counter_256_advanced:inst3
+|microprogram-access|ripple_counter_256_advanced:PC
 Q0 <= 74161:inst1.QA
 CLR => 74161:inst1.CLRN
 CLR => 74161:inst.CLRN
@@ -277,7 +275,7 @@ Q6 <= 74161:inst.QC
 Q7 <= 74161:inst.QD
 
 
-|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst1
+|microprogram-access|ripple_counter_256_advanced:PC|74161:inst1
 clk => f74161:sub.clk
 ldn => ~NO_FANOUT~
 clrn => f74161:sub.clrn
@@ -294,7 +292,7 @@ qa <= f74161:sub.qa
 rco <= f74161:sub.rco
 
 
-|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst1|f74161:sub
+|microprogram-access|ripple_counter_256_advanced:PC|74161:inst1|f74161:sub
 RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 110.ACLR
 CLRN => 99.ACLR
@@ -324,7 +322,7 @@ QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
 QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst
+|microprogram-access|ripple_counter_256_advanced:PC|74161:inst
 clk => f74161:sub.clk
 ldn => f74161:sub.ldn
 clrn => f74161:sub.clrn
@@ -341,7 +339,7 @@ qa <= f74161:sub.qa
 rco <= f74161:sub.rco
 
 
-|microprogram-access|ripple_counter_256_advanced:inst3|74161:inst|f74161:sub
+|microprogram-access|ripple_counter_256_advanced:PC|74161:inst|f74161:sub
 RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 110.ACLR
 CLRN => 99.ACLR
@@ -371,7 +369,7 @@ QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
 QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|microprogram-access|register-8_with_CLR:inst4
+|microprogram-access|register-8_with_CLR:MAR
 Q7 <= register-4_with_CLR:inst2.Q3
 CLR => register-4_with_CLR:inst2.CLR
 CLR => register-4_with_CLR:inst.CLR
@@ -394,7 +392,7 @@ Q1 <= register-4_with_CLR:inst.Q1
 Q0 <= register-4_with_CLR:inst.Q0
 
 
-|microprogram-access|register-8_with_CLR:inst4|register-4_with_CLR:inst2
+|microprogram-access|register-8_with_CLR:MAR|register-4_with_CLR:inst2
 Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 CLR => inst.ACLR
 CLR => inst.PRESET
@@ -417,7 +415,7 @@ Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 D2 => inst1.DATAIN
 
 
-|microprogram-access|register-8_with_CLR:inst4|register-4_with_CLR:inst
+|microprogram-access|register-8_with_CLR:MAR|register-4_with_CLR:inst
 Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 CLR => inst.ACLR
 CLR => inst.PRESET
@@ -440,7 +438,7 @@ Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 D2 => inst1.DATAIN
 
 
-|microprogram-access|MBR-with-tri:inst5
+|microprogram-access|MBR-with-tri:MBR
 Q7 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLR => register-8_with_CLR:inst.CLR
 PC => register-8_with_CLR:inst.PC
@@ -469,7 +467,7 @@ Q1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 Q0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|microprogram-access|MBR-with-tri:inst5|register-8_with_CLR:inst
+|microprogram-access|MBR-with-tri:MBR|register-8_with_CLR:inst
 Q7 <= register-4_with_CLR:inst2.Q3
 CLR => register-4_with_CLR:inst2.CLR
 CLR => register-4_with_CLR:inst.CLR
@@ -492,7 +490,7 @@ Q1 <= register-4_with_CLR:inst.Q1
 Q0 <= register-4_with_CLR:inst.Q0
 
 
-|microprogram-access|MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst2
+|microprogram-access|MBR-with-tri:MBR|register-8_with_CLR:inst|register-4_with_CLR:inst2
 Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 CLR => inst.ACLR
 CLR => inst.PRESET
@@ -515,7 +513,7 @@ Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 D2 => inst1.DATAIN
 
 
-|microprogram-access|MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst
+|microprogram-access|MBR-with-tri:MBR|register-8_with_CLR:inst|register-4_with_CLR:inst
 Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 CLR => inst.ACLR
 CLR => inst.PRESET

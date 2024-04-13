@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.226 ns
+From           : S0
+To             : register-8_with_CLR:inst10|register-4_with_CLR:inst2|inst
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 21.729 ns
+From           : register-8_with_CLR:inst5|register-4_with_CLR:inst|inst3
+To             : up6
+From Clock     : CPR1
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 21.151 ns
+From           : S3
+To             : up6
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.170 ns
+From           : u7
+To             : register-8_with_CLR:inst5|register-4_with_CLR:inst2|inst
+From Clock     : --
+To Clock       : CPR1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 121.12 MHz ( period = 8.256 ns )
+From           : register-8_with_CLR:inst5|register-4_with_CLR:inst|inst3
+To             : register-8_with_CLR:inst10|register-4_with_CLR:inst2|inst
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLK'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register-8_with_CLR:inst4|register-4_with_CLR:inst2|inst
+To             : register-8_with_CLR:inst10|register-4_with_CLR:inst2|inst
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 1
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1
+
+--------------------------------------------------------------------------------------
+

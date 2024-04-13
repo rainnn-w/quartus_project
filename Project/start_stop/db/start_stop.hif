@@ -29,7 +29,7 @@ db|start_stop.(0).cnf
 # case_insensitive
 # source_file
 start_stop.bdf
-87fbdef3be42c4c56d3e28ef5b2512a
+5b77f329bec9884c7b66fd02f7afe9b
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

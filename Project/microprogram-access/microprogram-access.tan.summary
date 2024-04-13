@@ -5,19 +5,19 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.279 ns
-From           : C5
-To             : MBR-with-tri:inst5|register-8_with_CLR:inst|register-4_with_CLR:inst2|inst2
+Actual Time    : 2.088 ns
+From           : C7
+To             : register-8_with_CLR:MAR|register-4_with_CLR:inst2|inst
 From Clock     : --
-To Clock       : cpMBR
+To Clock       : CP-Constant
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 19.081 ns
-From           : ripple_counter_256_advanced:inst3|74161:inst1|f74161:sub|99
-To             : Y2
+Actual Time    : 16.737 ns
+From           : ripple_counter_256_advanced:PC|74161:inst|f74161:sub|9
+To             : Y4
 From Clock     : CP-Single
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.987 ns
-From           : mux-A
-To             : Y1
+Actual Time    : 13.733 ns
+From           : mux-B
+To             : Y7
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,10 +35,20 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.613 ns
+Actual Time    : 1.408 ns
 From           : C2
-To             : register-8_with_CLR:inst4|register-4_with_CLR:inst|inst1
+To             : MBR-with-tri:MBR|register-8_with_CLR:inst|register-4_with_CLR:inst|inst1
 From Clock     : --
+To Clock       : CP-Single
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CP-Single'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 340.02 MHz ( period = 2.941 ns )
+From           : ripple_counter_256_advanced:inst2|74161:inst1|f74161:sub|99
+To             : ripple_counter_256_advanced:inst2|74161:inst|f74161:sub|99
+From Clock     : CP-Single
 To Clock       : CP-Single
 Failed Paths   : 0
 
@@ -46,28 +56,18 @@ Type           : Clock Setup: 'CP-Constant'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 340.02 MHz ( period = 2.941 ns )
-From           : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|87
-To             : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|110
+From           : ripple_counter_256_advanced:inst2|74161:inst1|f74161:sub|99
+To             : ripple_counter_256_advanced:inst2|74161:inst|f74161:sub|99
 From Clock     : CP-Constant
 To Clock       : CP-Constant
-Failed Paths   : 0
-
-Type           : Clock Setup: 'CP-Single'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 340.02 MHz ( period = 2.941 ns )
-From           : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|87
-To             : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|110
-From Clock     : CP-Single
-To Clock       : CP-Single
 Failed Paths   : 0
 
 Type           : Clock Setup: 'cpPC'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
-From           : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|87
-To             : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|110
+From           : ripple_counter_256_advanced:PC|74161:inst1|f74161:sub|87
+To             : ripple_counter_256_advanced:PC|74161:inst|f74161:sub|110
 From Clock     : cpPC
 To Clock       : cpPC
 Failed Paths   : 0
@@ -76,8 +76,8 @@ Type           : Clock Setup: 'HALT'
 Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
-From           : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|87
-To             : ripple_counter_256_advanced:inst3|74161:inst|f74161:sub|110
+From           : ripple_counter_256_advanced:inst2|74161:inst1|f74161:sub|99
+To             : ripple_counter_256_advanced:inst2|74161:inst|f74161:sub|99
 From Clock     : HALT
 To Clock       : HALT
 Failed Paths   : 0

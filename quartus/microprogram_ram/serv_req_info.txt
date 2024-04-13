@@ -1,0 +1,25 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x01bf0ad2: RESR_TMW + 0x20ad2 (??1TMW_WND@@UAE@XZ + 0x822)
+	0x7c16e0af:  + 0x8a16c3d
+	0x7c16e14e:  + 0x8a16cdc
+	0x7c16e1b7:  + 0x8a16d45
+	0x7c16e1f5:  + 0x8a16d83
+	0x76902e52:  + 0x31ab9e0
+	0x768f3c25:  + 0x319c7b3
+	0x768f24e4:  + 0x319b072
+	0x76966d0f:  + 0x320f89d
+	0x7c169075:  + 0x8a11c03
+	</callstack>
+	<error>Current editor: GED, GED, GED</error>
+	<date>Sat Apr 13 12:54:40 2024</date>
+	<version>Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition</version>
+	<full_error>Access Violation at 0X01BF0AD2
+Current editor: GED, GED, GED
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition </full_error>
+</internal_error>
+

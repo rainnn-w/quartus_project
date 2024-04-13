@@ -1,0 +1,105 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		microprogram_calculate_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY microprogram_calculate
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:14:54  MARCH 28, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name BDF_FILE microprogram_calculate.bdf
+set_global_assignment -name MISC_FILE "D:/Files/Study/cources/�������֯��ṹ�γ����/quartus_project/Project/microprogram_calculate/microprogram_calculate.dpf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_180 -to A0
+set_location_assignment PIN_181 -to A1
+set_location_assignment PIN_182 -to A2
+set_location_assignment PIN_185 -to A3
+set_location_assignment PIN_187 -to A4
+set_location_assignment PIN_188 -to A5
+set_location_assignment PIN_189 -to A6
+set_location_assignment PIN_191 -to A7
+set_location_assignment PIN_90 -to C0
+set_location_assignment PIN_132 -to CLK
+set_location_assignment PIN_206 -to CLR
+set_location_assignment PIN_99 -to CPR0
+set_location_assignment PIN_97 -to CPR1
+set_location_assignment PIN_96 -to CPR2
+set_location_assignment PIN_61 -to CPuIR
+set_location_assignment PIN_101 -to M
+set_location_assignment PIN_102 -to S0
+set_location_assignment PIN_103 -to S1
+set_location_assignment PIN_104 -to S2
+set_location_assignment PIN_105 -to S3
+set_location_assignment PIN_112 -to u0
+set_location_assignment PIN_113 -to u1
+set_location_assignment PIN_114 -to u2
+set_location_assignment PIN_115 -to u3
+set_location_assignment PIN_116 -to u4
+set_location_assignment PIN_117 -to u5
+set_location_assignment PIN_118 -to u6
+set_location_assignment PIN_127 -to u7
+set_location_assignment PIN_60 -to uRD
+set_location_assignment PIN_151 -to Q0
+set_location_assignment PIN_152 -to Q1
+set_location_assignment PIN_160 -to Q2
+set_location_assignment PIN_161 -to Q3
+set_location_assignment PIN_162 -to Q4
+set_location_assignment PIN_163 -to Q5
+set_location_assignment PIN_164 -to Q6
+set_location_assignment PIN_165 -to Q7
+set_location_assignment PIN_94 -to DM
+set_location_assignment PIN_95 -to LM
+set_location_assignment PIN_92 -to RM
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS PROGRAMMING PIN"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name MISC_FILE "G:/Project/microprogram_calculate/microprogram_calculate.dpf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_location_assignment PIN_37 -to up3
+set_location_assignment PIN_39 -to up4
+set_location_assignment PIN_40 -to up5
+set_location_assignment PIN_41 -to up6
+set_location_assignment PIN_43 -to up7
+set_location_assignment PIN_44 -to up8
+set_location_assignment PIN_34 -to Uq1
+set_location_assignment PIN_35 -to uq2
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_128 -to ro0
+set_location_assignment PIN_133 -to ro1
+set_location_assignment PIN_134 -to ro2
+set_location_assignment PIN_135 -to ro3
+set_location_assignment PIN_137 -to ro4
+set_location_assignment PIN_138 -to ro5
+set_location_assignment PIN_139 -to ro6
+set_location_assignment PIN_141 -to ro7
+

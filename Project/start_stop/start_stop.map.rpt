@@ -1,5 +1,5 @@
 Analysis & Synthesis report for start_stop
-Sun Apr 07 21:17:44 2024
+Sat Apr 13 13:26:47 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,15 +39,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 07 21:17:44 2024   ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 13 13:26:47 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; start_stop                              ;
 ; Top-level Entity Name              ; start_stop                              ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 3                                       ;
-;     Total combinational functions  ; 3                                       ;
-;     Dedicated logic registers      ; 2                                       ;
-; Total registers                    ; 2                                       ;
+; Total logic elements               ; 1                                       ;
+;     Total combinational functions  ; 1                                       ;
+;     Dedicated logic registers      ; 1                                       ;
+; Total registers                    ; 1                                       ;
 ; Total pins                         ; 5                                       ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
@@ -146,27 +146,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 3     ;
+; Estimated Total logic elements              ; 1     ;
 ;                                             ;       ;
-; Total combinational functions               ; 3     ;
+; Total combinational functions               ; 1     ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 3     ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 3     ;
+;     -- normal mode                          ; 1     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 2     ;
-;     -- Dedicated logic registers            ; 2     ;
+; Total registers                             ; 1     ;
+;     -- Dedicated logic registers            ; 1     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 5     ;
-; Maximum fan-out node                        ; inst5 ;
-; Maximum fan-out                             ; 2     ;
-; Total fan-out                               ; 11    ;
-; Average fan-out                             ; 1.10  ;
+; Maximum fan-out node                        ; inst1 ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 6     ;
+; Average fan-out                             ; 0.86  ;
 +---------------------------------------------+-------+
 
 
@@ -175,7 +175,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |start_stop                ; 3 (3)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |start_stop         ; work         ;
+; |start_stop                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |start_stop         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -185,10 +185,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2     ;
+; Total registers                              ; 1     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -201,19 +201,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sun Apr 07 21:17:43 2024
+    Info: Processing started: Sat Apr 13 13:26:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off start_stop -c start_stop
 Info: Found 1 design units, including 1 entities, in source file start_stop.bdf
     Info: Found entity 1: start_stop
 Info: Elaborating entity "start_stop" for the top level hierarchy
-Info: Implemented 9 device resources after synthesis - the final resource count might be different
+Info: Implemented 7 device resources after synthesis - the final resource count might be different
     Info: Implemented 4 input pins
     Info: Implemented 1 output pins
-    Info: Implemented 4 logic cells
+    Info: Implemented 2 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 225 megabytes
-    Info: Processing ended: Sun Apr 07 21:17:44 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Apr 13 13:26:47 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
