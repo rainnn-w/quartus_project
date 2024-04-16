@@ -12,12 +12,12 @@ ptn_Child1=ViewFrame-0
 DocPathName=register_4x.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
-IsActiveChildFrame=True
+IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0]
-DocPathName=register-8_with_CLR.bdf
+DocPathName=../../quartus/machine_alpha/machine_alpha.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
@@ -25,8 +25,8 @@ ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-2]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-2.ViewFrame-0]
-DocPathName=../../quartus/register_4x/register_4x.bdf
+DocPathName=../machine_v1/machine_v1.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
-IsActiveChildFrame=False
+IsActiveChildFrame=True
 ptn_Child1=StateMap

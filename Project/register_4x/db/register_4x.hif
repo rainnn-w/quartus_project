@@ -1,0 +1,157 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+register_4x
+# storage
+db|register_4x.(0).cnf
+db|register_4x.(0).cnf
+# case_insensitive
+# source_file
+register_4x.bdf
+fc949553d43ae42c93281715ea35b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+mux4-8
+# storage
+db|register_4x.(1).cnf
+db|register_4x.(1).cnf
+# case_insensitive
+# source_file
+mux4-8.bdf
+8d6f05fa55b11ab51a9e75d138d017
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux4-8:inst6
+}
+# macro_sequence
+
+# end
+# entity
+mux2-8
+# storage
+db|register_4x.(2).cnf
+db|register_4x.(2).cnf
+# case_insensitive
+# source_file
+mux2-8.bdf
+68f056e9b8cc49e9394a577b7e3afc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux4-8:inst6|mux2-8:inst2
+mux4-8:inst6|mux2-8:inst
+}
+# macro_sequence
+
+# end
+# entity
+24_decoder
+# storage
+db|register_4x.(3).cnf
+db|register_4x.(3).cnf
+# case_insensitive
+# source_file
+24_decoder.bdf
+14a2851d9dac95c8219e1e5fba31223
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux4-8:inst6|24_decoder:inst1
+24_decoder:inst
+}
+# macro_sequence
+
+# end
+# entity
+register-8_with_CLR
+# storage
+db|register_4x.(4).cnf
+db|register_4x.(4).cnf
+# case_insensitive
+# source_file
+register-8_with_CLR.bdf
+2f8e1d5a9743ec6fa072b3bc6ea8ecf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register-8_with_CLR:R0
+register-8_with_CLR:R1
+register-8_with_CLR:R2
+register-8_with_CLR:R3
+}
+# macro_sequence
+
+# end
+# entity
+register-4_with_CLR
+# storage
+db|register_4x.(5).cnf
+db|register_4x.(5).cnf
+# case_insensitive
+# source_file
+register-4_with_CLR.bdf
+c7363426bbe8ca05b8dca60fd3cfa78
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register-8_with_CLR:R0|register-4_with_CLR:inst2
+register-8_with_CLR:R0|register-4_with_CLR:inst
+register-8_with_CLR:R1|register-4_with_CLR:inst2
+register-8_with_CLR:R1|register-4_with_CLR:inst
+register-8_with_CLR:R2|register-4_with_CLR:inst2
+register-8_with_CLR:R2|register-4_with_CLR:inst
+register-8_with_CLR:R3|register-4_with_CLR:inst2
+register-8_with_CLR:R3|register-4_with_CLR:inst
+}
+# macro_sequence
+
+# end
+# complete
+
