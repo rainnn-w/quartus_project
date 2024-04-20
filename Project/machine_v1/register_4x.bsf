@@ -117,16 +117,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 240)
 		(input)
-		(text "OUT_IR0" (rect 0 0 49 14)(font "Arial" (font_size 8)))
-		(text "OUT_IR0" (rect 21 235 70 249)(font "Arial" (font_size 8)))
+		(text "PC" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "PC" (rect 21 235 36 249)(font "Arial" (font_size 8)))
 		(line (pt 0 240)(pt 16 240)(line_width 1))
 	)
 	(port
 		(pt 0 256)
 		(input)
-		(text "OUT_IR1" (rect 0 0 49 14)(font "Arial" (font_size 8)))
-		(text "OUT_IR1" (rect 21 251 70 265)(font "Arial" (font_size 8)))
+		(text "OUT_IR0" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "OUT_IR0" (rect 21 251 70 265)(font "Arial" (font_size 8)))
 		(line (pt 0 256)(pt 16 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "OUT_IR1" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "OUT_IR1" (rect 21 267 70 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 1))
 	)
 	(port
 		(pt 160 32)

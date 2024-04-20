@@ -1,14 +1,14 @@
 |microprogram-access
-uRD <= start_stop:inst.CP
-HALT => start_stop:inst.HALT
-CP-Constant => start_stop:inst.MACHONG
-CP-Single => start_stop:inst.START
-CLR => start_stop:inst.CLR
+uRD <= START_STOP_NEW:inst.CLK
+CP-Constant => START_STOP_NEW:inst.CP
+CLR => START_STOP_NEW:inst.CLR
 CLR => ripple_counter_256_advanced:inst2.CLR
 CLR => ripple_counter_256_advanced:PC.CLR
 CLR => register-8_with_CLR:MAR.CLR
 CLR => MBR-with-tri:MBR.CLR
-cp_uIR <= start_stop:inst.CP
+HALT => START_STOP_NEW:inst.HALT
+CP-Single => START_STOP_NEW:inst.START
+cp_uIR <= START_STOP_NEW:inst.CLK
 M_RD <= inst18.DB_MAX_OUTPUT_PORT_TYPE
 RD => inst18.IN0
 upc_Q4 <= ripple_counter_256_advanced:inst2.Q4
@@ -77,13 +77,12 @@ PC-Q3 <= ripple_counter_256_advanced:inst2.Q3
 cpMBR => inst13.IN0
 
 
-|microprogram-access|start_stop:inst
-CP <= inst.DB_MAX_OUTPUT_PORT_TYPE
-HALT => inst6.IN0
-MACHONG => inst9.IN1
-CLR => inst1.ACLR
-CLR => inst1.PRESET
-START => inst1.CLK
+|microprogram-access|START_STOP_NEW:inst
+CLK <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst31.IN0
+START => inst24.ACLR
+HALT => inst24.DATAIN
+CLR => inst24.PRESET
 
 
 |microprogram-access|ripple_counter_256_advanced:inst2

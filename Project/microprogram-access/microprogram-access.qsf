@@ -37,7 +37,6 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 set_global_assignment -name BDF_FILE "../mux2-8/mux2-8.bdf"
 set_global_assignment -name BDF_FILE ../start_stop/start_stop.bdf
@@ -121,3 +120,4 @@ set_location_assignment PIN_163 -to "PC-Q5"
 set_location_assignment PIN_164 -to "PC-Q6"
 set_location_assignment PIN_165 -to "PC-Q7"
 set_global_assignment -name MISC_FILE "D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/microprogram-access/microprogram-access.dpf"
+set_global_assignment -name MISC_FILE "C:/Users/dell/Desktop/microprogram-access/microprogram-access.dpf"
