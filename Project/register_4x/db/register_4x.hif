@@ -22,26 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-register_4x
-# storage
-db|register_4x.(0).cnf
-db|register_4x.(0).cnf
-# case_insensitive
-# source_file
-register_4x.bdf
-fc949553d43ae42c93281715ea35b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 mux4-8
 # storage
 db|register_4x.(1).cnf
@@ -149,6 +129,26 @@ register-8_with_CLR:R2|register-4_with_CLR:inst2
 register-8_with_CLR:R2|register-4_with_CLR:inst
 register-8_with_CLR:R3|register-4_with_CLR:inst2
 register-8_with_CLR:R3|register-4_with_CLR:inst
+}
+# macro_sequence
+
+# end
+# entity
+register_4x
+# storage
+db|register_4x.(0).cnf
+db|register_4x.(0).cnf
+# case_insensitive
+# source_file
+register_4x.bdf
+236dba4051e1d35e245dd0d92318416c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

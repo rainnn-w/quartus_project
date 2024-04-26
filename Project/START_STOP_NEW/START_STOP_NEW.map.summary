@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Apr 20 15:46:24 2024
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : START_STOP_NEW
+Top-level Entity Name : START_STOP_NEW
+Family : Cyclone II
+Total logic elements : 5
+    Total combinational functions : 5
+    Dedicated logic registers : 1
+Total registers : 1
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

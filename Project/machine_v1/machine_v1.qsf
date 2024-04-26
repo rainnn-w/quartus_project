@@ -39,3 +39,36 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/machine_v1.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_168 -to A0
+set_location_assignment PIN_169 -to A1
+set_location_assignment PIN_170 -to A2
+set_location_assignment PIN_171 -to A3
+set_location_assignment PIN_173 -to A4
+set_location_assignment PIN_175 -to A5
+set_location_assignment PIN_176 -to A6
+set_location_assignment PIN_179 -to A7
+set_location_assignment PIN_180 -to AD0
+set_location_assignment PIN_181 -to AD1
+set_location_assignment PIN_182 -to AD2
+set_location_assignment PIN_185 -to AD3
+set_location_assignment PIN_187 -to AD4
+set_location_assignment PIN_188 -to AD5
+set_location_assignment PIN_189 -to AD6
+set_location_assignment PIN_191 -to AD7
+set_location_assignment PIN_192 -to D0
+set_location_assignment PIN_193 -to D1
+set_location_assignment PIN_195 -to D2
+set_location_assignment PIN_197 -to D3
+set_location_assignment PIN_198 -to D4
+set_location_assignment PIN_199 -to D5
+set_location_assignment PIN_200 -to D6
+set_location_assignment PIN_201 -to D7
+set_location_assignment PIN_61 -to CPuIR
+set_location_assignment PIN_60 -to uRD
+set_location_assignment PIN_63 -to RD_OUT
+set_location_assignment PIN_64 -to WE_OUT
+set_location_assignment PIN_131 -to CP
+set_location_assignment PIN_132 -to START
+set_location_assignment PIN_206 -to CLR
