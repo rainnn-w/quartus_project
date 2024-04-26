@@ -1,0 +1,106 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+MBR_NEW
+# storage
+db|MBR_NEW.(0).cnf
+db|MBR_NEW.(0).cnf
+# case_insensitive
+# source_file
+MBR_NEW.bdf
+1379eb9811e558408e7a647bc7de46
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+register-8_with_CLR
+# storage
+db|MBR_NEW.(1).cnf
+db|MBR_NEW.(1).cnf
+# case_insensitive
+# source_file
+register-8_with_CLR.bdf
+2f8e1d5a9743ec6fa072b3bc6ea8ecf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register-8_with_CLR:inst1
+}
+# macro_sequence
+
+# end
+# entity
+register-4_with_CLR
+# storage
+db|MBR_NEW.(2).cnf
+db|MBR_NEW.(2).cnf
+# case_insensitive
+# source_file
+register-4_with_CLR.bdf
+c7363426bbe8ca05b8dca60fd3cfa78
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+register-8_with_CLR:inst1|register-4_with_CLR:inst2
+register-8_with_CLR:inst1|register-4_with_CLR:inst
+}
+# macro_sequence
+
+# end
+# entity
+mux2-8
+# storage
+db|MBR_NEW.(3).cnf
+db|MBR_NEW.(3).cnf
+# case_insensitive
+# source_file
+mux2-8.bdf
+68f056e9b8cc49e9394a577b7e3afc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux2-8:inst
+}
+# macro_sequence
+
+# end
+# complete
+

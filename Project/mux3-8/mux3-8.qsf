@@ -66,3 +66,4 @@ set_location_assignment PIN_129 -to C5
 set_location_assignment PIN_130 -to C6
 set_location_assignment PIN_107 -to C7
 set_global_assignment -name MISC_FILE "D:/xxx/quartus_project/Project/mux3-8/mux3-8.dpf"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

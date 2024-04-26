@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2008 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -5271,64 +5271,32 @@ applicable agreement for further details.
 	(pt 3032 1136)
 )
 (connector
-	(pt 3032 1136)
-	(pt 3208 1136)
-)
-(connector
 	(pt 2888 1152)
 	(pt 3048 1152)
-)
-(connector
-	(pt 3048 1152)
-	(pt 3208 1152)
 )
 (connector
 	(pt 2904 1168)
 	(pt 3064 1168)
 )
 (connector
-	(pt 3064 1168)
-	(pt 3208 1168)
-)
-(connector
 	(pt 2920 1184)
 	(pt 3080 1184)
-)
-(connector
-	(pt 3080 1184)
-	(pt 3208 1184)
 )
 (connector
 	(pt 2936 1200)
 	(pt 3096 1200)
 )
 (connector
-	(pt 3096 1200)
-	(pt 3208 1200)
-)
-(connector
 	(pt 2952 1216)
 	(pt 3112 1216)
-)
-(connector
-	(pt 3112 1216)
-	(pt 3208 1216)
 )
 (connector
 	(pt 2856 1120)
 	(pt 3016 1120)
 )
 (connector
-	(pt 3016 1120)
-	(pt 3208 1120)
-)
-(connector
 	(pt 2968 1232)
 	(pt 3128 1232)
-)
-(connector
-	(pt 3128 1232)
-	(pt 3208 1232)
 )
 (connector
 	(pt 736 904)
@@ -5359,10 +5327,6 @@ applicable agreement for further details.
 	(pt 816 760)
 )
 (connector
-	(pt 800 968)
-	(pt 800 744)
-)
-(connector
 	(pt 3192 848)
 	(pt 3192 680)
 )
@@ -5377,10 +5341,6 @@ applicable agreement for further details.
 (connector
 	(pt 3240 848)
 	(pt 3240 728)
-)
-(connector
-	(pt 3256 848)
-	(pt 3256 744)
 )
 (connector
 	(pt 3272 848)
@@ -5409,10 +5369,6 @@ applicable agreement for further details.
 (connector
 	(pt 784 728)
 	(pt 3240 728)
-)
-(connector
-	(pt 800 744)
-	(pt 3256 744)
 )
 (connector
 	(pt 816 760)
@@ -5541,6 +5497,18 @@ applicable agreement for further details.
 	(pt 2504 896)
 	(color 0 0 0)
 )
+(connector
+	(pt 800 968)
+	(pt 800 768)
+)
+(connector
+	(pt 3256 848)
+	(pt 3256 768)
+)
+(connector
+	(pt 800 768)
+	(pt 3256 768)
+)
 (junction (pt 2856 1120))
 (junction (pt 2872 1136))
 (junction (pt 2888 1152))
@@ -5549,14 +5517,6 @@ applicable agreement for further details.
 (junction (pt 2936 1200))
 (junction (pt 2952 1216))
 (junction (pt 2968 1232))
-(junction (pt 3032 1136))
-(junction (pt 3048 1152))
-(junction (pt 3064 1168))
-(junction (pt 3080 1184))
-(junction (pt 3096 1200))
-(junction (pt 3112 1216))
-(junction (pt 3128 1232))
-(junction (pt 3016 1120))
 (junction (pt 2664 1608))
 (junction (pt 2680 1592))
 (junction (pt 1392 1248))
