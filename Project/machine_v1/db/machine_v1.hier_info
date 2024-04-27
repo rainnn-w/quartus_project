@@ -49,14 +49,14 @@ AD6 <= ripple_counter_256_advanced:inst23.Q6
 AD7 <= ripple_counter_256_advanced:inst23.Q7
 uRD <= START_STOP_NEW:inst3.CLK
 CPuIR <= START_STOP_NEW:inst3.CLK
-LR0 <= ALU_parallel_8b:inst4.F0
-LR1 <= ALU_parallel_8b:inst4.F1
-LR2 <= ALU_parallel_8b:inst4.F2
-LR3 <= ALU_parallel_8b:inst4.F3
-LR4 <= ALU_parallel_8b:inst4.F4
-LR5 <= ALU_parallel_8b:inst4.F5
-LR6 <= ALU_parallel_8b:inst4.F6
-LR7 <= ALU_parallel_8b:inst4.F7
+AD_0 <= ripple_counter_256_advanced:inst23.Q0
+AD_1 <= ripple_counter_256_advanced:inst23.Q1
+AD_2 <= ripple_counter_256_advanced:inst23.Q2
+AD_3 <= ripple_counter_256_advanced:inst23.Q3
+AD_4 <= ripple_counter_256_advanced:inst23.Q4
+AD_5 <= ripple_counter_256_advanced:inst23.Q5
+AD_6 <= ripple_counter_256_advanced:inst23.Q6
+AD_7 <= ripple_counter_256_advanced:inst23.Q7
 
 
 |machine_v1|24_decoder:inst2
