@@ -94,3 +94,12 @@ set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATE
 set_location_assignment PIN_95 -to uIR4
 set_location_assignment PIN_96 -to uIR5
 set_location_assignment PIN_97 -to uIR6
+set_global_assignment -name MISC_FILE "G:/Project/machine_v1/machine_v1.dpf"
+set_location_assignment PIN_142 -to LR0
+set_location_assignment PIN_143 -to LR1
+set_location_assignment PIN_144 -to LR2
+set_location_assignment PIN_145 -to LR3
+set_location_assignment PIN_146 -to LR4
+set_location_assignment PIN_147 -to LR5
+set_location_assignment PIN_149 -to LR6
+set_location_assignment PIN_150 -to LR7
