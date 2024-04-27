@@ -5,27 +5,27 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 3.380 ns
-From           : REGIN3
-To             : register-8_with_CLR:R0|register-4_with_CLR:inst|inst
+Actual Time    : 3.809 ns
+From           : REGIN4
+To             : register-8_with_CLR:R2|register-4_with_CLR:inst2|inst3
 From Clock     : --
-To Clock       : IR1
+To Clock       : IR0
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.778 ns
-From           : register-8_with_CLR:R3|register-4_with_CLR:inst|inst
+Actual Time    : 14.949 ns
+From           : register-8_with_CLR:R1|register-4_with_CLR:inst|inst
 To             : REGQ1_3
-From Clock     : PC
+From Clock     : IR1
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.659 ns
+Actual Time    : 16.916 ns
 From           : OUT_IR1
 To             : REGQ1_3
 From Clock     : --
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.333 ns
-From           : REGIN0
-To             : register-8_with_CLR:R3|register-4_with_CLR:inst|inst3
+Actual Time    : -0.995 ns
+From           : REGIN1
+To             : register-8_with_CLR:R0|register-4_with_CLR:inst|inst2
 From Clock     : --
 To Clock       : PC
 Failed Paths   : 0

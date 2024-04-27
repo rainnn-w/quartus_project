@@ -1,5 +1,5 @@
 Analysis & Synthesis report for micro_address_generator
-Sat Apr 27 00:42:54 2024
+Sat Apr 27 13:10:55 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,16 +39,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 27 00:42:54 2024   ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 27 13:10:55 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; micro_address_generator                 ;
 ; Top-level Entity Name              ; micro_address_generator                 ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 14                                      ;
-;     Total combinational functions  ; 14                                      ;
+; Total logic elements               ; 20                                      ;
+;     Total combinational functions  ; 20                                      ;
 ;     Dedicated logic registers      ; 0                                       ;
 ; Total registers                    ; 0                                       ;
-; Total pins                         ; 26                                      ;
+; Total pins                         ; 28                                      ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                       ;
@@ -139,9 +139,8 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 ; micro_address_generator.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/micro_address_generator.bdf ;
 ; 38_decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/38_decoder.bdf              ;
-; mux3-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/mux3-8.bdf                  ;
 ; 24_decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/24_decoder.bdf              ;
-; mux4-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/mux4-8.bdf                  ;
+; mux4-8_4inputs.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/mux4-8_4inputs.bdf          ;
 ; mux2-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/micro_address_generator/mux2-8.bdf                  ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
@@ -151,39 +150,41 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 14    ;
+; Estimated Total logic elements              ; 20    ;
 ;                                             ;       ;
-; Total combinational functions               ; 14    ;
+; Total combinational functions               ; 20    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
-;     -- 3 input functions                    ; 3     ;
+;     -- 4 input functions                    ; 14    ;
+;     -- 3 input functions                    ; 5     ;
 ;     -- <=2 input functions                  ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 14    ;
+;     -- normal mode                          ; 20    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 26    ;
-; Maximum fan-out node                        ; uIR0  ;
-; Maximum fan-out                             ; 13    ;
-; Total fan-out                               ; 60    ;
-; Average fan-out                             ; 1.50  ;
+; I/O pins                                    ; 28    ;
+; Maximum fan-out node                        ; uIR2  ;
+; Maximum fan-out                             ; 8     ;
+; Total fan-out                               ; 82    ;
+; Average fan-out                             ; 1.71  ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
-; |micro_address_generator   ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |micro_address_generator                  ; work         ;
-;    |38_decoder:inst2|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micro_address_generator|38_decoder:inst2 ; work         ;
-;    |mux3-8:inst|           ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micro_address_generator|mux3-8:inst      ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |micro_address_generator   ; 20 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |micro_address_generator                                    ; work         ;
+;    |38_decoder:inst2|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micro_address_generator|38_decoder:inst2                   ; work         ;
+;    |mux4-8_4inputs:inst23| ; 14 (8)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micro_address_generator|mux4-8_4inputs:inst23              ; work         ;
+;       |mux2-8:inst2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micro_address_generator|mux4-8_4inputs:inst23|mux2-8:inst2 ; work         ;
+;       |mux2-8:inst|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micro_address_generator|mux4-8_4inputs:inst23|mux2-8:inst  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -208,7 +209,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Apr 27 00:42:53 2024
+    Info: Processing started: Sat Apr 27 13:10:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off micro_address_generator -c micro_address_generator
 Warning: Using design file micro_address_generator.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: micro_address_generator
@@ -216,29 +217,23 @@ Info: Elaborating entity "micro_address_generator" for the top level hierarchy
 Warning: Using design file 38_decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: 38_decoder
 Info: Elaborating entity "38_decoder" for hierarchy "38_decoder:inst2"
-Warning: Using design file mux3-8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: mux3-8
-Info: Elaborating entity "mux3-8" for hierarchy "mux3-8:inst"
 Warning: Using design file 24_decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: 24_decoder
-Info: Elaborating entity "24_decoder" for hierarchy "24_decoder:inst3"
-Warning: Using design file mux4-8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: mux4-8
-Info: Elaborating entity "mux4-8" for hierarchy "mux4-8:inst4"
+Info: Elaborating entity "24_decoder" for hierarchy "24_decoder:inst13"
+Warning: Using design file mux4-8_4inputs.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: mux4-8_4inputs
+Info: Elaborating entity "mux4-8_4inputs" for hierarchy "mux4-8_4inputs:inst23"
 Warning: Using design file mux2-8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: mux2-8
-Info: Elaborating entity "mux2-8" for hierarchy "mux4-8:inst4|mux2-8:inst2"
-Warning: Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "IR2"
-    Warning (15610): No output dependent on input pin "IR3"
-Info: Implemented 40 device resources after synthesis - the final resource count might be different
-    Info: Implemented 17 input pins
+Info: Elaborating entity "mux2-8" for hierarchy "mux4-8_4inputs:inst23|mux2-8:inst2"
+Info: Implemented 48 device resources after synthesis - the final resource count might be different
+    Info: Implemented 19 input pins
     Info: Implemented 9 output pins
-    Info: Implemented 14 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 226 megabytes
-    Info: Processing ended: Sat Apr 27 00:42:54 2024
+    Info: Implemented 20 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 225 megabytes
+    Info: Processing ended: Sat Apr 27 13:10:55 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

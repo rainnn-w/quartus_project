@@ -1,5 +1,5 @@
 Fitter report for register_4x
-Sat Apr 20 10:50:47 2024
+Sat Apr 27 13:16:27 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -60,7 +60,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +------------------------------------+-----------------------------------------+
-; Fitter Status                      ; Successful - Sat Apr 20 10:50:47 2024   ;
+; Fitter Status                      ; Successful - Sat Apr 27 13:16:27 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; register_4x                             ;
 ; Top-level Entity Name              ; register_4x                             ;
@@ -228,19 +228,19 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; CLR     ; 23    ; 1        ; 0            ; 9            ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; CPACC   ; 131   ; 3        ; 34           ; 10           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; CPR     ; 129   ; 3        ; 34           ; 10           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; IR0     ; 135   ; 3        ; 34           ; 11           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; IR1     ; 130   ; 3        ; 34           ; 10           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; OUT_IR0 ; 41    ; 1        ; 0            ; 4            ; 0           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; OUT_IR1 ; 40    ; 1        ; 0            ; 5            ; 2           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; PC      ; 133   ; 3        ; 34           ; 11           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN0  ; 47    ; 1        ; 0            ; 2            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN1  ; 48    ; 1        ; 0            ; 2            ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN2  ; 44    ; 1        ; 0            ; 3            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN3  ; 116   ; 3        ; 34           ; 5            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN4  ; 114   ; 3        ; 34           ; 4            ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN5  ; 113   ; 3        ; 34           ; 3            ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN6  ; 115   ; 3        ; 34           ; 4            ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; REGIN7  ; 103   ; 4        ; 32           ; 0            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; IR0     ; 130   ; 3        ; 34           ; 10           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; IR1     ; 135   ; 3        ; 34           ; 11           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; OUT_IR0 ; 112   ; 3        ; 34           ; 3            ; 1           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; OUT_IR1 ; 81    ; 4        ; 23           ; 0            ; 1           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; PC      ; 134   ; 3        ; 34           ; 11           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN0  ; 43    ; 1        ; 0            ; 3            ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN1  ; 44    ; 1        ; 0            ; 3            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN2  ; 200   ; 2        ; 3            ; 19           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN3  ; 105   ; 3        ; 34           ; 1            ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN4  ; 168   ; 2        ; 28           ; 19           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN5  ; 97    ; 4        ; 30           ; 0            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN6  ; 107   ; 3        ; 34           ; 2            ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; REGIN7  ; 102   ; 4        ; 32           ; 0            ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -249,22 +249,22 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
-; REGQ0_0 ; 60    ; 4        ; 3            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_1 ; 59    ; 4        ; 1            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_2 ; 58    ; 4        ; 1            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_3 ; 117   ; 3        ; 34           ; 5            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_4 ; 90    ; 4        ; 28           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_5 ; 99    ; 4        ; 30           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_6 ; 97    ; 4        ; 30           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ0_7 ; 96    ; 4        ; 30           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_0 ; 43    ; 1        ; 0            ; 3            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_1 ; 45    ; 1        ; 0            ; 3            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_2 ; 46    ; 1        ; 0            ; 2            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_3 ; 165   ; 2        ; 30           ; 19           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_4 ; 95    ; 4        ; 30           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_5 ; 89    ; 4        ; 28           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_6 ; 92    ; 4        ; 28           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; REGQ1_7 ; 94    ; 4        ; 28           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_0 ; 47    ; 1        ; 0            ; 2            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_1 ; 58    ; 4        ; 1            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_2 ; 40    ; 1        ; 0            ; 5            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_3 ; 169   ; 2        ; 28           ; 19           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_4 ; 115   ; 3        ; 34           ; 4            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_5 ; 45    ; 1        ; 0            ; 3            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_6 ; 110   ; 3        ; 34           ; 3            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ0_7 ; 39    ; 1        ; 0            ; 5            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_0 ; 56    ; 4        ; 1            ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_1 ; 46    ; 1        ; 0            ; 2            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_2 ; 41    ; 1        ; 0            ; 4            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_3 ; 35    ; 1        ; 0            ; 7            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_4 ; 171   ; 2        ; 28           ; 19           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_5 ; 90    ; 4        ; 28           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_6 ; 48    ; 1        ; 0            ; 2            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; REGQ1_7 ; 87    ; 4        ; 25           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 +---------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 
 
@@ -273,10 +273,10 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 11 / 32 ( 34 % ) ; 3.3V          ; --           ;
-; 2        ; 1 / 35 ( 3 % )   ; 3.3V          ; --           ;
+; 1        ; 13 / 32 ( 41 % ) ; 3.3V          ; --           ;
+; 2        ; 4 / 35 ( 11 % )  ; 3.3V          ; --           ;
 ; 3        ; 11 / 35 ( 31 % ) ; 3.3V          ; --           ;
-; 4        ; 12 / 36 ( 33 % ) ; 3.3V          ; --           ;
+; 4        ; 7 / 36 ( 19 % )  ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -319,20 +319,20 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; 32       ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 33       ; 35         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 34       ; 36         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 35       ; 37         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 35       ; 37         ; 1        ; REGQ1_3                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 36       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 37       ; 39         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 38       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 39       ; 43         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 40       ; 44         ; 1        ; OUT_IR1                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 41       ; 45         ; 1        ; OUT_IR0                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 39       ; 43         ; 1        ; REGQ0_7                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 40       ; 44         ; 1        ; REGQ0_2                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 41       ; 45         ; 1        ; REGQ1_2                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 42       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 43       ; 48         ; 1        ; REGQ1_0                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 44       ; 49         ; 1        ; REGIN2                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 45       ; 50         ; 1        ; REGQ1_1                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 46       ; 51         ; 1        ; REGQ1_2                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 47       ; 52         ; 1        ; REGIN0                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 48       ; 53         ; 1        ; REGIN1                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 43       ; 48         ; 1        ; REGIN0                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 44       ; 49         ; 1        ; REGIN1                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 45       ; 50         ; 1        ; REGQ0_5                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 46       ; 51         ; 1        ; REGQ1_1                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 47       ; 52         ; 1        ; REGQ0_0                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 48       ; 53         ; 1        ; REGQ1_6                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 49       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 50       ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 51       ;            ;          ; VCCD_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -340,11 +340,11 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; 53       ;            ;          ; VCCA_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 54       ;            ;          ; GNDA_PLL1                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 55       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 56       ; 54         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 56       ; 54         ; 4        ; REGQ1_0                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 57       ; 55         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 58       ; 56         ; 4        ; REGQ0_2                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 59       ; 57         ; 4        ; REGQ0_1                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 60       ; 58         ; 4        ; REGQ0_0                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 58       ; 56         ; 4        ; REGQ0_1                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 59       ; 57         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 60       ; 58         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 61       ; 59         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 62       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 63       ; 60         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -365,43 +365,43 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; 78       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 79       ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 80       ; 82         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 81       ; 83         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 81       ; 83         ; 4        ; OUT_IR1                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 82       ; 84         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 83       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 84       ; 85         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 85       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 86       ; 86         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 87       ; 87         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 87       ; 87         ; 4        ; REGQ1_7                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 88       ; 88         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 89       ; 89         ; 4        ; REGQ1_5                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 90       ; 90         ; 4        ; REGQ0_4                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 89       ; 89         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 90       ; 90         ; 4        ; REGQ1_5                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 91       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 92       ; 91         ; 4        ; REGQ1_6                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 92       ; 91         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 93       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 94       ; 92         ; 4        ; REGQ1_7                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 95       ; 93         ; 4        ; REGQ1_4                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 96       ; 94         ; 4        ; REGQ0_7                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 97       ; 95         ; 4        ; REGQ0_6                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 94       ; 92         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 95       ; 93         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 96       ; 94         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 97       ; 95         ; 4        ; REGIN5                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 98       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 99       ; 96         ; 4        ; REGQ0_5                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 99       ; 96         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 100      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 101      ; 97         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 102      ; 98         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 103      ; 99         ; 4        ; REGIN7                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 102      ; 98         ; 4        ; REGIN7                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 103      ; 99         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 104      ; 100        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 105      ; 101        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 105      ; 101        ; 3        ; REGIN3                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 106      ; 102        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 107      ; 105        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 107      ; 105        ; 3        ; REGIN6                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 108      ; 106        ; 3        ; ~LVDS54p/nCEO~                           ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 109      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 110      ; 107        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 110      ; 107        ; 3        ; REGQ0_6                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 111      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 112      ; 108        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 113      ; 109        ; 3        ; REGIN5                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 114      ; 110        ; 3        ; REGIN4                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 115      ; 112        ; 3        ; REGIN6                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 116      ; 113        ; 3        ; REGIN3                                   ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 117      ; 114        ; 3        ; REGQ0_3                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 112      ; 108        ; 3        ; OUT_IR0                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 113      ; 109        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 114      ; 110        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 115      ; 112        ; 3        ; REGQ0_4                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 116      ; 113        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 117      ; 114        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 118      ; 117        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 119      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 120      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -414,12 +414,12 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; 127      ; 125        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 128      ; 126        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 129      ; 127        ; 3        ; CPR                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 130      ; 128        ; 3        ; IR1                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 130      ; 128        ; 3        ; IR0                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 131      ; 129        ; 3        ; CPACC                                    ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 132      ; 130        ; 3        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; 133      ; 131        ; 3        ; PC                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 134      ; 132        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 135      ; 133        ; 3        ; IR0                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 133      ; 131        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 134      ; 132        ; 3        ; PC                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 135      ; 133        ; 3        ; IR1                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 136      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 137      ; 134        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 138      ; 135        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -449,13 +449,13 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; 162      ; 157        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 163      ; 158        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 164      ; 159        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 165      ; 160        ; 2        ; REGQ1_3                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 165      ; 160        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 166      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 167      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 168      ; 161        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 169      ; 162        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 168      ; 161        ; 2        ; REGIN4                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 169      ; 162        ; 2        ; REGQ0_3                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 170      ; 163        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 171      ; 164        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 171      ; 164        ; 2        ; REGQ1_4                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 172      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 173      ; 165        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 174      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -484,7 +484,7 @@ The pin-out file can be found in D:/Files/Study/cources/计算机组织与结构课程设计
 ; 197      ; 191        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 198      ; 192        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 199      ; 195        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 200      ; 196        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 200      ; 196        ; 2        ; REGIN2                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 201      ; 197        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 202      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 203      ; 198        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -589,10 +589,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; REGIN5  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; REGIN6  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; REGIN7  ; Input    ; 6             ; 6             ; --                    ; --  ;
-; IR0     ; Input    ; 0             ; 0             ; --                    ; --  ;
+; IR1     ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; PC      ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; CPR     ; Input    ; 0             ; 0             ; --                    ; --  ;
-; IR1     ; Input    ; 0             ; 0             ; --                    ; --  ;
+; IR0     ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; CPACC   ; Input    ; 0             ; 0             ; --                    ; --  ;
 +---------+----------+---------------+---------------+-----------------------+-----+
 
@@ -615,32 +615,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux4-8:inst6|inst5~37                                        ; 0                 ; 6       ;
 ;      - mux4-8:inst6|inst4~37                                        ; 0                 ; 6       ;
 ; OUT_IR0                                                             ;                   ;         ;
-;      - mux4-8:inst6|inst11~36                                       ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst10~36                                       ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst9~36                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst8~42                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst8~43                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst7~37                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst7~38                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst6~37                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst6~38                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst5~37                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst5~38                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst4~37                                        ; 1                 ; 6       ;
-;      - mux4-8:inst6|inst4~38                                        ; 1                 ; 6       ;
+;      - mux4-8:inst6|inst11~36                                       ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst10~36                                       ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst9~36                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst8~42                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst8~43                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst7~37                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst7~38                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst6~37                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst6~38                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst5~37                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst5~38                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst4~37                                        ; 0                 ; 6       ;
+;      - mux4-8:inst6|inst4~38                                        ; 0                 ; 6       ;
 ; REGIN0                                                              ;                   ;         ;
+;      - register-8_with_CLR:R3|register-4_with_CLR:inst|inst3        ; 0                 ; 6       ;
 ;      - register-8_with_CLR:R2|register-4_with_CLR:inst|inst3        ; 0                 ; 6       ;
-;      - register-8_with_CLR:R1|register-4_with_CLR:inst|inst3        ; 1                 ; 6       ;
-;      - register-8_with_CLR:R3|register-4_with_CLR:inst|inst3~feeder ; 1                 ; 6       ;
-;      - register-8_with_CLR:R0|register-4_with_CLR:inst|inst3~feeder ; 1                 ; 6       ;
+;      - register-8_with_CLR:R1|register-4_with_CLR:inst|inst3        ; 0                 ; 6       ;
+;      - register-8_with_CLR:R0|register-4_with_CLR:inst|inst3        ; 0                 ; 6       ;
 ; CLR                                                                 ;                   ;         ;
 ; REGIN1                                                              ;                   ;         ;
-;      - register-8_with_CLR:R3|register-4_with_CLR:inst|inst2        ; 0                 ; 6       ;
-;      - register-8_with_CLR:R2|register-4_with_CLR:inst|inst2        ; 0                 ; 6       ;
-;      - register-8_with_CLR:R1|register-4_with_CLR:inst|inst2        ; 0                 ; 6       ;
-;      - register-8_with_CLR:R0|register-4_with_CLR:inst|inst2        ; 0                 ; 6       ;
+;      - register-8_with_CLR:R2|register-4_with_CLR:inst|inst2        ; 1                 ; 6       ;
+;      - register-8_with_CLR:R1|register-4_with_CLR:inst|inst2        ; 1                 ; 6       ;
+;      - register-8_with_CLR:R3|register-4_with_CLR:inst|inst2~feeder ; 1                 ; 6       ;
+;      - register-8_with_CLR:R0|register-4_with_CLR:inst|inst2~feeder ; 1                 ; 6       ;
 ; REGIN2                                                              ;                   ;         ;
-;      - register-8_with_CLR:R2|register-4_with_CLR:inst|inst1        ; 0                 ; 6       ;
+;      - register-8_with_CLR:R2|register-4_with_CLR:inst|inst1        ; 1                 ; 6       ;
 ;      - register-8_with_CLR:R1|register-4_with_CLR:inst|inst1        ; 1                 ; 6       ;
 ;      - register-8_with_CLR:R3|register-4_with_CLR:inst|inst1~feeder ; 1                 ; 6       ;
 ;      - register-8_with_CLR:R0|register-4_with_CLR:inst|inst1~feeder ; 1                 ; 6       ;
@@ -650,10 +650,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - register-8_with_CLR:R1|register-4_with_CLR:inst|inst         ; 0                 ; 6       ;
 ;      - register-8_with_CLR:R0|register-4_with_CLR:inst|inst         ; 0                 ; 6       ;
 ; REGIN4                                                              ;                   ;         ;
-;      - register-8_with_CLR:R3|register-4_with_CLR:inst2|inst3       ; 0                 ; 6       ;
-;      - register-8_with_CLR:R2|register-4_with_CLR:inst2|inst3       ; 0                 ; 6       ;
-;      - register-8_with_CLR:R1|register-4_with_CLR:inst2|inst3       ; 0                 ; 6       ;
-;      - register-8_with_CLR:R0|register-4_with_CLR:inst2|inst3       ; 0                 ; 6       ;
+;      - register-8_with_CLR:R3|register-4_with_CLR:inst2|inst3       ; 1                 ; 6       ;
+;      - register-8_with_CLR:R2|register-4_with_CLR:inst2|inst3       ; 1                 ; 6       ;
+;      - register-8_with_CLR:R1|register-4_with_CLR:inst2|inst3       ; 1                 ; 6       ;
+;      - register-8_with_CLR:R0|register-4_with_CLR:inst2|inst3       ; 1                 ; 6       ;
 ; REGIN5                                                              ;                   ;         ;
 ;      - register-8_with_CLR:R3|register-4_with_CLR:inst2|inst2       ; 0                 ; 6       ;
 ;      - register-8_with_CLR:R2|register-4_with_CLR:inst2|inst2       ; 0                 ; 6       ;
@@ -665,22 +665,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - register-8_with_CLR:R1|register-4_with_CLR:inst2|inst1       ; 1                 ; 6       ;
 ;      - register-8_with_CLR:R0|register-4_with_CLR:inst2|inst1       ; 1                 ; 6       ;
 ; REGIN7                                                              ;                   ;         ;
-;      - register-8_with_CLR:R3|register-4_with_CLR:inst2|inst        ; 1                 ; 6       ;
-;      - register-8_with_CLR:R2|register-4_with_CLR:inst2|inst        ; 1                 ; 6       ;
-;      - register-8_with_CLR:R1|register-4_with_CLR:inst2|inst        ; 1                 ; 6       ;
-;      - register-8_with_CLR:R0|register-4_with_CLR:inst2|inst        ; 1                 ; 6       ;
-; IR0                                                                 ;                   ;         ;
-;      - inst9                                                        ; 1                 ; 0       ;
-;      - inst5                                                        ; 1                 ; 0       ;
-;      - inst7                                                        ; 1                 ; 0       ;
-;      - inst8                                                        ; 1                 ; 0       ;
-; PC                                                                  ;                   ;         ;
-;      - inst9                                                        ; 1                 ; 0       ;
-;      - inst10~2                                                     ; 1                 ; 0       ;
-;      - inst7                                                        ; 1                 ; 0       ;
-;      - inst8                                                        ; 1                 ; 0       ;
-; CPR                                                                 ;                   ;         ;
+;      - register-8_with_CLR:R3|register-4_with_CLR:inst2|inst        ; 0                 ; 6       ;
+;      - register-8_with_CLR:R2|register-4_with_CLR:inst2|inst        ; 0                 ; 6       ;
+;      - register-8_with_CLR:R1|register-4_with_CLR:inst2|inst        ; 0                 ; 6       ;
+;      - register-8_with_CLR:R0|register-4_with_CLR:inst2|inst        ; 0                 ; 6       ;
 ; IR1                                                                 ;                   ;         ;
+;      - inst8                                                        ; 1                 ; 0       ;
+;      - inst7                                                        ; 1                 ; 0       ;
+;      - inst5                                                        ; 1                 ; 0       ;
+;      - inst9                                                        ; 1                 ; 0       ;
+; PC                                                                  ;                   ;         ;
+;      - inst8                                                        ; 0                 ; 0       ;
+;      - inst7                                                        ; 0                 ; 0       ;
+;      - inst10~2                                                     ; 0                 ; 0       ;
+;      - inst9                                                        ; 0                 ; 0       ;
+; CPR                                                                 ;                   ;         ;
+; IR0                                                                 ;                   ;         ;
 ; CPACC                                                               ;                   ;         ;
 +---------------------------------------------------------------------+-------------------+---------+
 
@@ -691,10 +691,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name  ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLR   ; PIN_23             ; 32      ; Async. clear ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; inst5 ; LCCOMB_X33_Y10_N12 ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; inst7 ; LCCOMB_X33_Y10_N6  ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; inst5 ; LCCOMB_X33_Y10_N6  ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; inst7 ; LCCOMB_X33_Y10_N2  ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 ; inst8 ; LCCOMB_X33_Y10_N16 ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; inst9 ; LCCOMB_X33_Y10_N0  ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; inst9 ; LCCOMB_X33_Y10_N0  ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK7            ; --                        ;
 +-------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -704,10 +704,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name  ; Location           ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+--------------------+---------+----------------------+------------------+---------------------------+
 ; CLR   ; PIN_23             ; 32      ; Global Clock         ; GCLK2            ; --                        ;
-; inst5 ; LCCOMB_X33_Y10_N12 ; 8       ; Global Clock         ; GCLK6            ; --                        ;
-; inst7 ; LCCOMB_X33_Y10_N6  ; 8       ; Global Clock         ; GCLK7            ; --                        ;
+; inst5 ; LCCOMB_X33_Y10_N6  ; 8       ; Global Clock         ; GCLK6            ; --                        ;
+; inst7 ; LCCOMB_X33_Y10_N2  ; 8       ; Global Clock         ; GCLK4            ; --                        ;
 ; inst8 ; LCCOMB_X33_Y10_N16 ; 8       ; Global Clock         ; GCLK5            ; --                        ;
-; inst9 ; LCCOMB_X33_Y10_N0  ; 8       ; Global Clock         ; GCLK4            ; --                        ;
+; inst9 ; LCCOMB_X33_Y10_N0  ; 8       ; Global Clock         ; GCLK7            ; --                        ;
 +-------+--------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -718,10 +718,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------+---------+
 ; OUT_IR0                                                ; 13      ;
 ; OUT_IR1                                                ; 11      ;
-; IR1                                                    ; 4       ;
+; IR0                                                    ; 4       ;
 ; CPR                                                    ; 4       ;
 ; PC                                                     ; 4       ;
-; IR0                                                    ; 4       ;
+; IR1                                                    ; 4       ;
 ; REGIN7                                                 ; 4       ;
 ; REGIN6                                                 ; 4       ;
 ; REGIN5                                                 ; 4       ;
@@ -774,14 +774,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-----------------------+
 ; Interconnect Resource Type ; Usage                 ;
 +----------------------------+-----------------------+
-; Block interconnects        ; 62 / 26,052 ( < 1 % ) ;
-; C16 interconnects          ; 0 / 1,156 ( 0 % )     ;
-; C4 interconnects           ; 27 / 17,952 ( < 1 % ) ;
-; Direct links               ; 13 / 26,052 ( < 1 % ) ;
+; Block interconnects        ; 60 / 26,052 ( < 1 % ) ;
+; C16 interconnects          ; 5 / 1,156 ( < 1 % )   ;
+; C4 interconnects           ; 34 / 17,952 ( < 1 % ) ;
+; Direct links               ; 5 / 26,052 ( < 1 % )  ;
 ; Global clocks              ; 5 / 8 ( 63 % )        ;
-; Local interconnects        ; 16 / 8,256 ( < 1 % )  ;
+; Local interconnects        ; 17 / 8,256 ( < 1 % )  ;
 ; R24 interconnects          ; 4 / 1,020 ( < 1 % )   ;
-; R4 interconnects           ; 19 / 22,440 ( < 1 % ) ;
+; R4 interconnects           ; 51 / 22,440 ( < 1 % ) ;
 +----------------------------+-----------------------+
 
 
@@ -927,7 +927,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Apr 20 10:50:46 2024
+    Info: Processing started: Sat Apr 27 13:16:26 2024
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off register_4x -c register_4x
 Info: Selected device EP2C8Q208C8 for design "register_4x"
 Info: Low junction temperature is 0 degrees C
@@ -970,10 +970,10 @@ Warning: No exact pin location assignment(s) for 32 pins of 32 total pins
     Info: Pin REGIN5 not assigned to an exact location on the device
     Info: Pin REGIN6 not assigned to an exact location on the device
     Info: Pin REGIN7 not assigned to an exact location on the device
-    Info: Pin IR0 not assigned to an exact location on the device
+    Info: Pin IR1 not assigned to an exact location on the device
     Info: Pin PC not assigned to an exact location on the device
     Info: Pin CPR not assigned to an exact location on the device
-    Info: Pin IR1 not assigned to an exact location on the device
+    Info: Pin IR0 not assigned to an exact location on the device
     Info: Pin CPACC not assigned to an exact location on the device
 Info: Fitter is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
@@ -1039,8 +1039,8 @@ Warning: Found 16 output pins without output pin load capacitance assignment
 Info: Delay annotation completed successfully
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 249 megabytes
-    Info: Processing ended: Sat Apr 20 10:50:47 2024
+    Info: Peak virtual memory: 250 megabytes
+    Info: Processing ended: Sat Apr 27 13:16:27 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

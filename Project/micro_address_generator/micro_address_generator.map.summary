@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Apr 27 00:42:54 2024
+Analysis & Synthesis Status : Successful - Sat Apr 27 13:10:55 2024
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : micro_address_generator
 Top-level Entity Name : micro_address_generator
 Family : Cyclone II
-Total logic elements : 14
-    Total combinational functions : 14
+Total logic elements : 20
+    Total combinational functions : 20
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 26
+Total pins : 28
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -141,7 +141,7 @@ db|register_4x.(0).cnf
 # case_insensitive
 # source_file
 register_4x.bdf
-236dba4051e1d35e245dd0d92318416c
+dab8b493e2925c4fc10c2fb4b194e76
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

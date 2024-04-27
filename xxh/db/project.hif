@@ -36,28 +36,16 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-2_4decoder:inst41
 2_4decoder:inst28
 2_4decoder:inst11
 2_4decoder:inst29
 2_4decoder:inst25
-}
-# macro_sequence
-
-# end
-# entity
-register-4
-# storage
-db|project.(3).cnf
-db|project.(3).cnf
-# case_insensitive
-# source_file
-register-4.bdf
-9f61458067fa62f856a1cf3ef569fe
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+2_4decoder:inst41
+2_4decoder:inst51
+2_4decoder:inst49
+2_4decoder:inst43
+2_4decoder:inst42
+2_4decoder:inst52
 }
 # macro_sequence
 
@@ -78,7 +66,7 @@ AUTO
 }
 # hierarchies {
 3-8decoder:inst7
-3-8decoder:inst35
+3-8decoder:inst
 }
 # macro_sequence
 
@@ -98,8 +86,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-counter-8:inst16
-counter-8:inst10
+counter-8:MPC
+counter-8:PC
 }
 # macro_sequence
 
@@ -185,8 +173,8 @@ A
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
-counter-8:inst16|74161:inst1
-counter-8:inst10|74161:inst1
+counter-8:MPC|74161:inst1
+counter-8:PC|74161:inst1
 }
 # macro_sequence
 
@@ -206,10 +194,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-counter-8:inst16|74161:inst1|f74161:sub
-counter-8:inst16|74161:inst|f74161:sub
-counter-8:inst10|74161:inst1|f74161:sub
-counter-8:inst10|74161:inst|f74161:sub
+counter-8:MPC|74161:inst1|f74161:sub
+counter-8:MPC|74161:inst|f74161:sub
+counter-8:PC|74161:inst1|f74161:sub
+counter-8:PC|74161:inst|f74161:sub
 }
 # macro_sequence
 
@@ -292,8 +280,8 @@ A
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
-counter-8:inst16|74161:inst
-counter-8:inst10|74161:inst
+counter-8:MPC|74161:inst
+counter-8:PC|74161:inst
 }
 # macro_sequence
 
@@ -313,13 +301,15 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-chooser:inst37
-chooser4-1:inst26|chooser:inst13
-chooser4-1:inst26|chooser:inst12
-chooser4-1:inst27|chooser:inst13
-chooser4-1:inst27|chooser:inst12
+chooser4-1:A|chooser:inst13
+chooser4-1:A|chooser:inst12
+chooser4-1:B|chooser:inst13
+chooser4-1:B|chooser:inst12
 chooser4-1:inst24|chooser:inst13
 chooser4-1:inst24|chooser:inst12
+chooser4-1:inst57|chooser:inst13
+chooser4-1:inst57|chooser:inst12
+chooser:inst23
 }
 # macro_sequence
 
@@ -400,9 +390,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-chooser4-1:inst26
-chooser4-1:inst27
+chooser4-1:A
+chooser4-1:B
 chooser4-1:inst24
+chooser4-1:inst57
 }
 # macro_sequence
 
@@ -420,9 +411,6 @@ MBR.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-MBR:inst
 }
 # macro_sequence
 
@@ -442,12 +430,32 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-register-8:inst1
-register-8:inst9
+register-8:MAR
 register-8:inst15
+register-8:inst9
 register-8:inst12
 register-8:inst13
 register-8:inst14
+}
+# macro_sequence
+
+# end
+# entity
+MBR_new
+# storage
+db|project.(3).cnf
+db|project.(3).cnf
+# case_insensitive
+# source_file
+MBR_new.bdf
+17ed3a14bb5afbfdfc42b09bb084f155
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MBR_new:MDR
 }
 # macro_sequence
 
@@ -460,7 +468,7 @@ db|project.(0).cnf
 # case_insensitive
 # source_file
 project.bdf
-3dda6a9fe9d2d54ef8ec1154f6b88846
+b024ea5b16b0137e752e1028e1cb8f55
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

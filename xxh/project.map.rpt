@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Fri Apr 19 23:51:09 2024
+Sat Apr 27 05:02:39 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -13,10 +13,10 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Parameter Settings for User Entity Instance: counter-8:inst16|74161:inst1
-  9. Parameter Settings for User Entity Instance: counter-8:inst16|74161:inst
- 10. Parameter Settings for User Entity Instance: counter-8:inst10|74161:inst1
- 11. Parameter Settings for User Entity Instance: counter-8:inst10|74161:inst
+  8. Parameter Settings for User Entity Instance: counter-8:MPC|74161:inst1
+  9. Parameter Settings for User Entity Instance: counter-8:MPC|74161:inst
+ 10. Parameter Settings for User Entity Instance: counter-8:PC|74161:inst1
+ 11. Parameter Settings for User Entity Instance: counter-8:PC|74161:inst
  12. Analysis & Synthesis Messages
 
 
@@ -43,16 +43,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 19 23:51:09 2024   ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 27 05:02:39 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; project                                 ;
 ; Top-level Entity Name              ; project                                 ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 121                                     ;
-;     Total combinational functions  ; 121                                     ;
-;     Dedicated logic registers      ; 71                                      ;
-; Total registers                    ; 71                                      ;
-; Total pins                         ; 51                                      ;
+; Total logic elements               ; 134                                     ;
+;     Total combinational functions  ; 134                                     ;
+;     Dedicated logic registers      ; 73                                      ;
+; Total registers                    ; 73                                      ;
+; Total pins                         ; 50                                      ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                       ;
@@ -144,82 +144,84 @@ applicable agreement for further details.
 ; register-8.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/xie_x/Desktop/6组机组实验/project/register-8.bdf ;
 ; project.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/xie_x/Desktop/6组机组实验/project/project.bdf    ;
 ; 3-8decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/3-8decoder.bdf ;
-; 2_4decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/2_4decoder.bdf ;
-; counter-8.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/counter-8.bdf  ;
-; 74161.tdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74161.tdf  ;
-; aglobal.inc                      ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/megafunctions/aglobal.inc  ;
-; f74161.bdf                       ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/f74161.bdf ;
-; chooser.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/chooser.bdf    ;
 ; ALU.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/ALU.bdf        ;
 ; 74181.bdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74181.bdf  ;
 ; 74182.bdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74182.bdf  ;
 ; chooser4-1.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/chooser4-1.bdf ;
-; MBR.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/MBR.bdf        ;
+; chooser.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/chooser.bdf    ;
+; counter-8.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/counter-8.bdf  ;
+; 74161.tdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74161.tdf  ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/megafunctions/aglobal.inc  ;
+; f74161.bdf                       ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/f74161.bdf ;
+; 2_4decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/2_4decoder.bdf ;
+; MBR_new.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/xie_x/Desktop/6组机组实验/project/MBR_new.bdf    ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 121                     ;
-;                                             ;                         ;
-; Total combinational functions               ; 121                     ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 78                      ;
-;     -- 3 input functions                    ; 31                      ;
-;     -- <=2 input functions                  ; 12                      ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 121                     ;
-;     -- arithmetic mode                      ; 0                       ;
-;                                             ;                         ;
-; Total registers                             ; 71                      ;
-;     -- Dedicated logic registers            ; 71                      ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 51                      ;
-; Maximum fan-out node                        ; register-8:inst9|inst14 ;
-; Maximum fan-out                             ; 20                      ;
-; Total fan-out                               ; 611                     ;
-; Average fan-out                             ; 2.51                    ;
-+---------------------------------------------+-------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 134   ;
+;                                             ;       ;
+; Total combinational functions               ; 134   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 92    ;
+;     -- 3 input functions                    ; 29    ;
+;     -- <=2 input functions                  ; 13    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 134   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 73    ;
+;     -- Dedicated logic registers            ; 73    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 50    ;
+; Maximum fan-out node                        ; CLR   ;
+; Maximum fan-out                             ; 67    ;
+; Total fan-out                               ; 727   ;
+; Average fan-out                             ; 2.83  ;
++---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
-; |project                   ; 121 (15)          ; 71 (1)       ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |project                                         ; work         ;
-;    |2_4decoder:inst29|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|2_4decoder:inst29                       ; work         ;
-;    |2_4decoder:inst41|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|2_4decoder:inst41                       ; work         ;
-;    |3-8decoder:inst35|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|3-8decoder:inst35                       ; work         ;
-;    |ALU:inst2|             ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2                               ; work         ;
-;       |74181:inst1|        ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2|74181:inst1                   ; work         ;
-;       |74181:inst|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2|74181:inst                    ; work         ;
-;       |74182:inst2|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2|74182:inst2                   ; work         ;
-;    |MBR:inst|              ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|MBR:inst                                ; work         ;
-;    |chooser4-1:inst26|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|chooser4-1:inst26                       ; work         ;
-;    |chooser4-1:inst27|     ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|chooser4-1:inst27                       ; work         ;
-;    |counter-8:inst10|      ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst10                        ; work         ;
-;       |74161:inst1|        ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst10|74161:inst1            ; work         ;
-;          |f74161:sub|      ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst10|74161:inst1|f74161:sub ; work         ;
-;       |74161:inst|         ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst10|74161:inst             ; work         ;
-;          |f74161:sub|      ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst10|74161:inst|f74161:sub  ; work         ;
-;    |counter-8:inst16|      ; 19 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst16                        ; work         ;
-;       |74161:inst1|        ; 8 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst16|74161:inst1            ; work         ;
-;          |f74161:sub|      ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst16|74161:inst1|f74161:sub ; work         ;
-;       |74161:inst|         ; 11 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst16|74161:inst             ; work         ;
-;          |f74161:sub|      ; 11 (11)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:inst16|74161:inst|f74161:sub  ; work         ;
-;    |register-8:inst12|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst12                       ; work         ;
-;    |register-8:inst13|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst13                       ; work         ;
-;    |register-8:inst14|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst14                       ; work         ;
-;    |register-8:inst15|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst15                       ; work         ;
-;    |register-8:inst1|      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst1                        ; work         ;
-;    |register-8:inst9|      ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst9                        ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
+; |project                   ; 134 (25)          ; 73 (1)       ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |project                                      ; work         ;
+;    |2_4decoder:inst29|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|2_4decoder:inst29                    ; work         ;
+;    |2_4decoder:inst41|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|2_4decoder:inst41                    ; work         ;
+;    |3-8decoder:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|3-8decoder:inst                      ; work         ;
+;    |ALU:inst2|             ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2                            ; work         ;
+;       |74181:inst1|        ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2|74181:inst1                ; work         ;
+;       |74181:inst|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2|74181:inst                 ; work         ;
+;       |74182:inst2|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|ALU:inst2|74182:inst2                ; work         ;
+;    |MBR_new:MDR|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|MBR_new:MDR                          ; work         ;
+;    |chooser4-1:A|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|chooser4-1:A                         ; work         ;
+;    |chooser4-1:B|          ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|chooser4-1:B                         ; work         ;
+;    |chooser4-1:inst57|     ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|chooser4-1:inst57                    ; work         ;
+;       |chooser:inst12|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|chooser4-1:inst57|chooser:inst12     ; work         ;
+;    |counter-8:MPC|         ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:MPC                        ; work         ;
+;       |74161:inst1|        ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:MPC|74161:inst1            ; work         ;
+;          |f74161:sub|      ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:MPC|74161:inst1|f74161:sub ; work         ;
+;       |74161:inst|         ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:MPC|74161:inst             ; work         ;
+;          |f74161:sub|      ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:MPC|74161:inst|f74161:sub  ; work         ;
+;    |counter-8:PC|          ; 21 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:PC                         ; work         ;
+;       |74161:inst1|        ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:PC|74161:inst1             ; work         ;
+;          |f74161:sub|      ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:PC|74161:inst1|f74161:sub  ; work         ;
+;       |74161:inst|         ; 14 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:PC|74161:inst              ; work         ;
+;          |f74161:sub|      ; 14 (14)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|counter-8:PC|74161:inst|f74161:sub   ; work         ;
+;    |register-8:MAR|        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:MAR                       ; work         ;
+;    |register-8:inst12|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst12                    ; work         ;
+;    |register-8:inst13|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst13                    ; work         ;
+;    |register-8:inst14|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst14                    ; work         ;
+;    |register-8:inst15|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst15                    ; work         ;
+;    |register-8:inst9|      ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |project|register-8:inst9                     ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,69 +230,69 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 71    ;
-; Number of registers using Synchronous Clear  ; 4     ;
-; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 1     ;
+; Total registers                              ; 73    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 65    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: counter-8:inst16|74161:inst1 ;
-+------------------------+------------+-------------------------------------+
-; Parameter Name         ; Value      ; Type                                ;
-+------------------------+------------+-------------------------------------+
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                             ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                        ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                      ;
-+------------------------+------------+-------------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter-8:MPC|74161:inst1 ;
++------------------------+------------+----------------------------------+
+; Parameter Name         ; Value      ; Type                             ;
++------------------------+------------+----------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                   ;
++------------------------+------------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: counter-8:inst16|74161:inst ;
-+------------------------+------------+------------------------------------+
-; Parameter Name         ; Value      ; Type                               ;
-+------------------------+------------+------------------------------------+
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                            ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                       ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                     ;
-+------------------------+------------+------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter-8:MPC|74161:inst ;
++------------------------+------------+---------------------------------+
+; Parameter Name         ; Value      ; Type                            ;
++------------------------+------------+---------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                         ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                  ;
++------------------------+------------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: counter-8:inst10|74161:inst1 ;
-+------------------------+------------+-------------------------------------+
-; Parameter Name         ; Value      ; Type                                ;
-+------------------------+------------+-------------------------------------+
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                             ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                        ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                      ;
-+------------------------+------------+-------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter-8:PC|74161:inst1 ;
++------------------------+------------+---------------------------------+
+; Parameter Name         ; Value      ; Type                            ;
++------------------------+------------+---------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                         ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                  ;
++------------------------+------------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: counter-8:inst10|74161:inst ;
-+------------------------+------------+------------------------------------+
-; Parameter Name         ; Value      ; Type                               ;
-+------------------------+------------+------------------------------------+
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                            ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                       ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                     ;
-+------------------------+------------+------------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter-8:PC|74161:inst ;
++------------------------+------------+--------------------------------+
+; Parameter Name         ; Value      ; Type                           ;
++------------------------+------------+--------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                        ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                   ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                 ;
++------------------------+------------+--------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -300,34 +302,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Fri Apr 19 23:51:08 2024
+    Info: Processing started: Sat Apr 27 05:02:38 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
-Info: Found 1 design units, including 1 entities, in source file register-4.bdf
-    Info: Found entity 1: register-4
+Warning: Can't analyze file -- file C:/Users/xie_x/Desktop/6组机组实验/project/register-4.bdf is missing
 Info: Found 1 design units, including 1 entities, in source file register-8.bdf
     Info: Found entity 1: register-8
 Info: Found 1 design units, including 1 entities, in source file project.bdf
     Info: Found entity 1: project
 Info: Elaborating entity "project" for the top level hierarchy
-Info: Elaborating entity "register-8" for hierarchy "register-8:inst1"
+Info: Elaborating entity "register-8" for hierarchy "register-8:MAR"
 Warning: Using design file 3-8decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: 3-8decoder
 Info: Elaborating entity "3-8decoder" for hierarchy "3-8decoder:inst7"
-Warning: Using design file 2_4decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: 2_4decoder
-Info: Elaborating entity "2_4decoder" for hierarchy "2_4decoder:inst41"
-Warning: Using design file counter-8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: counter-8
-Info: Elaborating entity "counter-8" for hierarchy "counter-8:inst16"
-Info: Elaborating entity "74161" for hierarchy "counter-8:inst16|74161:inst1"
-Info: Elaborated megafunction instantiation "counter-8:inst16|74161:inst1"
-Info: Elaborating entity "f74161" for hierarchy "counter-8:inst16|74161:inst1|f74161:sub"
-Info: Elaborated megafunction instantiation "counter-8:inst16|74161:inst1|f74161:sub", which is child of megafunction instantiation "counter-8:inst16|74161:inst1"
-Info: Elaborating entity "74161" for hierarchy "counter-8:inst16|74161:inst"
-Info: Elaborated megafunction instantiation "counter-8:inst16|74161:inst"
-Warning: Using design file chooser.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: chooser
-Info: Elaborating entity "chooser" for hierarchy "chooser:inst37"
 Warning: Using design file ALU.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: ALU
 Info: Elaborating entity "ALU" for hierarchy "ALU:inst2"
@@ -337,61 +323,38 @@ Info: Elaborating entity "74182" for hierarchy "ALU:inst2|74182:inst2"
 Info: Elaborated megafunction instantiation "ALU:inst2|74182:inst2"
 Warning: Using design file chooser4-1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: chooser4-1
-Info: Elaborating entity "chooser4-1" for hierarchy "chooser4-1:inst26"
-Warning: Using design file MBR.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: MBR
-Info: Elaborating entity "MBR" for hierarchy "MBR:inst"
+Info: Elaborating entity "chooser4-1" for hierarchy "chooser4-1:A"
+Warning: Using design file chooser.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: chooser
+Info: Elaborating entity "chooser" for hierarchy "chooser4-1:A|chooser:inst13"
+Warning: Using design file counter-8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: counter-8
+Info: Elaborating entity "counter-8" for hierarchy "counter-8:MPC"
+Info: Elaborating entity "74161" for hierarchy "counter-8:MPC|74161:inst1"
+Info: Elaborated megafunction instantiation "counter-8:MPC|74161:inst1"
+Info: Elaborating entity "f74161" for hierarchy "counter-8:MPC|74161:inst1|f74161:sub"
+Info: Elaborated megafunction instantiation "counter-8:MPC|74161:inst1|f74161:sub", which is child of megafunction instantiation "counter-8:MPC|74161:inst1"
+Info: Elaborating entity "74161" for hierarchy "counter-8:MPC|74161:inst"
+Info: Elaborated megafunction instantiation "counter-8:MPC|74161:inst"
+Warning: Using design file 2_4decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: 2_4decoder
+Info: Elaborating entity "2_4decoder" for hierarchy "2_4decoder:inst28"
+Warning: Using design file MBR_new.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: MBR_new
+Info: Elaborating entity "MBR_new" for hierarchy "MBR_new:MDR"
 Info: Ignored 46 buffer(s)
     Info: Ignored 16 CARRY buffer(s)
     Info: Ignored 30 SOFT buffer(s)
-Warning: Tri-state node(s) do not directly drive top-level pin(s)
-    Warning: Converted tri-state buffer "MBR:inst|inst5" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst6" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst9" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst11" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst13" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst15" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst17" feeding internal logic into a wire
-    Warning: Converted tri-state buffer "MBR:inst|inst19" feeding internal logic into a wire
-Warning: The following nodes have both tri-state and non-tri-state drivers
-    Warning: Inserted always-enabled tri-state buffer between "pin_name8" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name9" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name10" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name11" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name12" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name13" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name14" and its non-tri-state driver.
-    Warning: Inserted always-enabled tri-state buffer between "pin_name15" and its non-tri-state driver.
-Info: One or more bidirs are fed by always enabled tri-state buffers
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name8" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name9" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name10" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name11" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name12" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name13" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name14" is moved to its source
-    Info: Fan-out of permanently enabled tri-state buffer feeding bidir "pin_name15" is moved to its source
 Warning: Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "inst22" is converted into an equivalent circuit using register "inst22~_emulated" and latch "inst22~latch"
-Warning: TRI or OPNDRN buffers permanently enabled
-    Warning: Node "pin_name8~1"
-    Warning: Node "pin_name9~1"
-    Warning: Node "pin_name10~1"
-    Warning: Node "pin_name11~1"
-    Warning: Node "pin_name12~1"
-    Warning: Node "pin_name13~1"
-    Warning: Node "pin_name14~1"
-    Warning: Node "pin_name15~1"
-Warning: Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "IR9"
-Info: Implemented 226 device resources after synthesis - the final resource count might be different
-    Info: Implemented 23 input pins
+Info: Implemented 240 device resources after synthesis - the final resource count might be different
+    Info: Implemented 22 input pins
     Info: Implemented 20 output pins
     Info: Implemented 8 bidirectional pins
-    Info: Implemented 175 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Implemented 190 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 234 megabytes
-    Info: Processing ended: Fri Apr 19 23:51:09 2024
+    Info: Processing ended: Sat Apr 27 05:02:39 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

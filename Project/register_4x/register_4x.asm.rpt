@@ -1,5 +1,5 @@
 Assembler report for register_4x
-Sat Apr 20 10:50:49 2024
+Sat Apr 27 13:16:28 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Apr 20 10:50:49 2024 ;
+; Assembler Status      ; Successful - Sat Apr 27 13:16:28 2024 ;
 ; Revision Name         ; register_4x                           ;
 ; Top-level Entity Name ; register_4x                           ;
 ; Family                ; Cyclone II                            ;
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +----------------+--------------------------------------------------------------------------------------------------------------+
 ; Device         ; EP2C8Q208C8                                                                                                  ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                   ;
-; Checksum       ; 0x000CAB1E                                                                                                   ;
+; Checksum       ; 0x000CB244                                                                                                   ;
 +----------------+--------------------------------------------------------------------------------------------------------------+
 
 
@@ -104,7 +104,7 @@ applicable agreement for further details.
 +--------------------+----------------------------------------------------------------------------------------------------------+
 ; Device             ; EPCS4                                                                                                    ;
 ; JTAG usercode      ; 0x00000000                                                                                               ;
-; Checksum           ; 0x06F0C270                                                                                               ;
+; Checksum           ; 0x06F0935B                                                                                               ;
 ; Compression Ratio  ; 3                                                                                                        ;
 +--------------------+----------------------------------------------------------------------------------------------------------+
 
@@ -115,13 +115,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Apr 20 10:50:49 2024
+    Info: Processing started: Sat Apr 27 13:16:28 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off register_4x -c register_4x
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 210 megabytes
-    Info: Processing ended: Sat Apr 20 10:50:49 2024
+    Info: Peak virtual memory: 212 megabytes
+    Info: Processing ended: Sat Apr 27 13:16:28 2024
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

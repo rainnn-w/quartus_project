@@ -1,5 +1,5 @@
 Analysis & Synthesis report for machine_v1
-Fri Apr 26 18:55:15 2024
+Sat Apr 27 13:25:14 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -13,8 +13,8 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Parameter Settings for User Entity Instance: ripple_counter_256_advanced:inst22|74161:inst1
-  9. Parameter Settings for User Entity Instance: ripple_counter_256_advanced:inst22|74161:inst
+  8. Parameter Settings for User Entity Instance: ripple_counter_256_advanced:pc|74161:inst1
+  9. Parameter Settings for User Entity Instance: ripple_counter_256_advanced:pc|74161:inst
  10. Parameter Settings for User Entity Instance: ripple_counter_256_advanced:inst23|74161:inst1
  11. Parameter Settings for User Entity Instance: ripple_counter_256_advanced:inst23|74161:inst
  12. Analysis & Synthesis Messages
@@ -43,15 +43,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 26 18:55:15 2024   ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 27 13:25:14 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; machine_v1                              ;
 ; Top-level Entity Name              ; machine_v1                              ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 118                                     ;
-;     Total combinational functions  ; 118                                     ;
-;     Dedicated logic registers      ; 67                                      ;
-; Total registers                    ; 67                                      ;
+; Total logic elements               ; 128                                     ;
+;     Total combinational functions  ; 128                                     ;
+;     Dedicated logic registers      ; 73                                      ;
+; Total registers                    ; 73                                      ;
 ; Total pins                         ; 50                                      ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
@@ -158,6 +158,8 @@ applicable agreement for further details.
 ; register_4x.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/register_4x.bdf                 ;
 ; mux4-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/mux4-8.bdf                      ;
 ; MBR_NEW.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/MBR_NEW.bdf                     ;
+; micro_address_generator.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/micro_address_generator.bdf     ;
+; mux4-8_4inputs.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/mux4-8_4inputs.bdf              ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
@@ -166,27 +168,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------------------------------------+
 ; Resource                                    ; Usage                                                 ;
 +---------------------------------------------+-------------------------------------------------------+
-; Estimated Total logic elements              ; 118                                                   ;
+; Estimated Total logic elements              ; 128                                                   ;
 ;                                             ;                                                       ;
-; Total combinational functions               ; 118                                                   ;
+; Total combinational functions               ; 128                                                   ;
 ; Logic element usage by number of LUT inputs ;                                                       ;
-;     -- 4 input functions                    ; 76                                                    ;
-;     -- 3 input functions                    ; 28                                                    ;
-;     -- <=2 input functions                  ; 14                                                    ;
+;     -- 4 input functions                    ; 89                                                    ;
+;     -- 3 input functions                    ; 27                                                    ;
+;     -- <=2 input functions                  ; 12                                                    ;
 ;                                             ;                                                       ;
 ; Logic elements by mode                      ;                                                       ;
-;     -- normal mode                          ; 118                                                   ;
+;     -- normal mode                          ; 128                                                   ;
 ;     -- arithmetic mode                      ; 0                                                     ;
 ;                                             ;                                                       ;
-; Total registers                             ; 67                                                    ;
-;     -- Dedicated logic registers            ; 67                                                    ;
+; Total registers                             ; 73                                                    ;
+;     -- Dedicated logic registers            ; 73                                                    ;
 ;     -- I/O registers                        ; 0                                                     ;
 ;                                             ;                                                       ;
 ; I/O pins                                    ; 50                                                    ;
 ; Maximum fan-out node                        ; register-8_with_CLR:IR|register-4_with_CLR:inst|inst3 ;
-; Maximum fan-out                             ; 19                                                    ;
-; Total fan-out                               ; 585                                                   ;
-; Average fan-out                             ; 2.49                                                  ;
+; Maximum fan-out                             ; 18                                                    ;
+; Total fan-out                               ; 642                                                   ;
+; Average fan-out                             ; 2.56                                                  ;
 +---------------------------------------------+-------------------------------------------------------+
 
 
@@ -195,23 +197,25 @@ applicable agreement for further details.
 +-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
 +-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; |machine_v1                             ; 118 (4)           ; 67 (0)       ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |machine_v1                                                                    ; work         ;
-;    |24_decoder:inst1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|24_decoder:inst1                                                   ; work         ;
+; |machine_v1                             ; 128 (7)           ; 73 (0)       ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |machine_v1                                                                    ; work         ;
 ;    |24_decoder:inst2|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|24_decoder:inst2                                                   ; work         ;
 ;    |38_decoder:inst11|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|38_decoder:inst11                                                  ; work         ;
-;    |ALU_parallel_8b:inst4|              ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4                                              ; work         ;
-;       |74181:inst1|                     ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4|74181:inst1                                  ; work         ;
+;    |ALU_parallel_8b:inst4|              ; 44 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4                                              ; work         ;
+;       |74181:inst1|                     ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4|74181:inst1                                  ; work         ;
 ;       |74181:inst|                      ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4|74181:inst                                   ; work         ;
 ;       |74182:inst2|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4|74182:inst2                                  ; work         ;
-;    |MBR_NEW:inst7|                      ; 8 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:inst7                                                      ; work         ;
-;       |mux2-8:inst|                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:inst7|mux2-8:inst                                          ; work         ;
-;       |register-8_with_CLR:inst1|       ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:inst7|register-8_with_CLR:inst1                            ; work         ;
-;          |register-4_with_CLR:inst2|    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:inst7|register-8_with_CLR:inst1|register-4_with_CLR:inst2  ; work         ;
-;          |register-4_with_CLR:inst|     ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:inst7|register-8_with_CLR:inst1|register-4_with_CLR:inst   ; work         ;
+;    |MBR_NEW:MDR|                        ; 8 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:MDR                                                        ; work         ;
+;       |mux2-8:inst|                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:MDR|mux2-8:inst                                            ; work         ;
+;       |register-8_with_CLR:inst1|       ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:MDR|register-8_with_CLR:inst1                              ; work         ;
+;          |register-4_with_CLR:inst2|    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:MDR|register-8_with_CLR:inst1|register-4_with_CLR:inst2    ; work         ;
+;          |register-4_with_CLR:inst|     ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|MBR_NEW:MDR|register-8_with_CLR:inst1|register-4_with_CLR:inst     ; work         ;
 ;    |START_STOP_NEW:inst3|               ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|START_STOP_NEW:inst3                                               ; work         ;
-;    |mux2-8:B_sclector|                  ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|mux2-8:B_sclector                                                  ; work         ;
-;    |register-8_with_CLR:IR|             ; 0 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:IR                                             ; work         ;
-;       |register-4_with_CLR:inst|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:IR|register-4_with_CLR:inst                    ; work         ;
+;    |micro_address_generator:inst19|     ; 6 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|micro_address_generator:inst19                                     ; work         ;
+;       |38_decoder:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|micro_address_generator:inst19|38_decoder:inst2                    ; work         ;
+;    |mux2-8:B_sclector|                  ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|mux2-8:B_sclector                                                  ; work         ;
+;    |register-8_with_CLR:IR|             ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:IR                                             ; work         ;
+;       |register-4_with_CLR:inst2|       ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:IR|register-4_with_CLR:inst2                   ; work         ;
+;       |register-4_with_CLR:inst|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:IR|register-4_with_CLR:inst                    ; work         ;
 ;    |register-8_with_CLR:MAR|            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:MAR                                            ; work         ;
 ;       |register-4_with_CLR:inst2|       ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:MAR|register-4_with_CLR:inst2                  ; work         ;
 ;       |register-4_with_CLR:inst|        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register-8_with_CLR:MAR|register-4_with_CLR:inst                   ; work         ;
@@ -228,16 +232,16 @@ applicable agreement for further details.
 ;       |register-8_with_CLR:R3|          ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register_4x:inst8|register-8_with_CLR:R3                           ; work         ;
 ;          |register-4_with_CLR:inst2|    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst2 ; work         ;
 ;          |register-4_with_CLR:inst|     ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst  ; work         ;
-;    |ripple_counter_256_advanced:inst22| ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst22                                 ; work         ;
-;       |74161:inst1|                     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst22|74161:inst1                     ; work         ;
-;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst22|74161:inst1|f74161:sub          ; work         ;
-;       |74161:inst|                      ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst22|74161:inst                      ; work         ;
-;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst22|74161:inst|f74161:sub           ; work         ;
-;    |ripple_counter_256_advanced:inst23| ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23                                 ; work         ;
-;       |74161:inst1|                     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst1                     ; work         ;
-;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst1|f74161:sub          ; work         ;
-;       |74161:inst|                      ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst                      ; work         ;
-;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst|f74161:sub           ; work         ;
+;    |ripple_counter_256_advanced:inst23| ; 16 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23                                 ; work         ;
+;       |74161:inst1|                     ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst1                     ; work         ;
+;          |f74161:sub|                   ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst1|f74161:sub          ; work         ;
+;       |74161:inst|                      ; 12 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst                      ; work         ;
+;          |f74161:sub|                   ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst|f74161:sub           ; work         ;
+;    |ripple_counter_256_advanced:pc|     ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc                                     ; work         ;
+;       |74161:inst1|                     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst1                         ; work         ;
+;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst1|f74161:sub              ; work         ;
+;       |74161:inst|                      ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst                          ; work         ;
+;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst|f74161:sub               ; work         ;
 +-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -247,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 67    ;
+; Total registers                              ; 73    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 1     ;
@@ -257,31 +261,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ripple_counter_256_advanced:inst22|74161:inst1 ;
-+------------------------+------------+-------------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                                  ;
-+------------------------+------------+-------------------------------------------------------+
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                               ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                            ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                          ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                          ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                        ;
-+------------------------+------------+-------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_counter_256_advanced:pc|74161:inst1 ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
++------------------------+------------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ripple_counter_256_advanced:inst22|74161:inst ;
-+------------------------+------------+------------------------------------------------------+
-; Parameter Name         ; Value      ; Type                                                 ;
-+------------------------+------------+------------------------------------------------------+
-; DEVICE_FAMILY          ; Cyclone II ; Untyped                                              ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                           ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                         ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                         ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                       ;
-+------------------------+------------+------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_counter_256_advanced:pc|74161:inst ;
++------------------------+------------+--------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                             ;
++------------------------+------------+--------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                   ;
++------------------------+------------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -319,7 +323,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Fri Apr 26 18:55:13 2024
+    Info: Processing started: Sat Apr 27 13:25:13 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off machine_v1 -c machine_v1
 Info: Found 1 design units, including 1 entities, in source file ALU_parallel_8b.bdf
     Info: Found entity 1: ALU_parallel_8b
@@ -352,13 +356,13 @@ Warning: Using design file mux2-8.bdf, which is not specified as a design file f
 Info: Elaborating entity "mux2-8" for hierarchy "mux2-8:A_selector"
 Warning: Using design file ripple_counter_256_advanced.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: ripple_counter_256_advanced
-Info: Elaborating entity "ripple_counter_256_advanced" for hierarchy "ripple_counter_256_advanced:inst22"
-Info: Elaborating entity "74161" for hierarchy "ripple_counter_256_advanced:inst22|74161:inst1"
-Info: Elaborated megafunction instantiation "ripple_counter_256_advanced:inst22|74161:inst1"
-Info: Elaborating entity "f74161" for hierarchy "ripple_counter_256_advanced:inst22|74161:inst1|f74161:sub"
-Info: Elaborated megafunction instantiation "ripple_counter_256_advanced:inst22|74161:inst1|f74161:sub", which is child of megafunction instantiation "ripple_counter_256_advanced:inst22|74161:inst1"
-Info: Elaborating entity "74161" for hierarchy "ripple_counter_256_advanced:inst22|74161:inst"
-Info: Elaborated megafunction instantiation "ripple_counter_256_advanced:inst22|74161:inst"
+Info: Elaborating entity "ripple_counter_256_advanced" for hierarchy "ripple_counter_256_advanced:pc"
+Info: Elaborating entity "74161" for hierarchy "ripple_counter_256_advanced:pc|74161:inst1"
+Info: Elaborated megafunction instantiation "ripple_counter_256_advanced:pc|74161:inst1"
+Info: Elaborating entity "f74161" for hierarchy "ripple_counter_256_advanced:pc|74161:inst1|f74161:sub"
+Info: Elaborated megafunction instantiation "ripple_counter_256_advanced:pc|74161:inst1|f74161:sub", which is child of megafunction instantiation "ripple_counter_256_advanced:pc|74161:inst1"
+Info: Elaborating entity "74161" for hierarchy "ripple_counter_256_advanced:pc|74161:inst"
+Info: Elaborated megafunction instantiation "ripple_counter_256_advanced:pc|74161:inst"
 Warning: Using design file register_4x.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: register_4x
 Info: Elaborating entity "register_4x" for hierarchy "register_4x:inst8"
@@ -367,25 +371,27 @@ Warning: Using design file mux4-8.bdf, which is not specified as a design file f
 Info: Elaborating entity "mux4-8" for hierarchy "register_4x:inst8|mux4-8:inst6"
 Warning: Using design file MBR_NEW.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: MBR_NEW
-Info: Elaborating entity "MBR_NEW" for hierarchy "MBR_NEW:inst7"
+Info: Elaborating entity "MBR_NEW" for hierarchy "MBR_NEW:MDR"
+Warning: Using design file micro_address_generator.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: micro_address_generator
+Info: Elaborating entity "micro_address_generator" for hierarchy "micro_address_generator:inst19"
+Warning: Using design file mux4-8_4inputs.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: mux4-8_4inputs
+Info: Elaborating entity "mux4-8_4inputs" for hierarchy "micro_address_generator:inst19|mux4-8_4inputs:inst23"
 Info: Ignored 46 buffer(s)
     Info: Ignored 16 CARRY buffer(s)
     Info: Ignored 30 SOFT buffer(s)
 Warning: Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "START_STOP_NEW:inst3|inst24" is converted into an equivalent circuit using register "START_STOP_NEW:inst3|inst24~_emulated" and latch "START_STOP_NEW:inst3|inst24~latch"
-Warning: Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "uIR2"
-    Warning (15610): No output dependent on input pin "uIR1"
-    Warning (15610): No output dependent on input pin "uIR0"
-Info: Implemented 210 device resources after synthesis - the final resource count might be different
+Info: Implemented 226 device resources after synthesis - the final resource count might be different
     Info: Implemented 22 input pins
     Info: Implemented 20 output pins
     Info: Implemented 8 bidirectional pins
-    Info: Implemented 160 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Implemented 176 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 232 megabytes
-    Info: Processing ended: Fri Apr 26 18:55:15 2024
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sat Apr 27 13:25:14 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

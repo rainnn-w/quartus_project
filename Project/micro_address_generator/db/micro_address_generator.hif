@@ -22,26 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-micro_address_generator
-# storage
-db|micro_address_generator.(0).cnf
-db|micro_address_generator.(0).cnf
-# case_insensitive
-# source_file
-micro_address_generator.bdf
-c12a39db8866d162efe5666c8738ca3d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 38_decoder
 # storage
 db|micro_address_generator.(1).cnf
@@ -75,9 +55,6 @@ mux3-8.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-mux3-8:inst
-}
 # macro_sequence
 
 # end
@@ -96,8 +73,9 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+24_decoder:inst13
 24_decoder:inst3
-mux4-8:inst4|24_decoder:inst1
+24_decoder:inst5
 }
 # macro_sequence
 
@@ -115,9 +93,6 @@ mux4-8.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-mux4-8:inst4
 }
 # macro_sequence
 
@@ -137,8 +112,48 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-mux4-8:inst4|mux2-8:inst2
-mux4-8:inst4|mux2-8:inst
+mux4-8_4inputs:inst23|mux2-8:inst2
+mux4-8_4inputs:inst23|mux2-8:inst
+}
+# macro_sequence
+
+# end
+# entity
+micro_address_generator
+# storage
+db|micro_address_generator.(0).cnf
+db|micro_address_generator.(0).cnf
+# case_insensitive
+# source_file
+micro_address_generator.bdf
+792ab4398abdfa6ffefddef037cda9f0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+mux4-8_4inputs
+# storage
+db|micro_address_generator.(6).cnf
+db|micro_address_generator.(6).cnf
+# case_insensitive
+# source_file
+mux4-8_4inputs.bdf
+3a56fa3e705bbd9d8aaab6c2272175a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux4-8_4inputs:inst23
 }
 # macro_sequence
 
