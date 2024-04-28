@@ -41,9 +41,11 @@ register_4x:inst8|mux4-8:inst6|24_decoder:inst1
 register_4x:inst8|24_decoder:inst
 24_decoder:inst
 24_decoder:inst1
-micro_address_generator:inst19|24_decoder:inst13
-micro_address_generator:inst19|24_decoder:inst3
-micro_address_generator:inst19|24_decoder:inst5
+micro_address_generator:inst22|24_decoder:inst3
+micro_address_generator:inst22|24_decoder:inst12
+micro_address_generator:inst22|24_decoder:inst11
+micro_address_generator:inst22|24_decoder:inst13
+micro_address_generator:inst22|24_decoder:inst5
 }
 # macro_sequence
 
@@ -123,7 +125,7 @@ AUTO
 }
 # hierarchies {
 38_decoder:inst11
-micro_address_generator:inst19|38_decoder:inst2
+micro_address_generator:inst22|38_decoder:inst2
 }
 # macro_sequence
 
@@ -189,8 +191,9 @@ register_4x:inst8|mux4-8:inst6|mux2-8:inst2
 register_4x:inst8|mux4-8:inst6|mux2-8:inst
 mux2-8:B_sclector
 MBR_NEW:MDR|mux2-8:inst
-micro_address_generator:inst19|mux4-8_4inputs:inst23|mux2-8:inst2
-micro_address_generator:inst19|mux4-8_4inputs:inst23|mux2-8:inst
+micro_address_generator:inst22|mux4-8_4inputs:inst23|mux2-8:inst2
+micro_address_generator:inst22|mux4-8_4inputs:inst23|mux2-8:inst
+micro_address_generator:inst22|mux2-8:inst20
 }
 # macro_sequence
 
@@ -304,7 +307,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-micro_address_generator:inst19|mux4-8_4inputs:inst23
+micro_address_generator:inst22|mux4-8_4inputs:inst23
 }
 # macro_sequence
 
@@ -316,7 +319,7 @@ db|machine_v1.(6).cnf
 db|machine_v1.(6).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+e:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
 5a7a42864d75db2f39a1f2da31e3e53
 26
 # internal_option {
@@ -337,7 +340,7 @@ db|machine_v1.(7).cnf
 db|machine_v1.(7).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
+e:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
 7e848f93ad7899d68043667228e561f6
 26
 # internal_option {
@@ -357,7 +360,7 @@ db|machine_v1.(8).cnf
 db|machine_v1.(8).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -424,7 +427,7 @@ A
 3
 }
 # include_file {
-c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -441,7 +444,7 @@ db|machine_v1.(10).cnf
 db|machine_v1.(10).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
+e:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
 408d3815988dee8ef0f04d17774959
 26
 # internal_option {
@@ -464,7 +467,7 @@ db|machine_v1.(11).cnf
 db|machine_v1.(11).cnf
 # case_insensitive
 # source_file
-c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -531,7 +534,7 @@ A
 3
 }
 # include_file {
-c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -549,14 +552,14 @@ db|machine_v1.(18).cnf
 # case_insensitive
 # source_file
 micro_address_generator.bdf
-ccbf372b60b565d3291cacf271b21f7
+21314a505b37505f2c5e23604c81b6b0
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-micro_address_generator:inst19
+micro_address_generator:inst22
 }
 # macro_sequence
 
@@ -569,7 +572,7 @@ db|machine_v1.(0).cnf
 # case_insensitive
 # source_file
 machine_v1.bdf
-869ea58b9b63c748ba0d7cf7f8975c8
+f29e1af8f5ce7e4df731dc95dd2137b1
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

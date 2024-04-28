@@ -73,8 +73,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-24_decoder:inst13
 24_decoder:inst3
+24_decoder:inst12
+24_decoder:inst11
+24_decoder:inst13
 24_decoder:inst5
 }
 # macro_sequence
@@ -114,26 +116,7 @@ AUTO
 # hierarchies {
 mux4-8_4inputs:inst23|mux2-8:inst2
 mux4-8_4inputs:inst23|mux2-8:inst
-}
-# macro_sequence
-
-# end
-# entity
-micro_address_generator
-# storage
-db|micro_address_generator.(0).cnf
-db|micro_address_generator.(0).cnf
-# case_insensitive
-# source_file
-micro_address_generator.bdf
-792ab4398abdfa6ffefddef037cda9f0
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
+mux2-8:inst20
 }
 # macro_sequence
 
@@ -154,6 +137,26 @@ AUTO
 }
 # hierarchies {
 mux4-8_4inputs:inst23
+}
+# macro_sequence
+
+# end
+# entity
+micro_address_generator
+# storage
+db|micro_address_generator.(0).cnf
+db|micro_address_generator.(0).cnf
+# case_insensitive
+# source_file
+micro_address_generator.bdf
+b8293e9b5ad41926c722eb30afeaead
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
