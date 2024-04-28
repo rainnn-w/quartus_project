@@ -209,15 +209,15 @@ LD13                         : 138       : output : 3.3-V LVTTL       :         
 LD14                         : 139       : output : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : 140       : gnd    :                   :         :           :                
 LD15                         : 141       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_0                         : 142       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_1                         : 143       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_2                         : 144       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_3                         : 145       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_4                         : 146       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_5                         : 147       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR0                          : 142       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR1                          : 143       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR2                          : 144       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR3                          : 145       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR4                          : 146       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR5                          : 147       : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 148       : power  :                   : 3.3V    : 3         :                
-AD_6                         : 149       : output : 3.3-V LVTTL       :         : 3         : Y              
-AD_7                         : 150       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR6                          : 149       : output : 3.3-V LVTTL       :         : 3         : Y              
+LR7                          : 150       : output : 3.3-V LVTTL       :         : 3         : Y              
 LR8                          : 151       : output : 3.3-V LVTTL       :         : 3         : Y              
 LR9                          : 152       : output : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : 153       : gnd    :                   :         :           :                
