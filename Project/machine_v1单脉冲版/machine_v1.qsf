@@ -95,6 +95,14 @@ set_location_assignment PIN_95 -to uIR4
 set_location_assignment PIN_96 -to uIR5
 set_location_assignment PIN_97 -to uIR6
 set_global_assignment -name MISC_FILE "G:/Project/machine_v1/machine_v1.dpf"
+set_location_assignment PIN_142 -to LR0
+set_location_assignment PIN_143 -to LR1
+set_location_assignment PIN_144 -to LR2
+set_location_assignment PIN_145 -to LR3
+set_location_assignment PIN_146 -to LR4
+set_location_assignment PIN_147 -to LR5
+set_location_assignment PIN_149 -to LR6
+set_location_assignment PIN_150 -to LR7
 set_global_assignment -name MISC_FILE "G:/Project/machine_v1µ¥Âö³å°æ/machine_v1.dpf"
 set_location_assignment PIN_151 -to LR8
 set_location_assignment PIN_152 -to LR9
@@ -129,12 +137,3 @@ set_location_assignment PIN_15 -to LA12
 set_location_assignment PIN_30 -to LA13
 set_location_assignment PIN_31 -to LA14
 set_location_assignment PIN_33 -to LA15
-set_global_assignment -name MISC_FILE "D:/xxx/quartus_project/Project/machine_v1µ¥Âö³å°æ/machine_v1.dpf"
-set_location_assignment PIN_142 -to AD_0
-set_location_assignment PIN_143 -to AD_1
-set_location_assignment PIN_144 -to AD_2
-set_location_assignment PIN_145 -to AD_3
-set_location_assignment PIN_146 -to AD_4
-set_location_assignment PIN_147 -to AD_5
-set_location_assignment PIN_149 -to AD_6
-set_location_assignment PIN_150 -to AD_7
