@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Apr 27 17:56:11 2024
+Analysis & Synthesis Status : Successful - Sat Apr 27 19:57:09 2024
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : machine_v1
 Top-level Entity Name : machine_v1
 Family : Cyclone II
-Total logic elements : 171
-    Total combinational functions : 171
+Total logic elements : 132
+    Total combinational functions : 132
     Dedicated logic registers : 72
 Total registers : 72
 Total pins : 87
