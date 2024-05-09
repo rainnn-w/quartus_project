@@ -1,0 +1,10 @@
+|start_stop_selection
+CLK <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+START => inst.IN0
+START => inst24.ACLR
+CK_Single => inst1.IN1
+CK_Consistant => inst31.IN0
+HALT => inst24.DATAIN
+CLR => inst24.PRESET
+
+
