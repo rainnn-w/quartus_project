@@ -713,9 +713,22 @@ applicable agreement for further details.
 	(pt 448 360)
 )
 (connector
+	(pt 272 280)
+	(pt 224 280)
+)
+(connector
+	(pt 224 280)
+	(pt 224 64)
+)
+(connector
 	(pt 216 64)
+	(pt 224 64)
+)
+(connector
+	(pt 224 64)
 	(pt 272 64)
 )
 (junction (pt 232 200))
 (junction (pt 248 392))
 (junction (pt 256 160))
+(junction (pt 224 64))

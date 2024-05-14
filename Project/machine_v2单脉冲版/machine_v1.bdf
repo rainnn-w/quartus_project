@@ -4076,9 +4076,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -280 -1456 -232 -1424)
+	(rect -264 -1456 -216 -1424)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 3 21 32 33)(font "Arial" ))
+	(text "inst19" (rect 3 21 32 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -6538,10 +6538,10 @@ applicable agreement for further details.
 )
 (connector
 	(pt -328 -1440)
-	(pt -280 -1440)
+	(pt -264 -1440)
 )
 (connector
-	(pt -232 -1440)
+	(pt -216 -1440)
 	(pt -184 -1440)
 )
 (connector

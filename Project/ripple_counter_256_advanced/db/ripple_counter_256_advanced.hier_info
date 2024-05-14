@@ -5,6 +5,8 @@ CLR => 74161:inst.CLRN
 CLK => 74161:inst1.CLK
 CLK => 74161:inst.CLK
 EP => 74161:inst1.ENP
+LOAD => 74161:inst1.LDN
+LOAD => 74161:inst.LDN
 D0 => 74161:inst1.A
 D3 => 74161:inst1.D
 ET => 74161:inst1.ENT
@@ -14,7 +16,6 @@ Q1 <= 74161:inst1.QB
 Q2 <= 74161:inst1.QC
 Q3 <= 74161:inst1.QD
 Q4 <= 74161:inst.QA
-LOAD => 74161:inst.LDN
 D4 => 74161:inst.A
 D7 => 74161:inst.D
 D5 => 74161:inst.B
@@ -26,7 +27,7 @@ Q7 <= 74161:inst.QD
 
 |ripple_counter_256_advanced|74161:inst1
 clk => f74161:sub.clk
-ldn => ~NO_FANOUT~
+ldn => f74161:sub.ldn
 clrn => f74161:sub.clrn
 enp => f74161:sub.enp
 ent => f74161:sub.ent

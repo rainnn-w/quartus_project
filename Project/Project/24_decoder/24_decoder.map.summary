@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Apr 13 16:19:28 2024
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : 24_decoder
+Top-level Entity Name : 24_decoder
+Family : Cyclone II
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

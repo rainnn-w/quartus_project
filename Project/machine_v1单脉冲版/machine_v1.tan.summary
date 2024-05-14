@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.554 ns
-From           : B_R
-To             : ripple_counter_256_advanced:inst23|74161:inst|f74161:sub|110
+Actual Time    : 17.485 ns
+From           : B_MDR
+To             : ripple_counter_256_advanced:inst22|74161:inst|f74161:sub|110
 From Clock     : --
 To Clock       : START
 Failed Paths   : 0
@@ -15,19 +15,19 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 29.701 ns
+Actual Time    : 30.289 ns
 From           : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst3
-To             : LA14
-From Clock     : uIR6
+To             : LA15
+From Clock     : uIR4
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 25.459 ns
-From           : B_R
-To             : LA14
+Actual Time    : 26.129 ns
+From           : B_MDR
+To             : LA15
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,19 +35,19 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.848 ns
+Actual Time    : 3.051 ns
 From           : C0
-To             : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst3
+To             : register_4x:inst8|register-8_with_CLR:R0|register-4_with_CLR:inst|inst3
 From Clock     : --
-To Clock       : uIR6
+To Clock       : uIR4
 Failed Paths   : 0
 
 Type           : Clock Setup: 'START'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 49.89 MHz ( period = 20.046 ns )
+Actual Time    : 49.07 MHz ( period = 20.379 ns )
 From           : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst3
-To             : ripple_counter_256_advanced:inst23|74161:inst|f74161:sub|110
+To             : ripple_counter_256_advanced:inst22|74161:inst|f74161:sub|110
 From Clock     : START
 To Clock       : START
 Failed Paths   : 0
@@ -55,72 +55,72 @@ Failed Paths   : 0
 Type           : Clock Setup: 'uIR6'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 67.44 MHz ( period = 14.827 ns )
-From           : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
-To             : register_4x:inst8|register-8_with_CLR:R0|register-4_with_CLR:inst2|inst2
+Actual Time    : 76.01 MHz ( period = 13.157 ns )
+From           : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst3
+To             : register_4x:inst8|register-8_with_CLR:R0|register-4_with_CLR:inst2|inst1
 From Clock     : uIR6
 To Clock       : uIR6
-Failed Paths   : 0
-
-Type           : Clock Setup: 'uIR4'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 69.57 MHz ( period = 14.373 ns )
-From           : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
-To             : register-8_with_CLR:IR|register-4_with_CLR:inst2|inst1
-From Clock     : uIR4
-To Clock       : uIR4
 Failed Paths   : 0
 
 Type           : Clock Setup: 'uIR5'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 69.57 MHz ( period = 14.373 ns )
-From           : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
-To             : register-8_with_CLR:IR|register-4_with_CLR:inst2|inst1
+Actual Time    : 77.50 MHz ( period = 12.904 ns )
+From           : register_4x:inst8|register-8_with_CLR:R0|register-4_with_CLR:inst|inst2
+To             : register-8_with_CLR:IR|register-4_with_CLR:inst|inst2
 From Clock     : uIR5
 To Clock       : uIR5
 Failed Paths   : 0
 
-Type           : Clock Hold: 'uIR6'
-Slack          : Not operational: Clock Skew > Data Delay
+Type           : Clock Setup: 'uIR4'
+Slack          : N/A
 Required Time  : None
-Actual Time    : N/A
-From           : register-8_with_CLR:IR|register-4_with_CLR:inst|inst3
-To             : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
-From Clock     : uIR6
-To Clock       : uIR6
-Failed Paths   : 116
-
-Type           : Clock Hold: 'uIR5'
-Slack          : Not operational: Clock Skew > Data Delay
-Required Time  : None
-Actual Time    : N/A
-From           : register-8_with_CLR:IR|register-4_with_CLR:inst|inst3
-To             : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
-From Clock     : uIR5
-To Clock       : uIR5
-Failed Paths   : 73
+Actual Time    : 77.50 MHz ( period = 12.904 ns )
+From           : register_4x:inst8|register-8_with_CLR:R0|register-4_with_CLR:inst|inst2
+To             : register-8_with_CLR:IR|register-4_with_CLR:inst|inst2
+From Clock     : uIR4
+To Clock       : uIR4
+Failed Paths   : 0
 
 Type           : Clock Hold: 'uIR4'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
 From           : register-8_with_CLR:IR|register-4_with_CLR:inst|inst3
-To             : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
+To             : register-8_with_CLR:IR|register-4_with_CLR:inst2|inst3
 From Clock     : uIR4
 To Clock       : uIR4
-Failed Paths   : 63
+Failed Paths   : 18
 
 Type           : Clock Hold: 'START'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
 From           : register-8_with_CLR:IR|register-4_with_CLR:inst|inst3
-To             : register_4x:inst8|register-8_with_CLR:R3|register-4_with_CLR:inst|inst
+To             : register-8_with_CLR:IR|register-4_with_CLR:inst2|inst3
 From Clock     : START
 To Clock       : START
-Failed Paths   : 102
+Failed Paths   : 24
+
+Type           : Clock Hold: 'uIR6'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register-8_with_CLR:IR|register-4_with_CLR:inst|inst3
+To             : register-8_with_CLR:IR|register-4_with_CLR:inst2|inst3
+From Clock     : uIR6
+To Clock       : uIR6
+Failed Paths   : 28
+
+Type           : Clock Hold: 'uIR5'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : register-8_with_CLR:IR|register-4_with_CLR:inst|inst3
+To             : register-8_with_CLR:IR|register-4_with_CLR:inst2|inst3
+From Clock     : uIR5
+To Clock       : uIR5
+Failed Paths   : 22
 
 Type           : Total number of failed paths
 Slack          : 
@@ -130,7 +130,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 354
+Failed Paths   : 92
 
 --------------------------------------------------------------------------------------
 

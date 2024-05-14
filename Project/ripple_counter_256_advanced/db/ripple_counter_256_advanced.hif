@@ -22,13 +22,33 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+ripple_counter_256_advanced
+# storage
+db|ripple_counter_256_advanced.(0).cnf
+db|ripple_counter_256_advanced.(0).cnf
+# case_insensitive
+# source_file
+ripple_counter_256_advanced.bdf
+f295b9d54cac5e33ddf768b8385d317e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 74161
 # storage
 db|ripple_counter_256_advanced.(1).cnf
 db|ripple_counter_256_advanced.(1).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -69,6 +89,9 @@ QB
 QA
 -1
 3
+LDN
+-1
+3
 ENT
 -1
 3
@@ -95,7 +118,7 @@ A
 3
 }
 # include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -111,7 +134,7 @@ db|ripple_counter_256_advanced.(2).cnf
 db|ripple_counter_256_advanced.(2).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
 408d3815988dee8ef0f04d17774959
 26
 # internal_option {
@@ -132,104 +155,7 @@ db|ripple_counter_256_advanced.(3).cnf
 db|ripple_counter_256_advanced.(3).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
-8ae87de328fa01839f5a524a1a9ba
-7
-# user_parameter {
-DEVICE_FAMILY
-Cyclone II
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-QD
--1
-3
-QC
--1
-3
-QB
--1
-3
-QA
--1
-3
-ENT
--1
-3
-ENP
--1
-3
-D
--1
-3
-CLRN
--1
-3
-CLK
--1
-3
-C
--1
-3
-B
--1
-3
-A
--1
-3
-}
-# include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
-ba79644cade9dcbd5df4af72a9b02986
-}
-# macro_sequence
-
-# end
-# entity
-ripple_counter_256_advanced
-# storage
-db|ripple_counter_256_advanced.(0).cnf
-db|ripple_counter_256_advanced.(0).cnf
-# case_insensitive
-# source_file
-ripple_counter_256_advanced.bdf
-b2a1ca9c71a7d213a313ed6ac2fd26
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-74161
-# storage
-db|ripple_counter_256_advanced.(4).cnf
-db|ripple_counter_256_advanced.(4).cnf
-# case_insensitive
-# source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -296,7 +222,7 @@ A
 3
 }
 # include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {

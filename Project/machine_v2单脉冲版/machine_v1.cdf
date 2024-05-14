@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C8Q208) Path("G:/Project/machine_v1µ¥Âö³å°æ/") File("machine_v1.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C8Q208) Path("G:/Project/machine_v2µ¥Âö³å°æ/") File("machine_v1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Mar 28 20:44:17 2024
+Analysis & Synthesis Status : Successful - Sat May 11 14:31:35 2024
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : ripple_counter_256_advanced
 Top-level Entity Name : ripple_counter_256_advanced
 Family : Cyclone II
-Total logic elements : 17
-    Total combinational functions : 17
+Total logic elements : 18
+    Total combinational functions : 18
     Dedicated logic registers : 8
 Total registers : 8
 Total pins : 21

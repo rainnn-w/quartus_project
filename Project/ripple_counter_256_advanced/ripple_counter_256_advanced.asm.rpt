@@ -1,5 +1,5 @@
 Assembler report for ripple_counter_256_advanced
-Thu Mar 28 20:44:20 2024
+Sat May 11 14:31:43 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.sof
-  6. Assembler Device Options: D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.pof
+  5. Assembler Device Options: G:/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.sof
+  6. Assembler Device Options: G:/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 28 20:44:20 2024 ;
+; Assembler Status      ; Successful - Sat May 11 14:31:43 2024 ;
 ; Revision Name         ; ripple_counter_256_advanced           ;
 ; Top-level Entity Name ; ripple_counter_256_advanced           ;
 ; Family                ; Cyclone II                            ;
@@ -76,37 +76,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                           ;
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                           ;
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.sof ;
-; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.pof ;
-+-------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; Assembler Generated Files                                              ;
++------------------------------------------------------------------------+
+; File Name                                                              ;
++------------------------------------------------------------------------+
+; G:/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.sof ;
+; G:/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.pof ;
++------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                      ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Device         ; EP2C8Q208C8                                                                                                                                  ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                                                                   ;
-; Checksum       ; 0x000C772B                                                                                                                                   ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Assembler Device Options: G:/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.sof ;
++----------------+---------------------------------------------------------------------------------+
+; Option         ; Setting                                                                         ;
++----------------+---------------------------------------------------------------------------------+
+; Device         ; EP2C8Q208C8                                                                     ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                      ;
+; Checksum       ; 0x000C7919                                                                      ;
++----------------+---------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.pof ;
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                                                                  ;
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-; Device             ; EPCS4                                                                                                                                    ;
-; JTAG usercode      ; 0x00000000                                                                                                                               ;
-; Checksum           ; 0x06F0707A                                                                                                                               ;
-; Compression Ratio  ; 3                                                                                                                                        ;
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Assembler Device Options: G:/Project/ripple_counter_256_advanced/ripple_counter_256_advanced.pof ;
++--------------------+-----------------------------------------------------------------------------+
+; Option             ; Setting                                                                     ;
++--------------------+-----------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                       ;
+; JTAG usercode      ; 0x00000000                                                                  ;
+; Checksum           ; 0x06F08E10                                                                  ;
+; Compression Ratio  ; 3                                                                           ;
++--------------------+-----------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -115,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Thu Mar 28 20:44:19 2024
+    Info: Processing started: Sat May 11 14:31:40 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ripple_counter_256_advanced -c ripple_counter_256_advanced
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 212 megabytes
-    Info: Processing ended: Thu Mar 28 20:44:20 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 189 megabytes
+    Info: Processing ended: Sat May 11 14:31:43 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 

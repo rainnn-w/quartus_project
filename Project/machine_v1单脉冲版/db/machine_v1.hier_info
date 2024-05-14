@@ -8,7 +8,7 @@ uIR6 => 38_decoder:inst11.I2
 uIR5 => 38_decoder:inst11.I1
 uIR4 => 38_decoder:inst11.I0
 START => inst20.IN0
-START => ripple_counter_256_advanced:inst23.CLK
+START => ripple_counter_256_advanced:inst22.CLK
 START => uRD.DATAIN
 START => CPuIR.DATAIN
 A_PC => 24_decoder:inst.I0
@@ -36,17 +36,17 @@ A4 <= register-8_with_CLR:MAR.Q4
 A5 <= register-8_with_CLR:MAR.Q5
 A6 <= register-8_with_CLR:MAR.Q6
 A7 <= register-8_with_CLR:MAR.Q7
-AD0 <= ripple_counter_256_advanced:inst23.Q0
-uIR2 => micro_address_generator:inst22.uIR2
-uIR1 => micro_address_generator:inst22.uIR1
-uIR0 => micro_address_generator:inst22.uIR0
-AD1 <= ripple_counter_256_advanced:inst23.Q1
-AD2 <= ripple_counter_256_advanced:inst23.Q2
-AD3 <= ripple_counter_256_advanced:inst23.Q3
-AD4 <= ripple_counter_256_advanced:inst23.Q4
-AD5 <= ripple_counter_256_advanced:inst23.Q5
-AD6 <= ripple_counter_256_advanced:inst23.Q6
-AD7 <= ripple_counter_256_advanced:inst23.Q7
+AD0 <= ripple_counter_256_advanced:inst22.Q0
+uIR2 => micro_address_generator:inst19.uIR2
+uIR1 => micro_address_generator:inst19.uIR1
+uIR0 => micro_address_generator:inst19.uIR0
+AD1 <= ripple_counter_256_advanced:inst22.Q1
+AD2 <= ripple_counter_256_advanced:inst22.Q2
+AD3 <= ripple_counter_256_advanced:inst22.Q3
+AD4 <= ripple_counter_256_advanced:inst22.Q4
+AD5 <= ripple_counter_256_advanced:inst22.Q5
+AD6 <= ripple_counter_256_advanced:inst22.Q6
+AD7 <= ripple_counter_256_advanced:inst22.Q7
 uRD <= START.DB_MAX_OUTPUT_PORT_TYPE
 CPuIR <= START.DB_MAX_OUTPUT_PORT_TYPE
 LR8 <= register-8_with_CLR:IR.Q0
@@ -73,22 +73,22 @@ LD12 <= mux2-8:A_selector.Y4
 LD13 <= mux2-8:A_selector.Y5
 LD14 <= mux2-8:A_selector.Y6
 LD15 <= mux2-8:A_selector.Y7
-LA8 <= micro_address_generator:inst22.Y0
-LA9 <= micro_address_generator:inst22.Y1
-LA10 <= micro_address_generator:inst22.Y2
-LA11 <= micro_address_generator:inst22.Y3
-LA12 <= micro_address_generator:inst22.Y4
-LA13 <= micro_address_generator:inst22.Y5
-LA14 <= micro_address_generator:inst22.Y6
-LA15 <= micro_address_generator:inst22.Y7
-LR0 <= ripple_counter_256_advanced:inst23.Q0
-LR1 <= ripple_counter_256_advanced:inst23.Q1
-LR2 <= ripple_counter_256_advanced:inst23.Q2
-LR3 <= ripple_counter_256_advanced:inst23.Q3
-LR4 <= ripple_counter_256_advanced:inst23.Q4
-LR5 <= ripple_counter_256_advanced:inst23.Q5
-LR6 <= ripple_counter_256_advanced:inst23.Q6
-LR7 <= ripple_counter_256_advanced:inst23.Q7
+LA8 <= micro_address_generator:inst19.Y0
+LA9 <= micro_address_generator:inst19.Y1
+LA10 <= micro_address_generator:inst19.Y2
+LA11 <= micro_address_generator:inst19.Y3
+LA12 <= micro_address_generator:inst19.Y4
+LA13 <= micro_address_generator:inst19.Y5
+LA14 <= micro_address_generator:inst19.Y6
+LA15 <= micro_address_generator:inst19.Y7
+LR0 <= ripple_counter_256_advanced:inst22.Q0
+LR1 <= ripple_counter_256_advanced:inst22.Q1
+LR2 <= ripple_counter_256_advanced:inst22.Q2
+LR3 <= ripple_counter_256_advanced:inst22.Q3
+LR4 <= ripple_counter_256_advanced:inst22.Q4
+LR5 <= ripple_counter_256_advanced:inst22.Q5
+LR6 <= ripple_counter_256_advanced:inst22.Q6
+LR7 <= ripple_counter_256_advanced:inst22.Q7
 
 
 |machine_v1|24_decoder:inst2
@@ -455,6 +455,8 @@ CLR => 74161:inst.CLRN
 CLK => 74161:inst1.CLK
 CLK => 74161:inst.CLK
 EP => 74161:inst1.ENP
+LOAD => 74161:inst1.LDN
+LOAD => 74161:inst.LDN
 D0 => 74161:inst1.A
 D3 => 74161:inst1.D
 ET => 74161:inst1.ENT
@@ -464,7 +466,6 @@ Q1 <= 74161:inst1.QB
 Q2 <= 74161:inst1.QC
 Q3 <= 74161:inst1.QD
 Q4 <= 74161:inst.QA
-LOAD => 74161:inst.LDN
 D4 => 74161:inst.A
 D7 => 74161:inst.D
 D5 => 74161:inst.B
@@ -476,7 +477,7 @@ Q7 <= 74161:inst.QD
 
 |machine_v1|ripple_counter_256_advanced:pc|74161:inst1
 clk => f74161:sub.clk
-ldn => ~NO_FANOUT~
+ldn => f74161:sub.ldn
 clrn => f74161:sub.clrn
 enp => f74161:sub.enp
 ent => f74161:sub.ent
@@ -1358,13 +1359,15 @@ Y2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Y3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|ripple_counter_256_advanced:inst23
+|machine_v1|ripple_counter_256_advanced:inst22
 Q0 <= 74161:inst1.QA
 CLR => 74161:inst1.CLRN
 CLR => 74161:inst.CLRN
 CLK => 74161:inst1.CLK
 CLK => 74161:inst.CLK
 EP => 74161:inst1.ENP
+LOAD => 74161:inst1.LDN
+LOAD => 74161:inst.LDN
 D0 => 74161:inst1.A
 D3 => 74161:inst1.D
 ET => 74161:inst1.ENT
@@ -1374,7 +1377,6 @@ Q1 <= 74161:inst1.QB
 Q2 <= 74161:inst1.QC
 Q3 <= 74161:inst1.QD
 Q4 <= 74161:inst.QA
-LOAD => 74161:inst.LDN
 D4 => 74161:inst.A
 D7 => 74161:inst.D
 D5 => 74161:inst.B
@@ -1384,54 +1386,7 @@ Q6 <= 74161:inst.QC
 Q7 <= 74161:inst.QD
 
 
-|machine_v1|ripple_counter_256_advanced:inst23|74161:inst1
-clk => f74161:sub.clk
-ldn => ~NO_FANOUT~
-clrn => f74161:sub.clrn
-enp => f74161:sub.enp
-ent => f74161:sub.ent
-d => f74161:sub.d
-c => f74161:sub.c
-b => f74161:sub.b
-a => f74161:sub.a
-qd <= f74161:sub.qd
-qc <= f74161:sub.qc
-qb <= f74161:sub.qb
-qa <= f74161:sub.qa
-rco <= f74161:sub.rco
-
-
-|machine_v1|ripple_counter_256_advanced:inst23|74161:inst1|f74161:sub
-RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
-CLRN => 110.ACLR
-CLRN => 99.ACLR
-CLRN => 87.ACLR
-CLRN => 9.ACLR
-CLK => 110.CLK
-CLK => 99.CLK
-CLK => 87.CLK
-CLK => 9.CLK
-D => 113.IN0
-LDN => 117.IN0
-LDN => 77.IN1
-LDN => 86.IN1
-LDN => 98.IN1
-LDN => 108.IN1
-ENP => 106.IN0
-ENP => 96.IN0
-ENP => 89.IN0
-ENP => 79.IN0
-C => 101.IN0
-B => 91.IN0
-A => 76.IN0
-ENT => 82.DATAIN
-QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
-QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
-QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
-QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|machine_v1|ripple_counter_256_advanced:inst23|74161:inst
+|machine_v1|ripple_counter_256_advanced:inst22|74161:inst1
 clk => f74161:sub.clk
 ldn => f74161:sub.ldn
 clrn => f74161:sub.clrn
@@ -1448,7 +1403,7 @@ qa <= f74161:sub.qa
 rco <= f74161:sub.rco
 
 
-|machine_v1|ripple_counter_256_advanced:inst23|74161:inst|f74161:sub
+|machine_v1|ripple_counter_256_advanced:inst22|74161:inst1|f74161:sub
 RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 110.ACLR
 CLRN => 99.ACLR
@@ -1478,7 +1433,54 @@ QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
 QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22
+|machine_v1|ripple_counter_256_advanced:inst22|74161:inst
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|machine_v1|ripple_counter_256_advanced:inst22|74161:inst|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|machine_v1|micro_address_generator:inst19
 Y0 <= mux4-8_4inputs:inst23.Y0
 JP_A7 => mux4-8_4inputs:inst23.A7
 IR7 => mux4-8_4inputs:inst23.B7
@@ -1516,7 +1518,7 @@ Y7 <= mux4-8_4inputs:inst23.Y7
 LOAD <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|mux4-8_4inputs:inst23
+|machine_v1|micro_address_generator:inst19|mux4-8_4inputs:inst23
 Y7 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 C7 => mux2-8:inst2.A7
 D7 => mux2-8:inst2.B7
@@ -1563,7 +1565,7 @@ Y5 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Y6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|mux4-8_4inputs:inst23|mux2-8:inst2
+|machine_v1|micro_address_generator:inst19|mux4-8_4inputs:inst23|mux2-8:inst2
 Y7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 B7 => inst3.IN0
 BY => inst3.IN1
@@ -1606,7 +1608,7 @@ B0 => inst23.IN0
 A0 => inst22.IN0
 
 
-|machine_v1|micro_address_generator:inst22|mux4-8_4inputs:inst23|mux2-8:inst
+|machine_v1|micro_address_generator:inst19|mux4-8_4inputs:inst23|mux2-8:inst
 Y7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 B7 => inst3.IN0
 BY => inst3.IN1
@@ -1649,7 +1651,7 @@ B0 => inst23.IN0
 A0 => inst22.IN0
 
 
-|machine_v1|micro_address_generator:inst22|38_decoder:inst2
+|machine_v1|micro_address_generator:inst19|38_decoder:inst2
 Y7 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 I2 => inst5.IN0
 I2 => inst6.IN0
@@ -1675,7 +1677,7 @@ Y1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 Y0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|24_decoder:inst3
+|machine_v1|micro_address_generator:inst19|24_decoder:inst3
 Y0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 I0 => inst.IN0
 I0 => inst5.IN0
@@ -1688,7 +1690,7 @@ Y2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Y3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|mux2-8:inst20
+|machine_v1|micro_address_generator:inst19|mux2-8:inst20
 Y7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 B7 => inst3.IN0
 BY => inst3.IN1
@@ -1731,7 +1733,7 @@ B0 => inst23.IN0
 A0 => inst22.IN0
 
 
-|machine_v1|micro_address_generator:inst22|24_decoder:inst12
+|machine_v1|micro_address_generator:inst19|24_decoder:inst12
 Y0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 I0 => inst.IN0
 I0 => inst5.IN0
@@ -1744,7 +1746,7 @@ Y2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Y3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|24_decoder:inst11
+|machine_v1|micro_address_generator:inst19|24_decoder:inst11
 Y0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 I0 => inst.IN0
 I0 => inst5.IN0
@@ -1757,7 +1759,7 @@ Y2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Y3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|24_decoder:inst13
+|machine_v1|micro_address_generator:inst19|24_decoder:inst13
 Y0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 I0 => inst.IN0
 I0 => inst5.IN0
@@ -1770,7 +1772,7 @@ Y2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Y3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|machine_v1|micro_address_generator:inst22|24_decoder:inst5
+|machine_v1|micro_address_generator:inst19|24_decoder:inst5
 Y0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 I0 => inst.IN0
 I0 => inst5.IN0
