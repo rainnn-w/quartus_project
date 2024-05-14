@@ -332,6 +332,26 @@ start_stop_selection:inst22
 
 # end
 # entity
+micro_address_generator
+# storage
+db|machine_v1.(18).cnf
+db|machine_v1.(18).cnf
+# case_insensitive
+# source_file
+micro_address_generator.bdf
+90635cb897cde33836c1653ea92594
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+micro_address_generator:inst12
+}
+# macro_sequence
+
+# end
+# entity
 machine_v1
 # storage
 db|machine_v1.(0).cnf
@@ -339,7 +359,7 @@ db|machine_v1.(0).cnf
 # case_insensitive
 # source_file
 machine_v1.bdf
-fce3afe28a2c9bca87e3bc6da8c246a4
+b0186d4b7fc8ac0a4789d54c9dd7ec
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -358,7 +378,7 @@ db|machine_v1.(6).cnf
 db|machine_v1.(6).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
 5a7a42864d75db2f39a1f2da31e3e53
 26
 # internal_option {
@@ -379,7 +399,7 @@ db|machine_v1.(7).cnf
 db|machine_v1.(7).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
 7e848f93ad7899d68043667228e561f6
 26
 # internal_option {
@@ -399,7 +419,7 @@ db|machine_v1.(8).cnf
 db|machine_v1.(8).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -469,7 +489,7 @@ A
 3
 }
 # include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -486,7 +506,7 @@ db|machine_v1.(10).cnf
 db|machine_v1.(10).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
 408d3815988dee8ef0f04d17774959
 26
 # internal_option {
@@ -509,7 +529,7 @@ db|machine_v1.(11).cnf
 db|machine_v1.(11).cnf
 # case_insensitive
 # source_file
-e:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -576,32 +596,12 @@ A
 3
 }
 # include_file {
-e:|altera|81|quartus|libraries|megafunctions|aglobal.inc
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
 ripple_counter_256_advanced:pc|74161:inst
 ripple_counter_256_advanced:inst23|74161:inst
-}
-# macro_sequence
-
-# end
-# entity
-micro_address_generator
-# storage
-db|machine_v1.(18).cnf
-db|machine_v1.(18).cnf
-# case_insensitive
-# source_file
-micro_address_generator.bdf
-90635cb897cde33836c1653ea92594
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-micro_address_generator:inst12
 }
 # macro_sequence
 

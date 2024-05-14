@@ -72,12 +72,12 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 2         : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 3         :        :                   :         : 1         :                
 GND*                         : 4         :        :                   :         : 1         :                
-GND*                         : 5         :        :                   :         : 1         :                
-GND*                         : 6         :        :                   :         : 1         :                
+LA_4                         : 5         : output : 3.3-V LVTTL       :         : 1         : Y              
+LA_5                         : 6         : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 7         : power  :                   : 3.3V    : 1         :                
-GND*                         : 8         :        :                   :         : 1         :                
+LA_6                         : 8         : output : 3.3-V LVTTL       :         : 1         : Y              
 GND                          : 9         : gnd    :                   :         :           :                
-GND*                         : 10        :        :                   :         : 1         :                
+LA_7                         : 10        : output : 3.3-V LVTTL       :         : 1         : Y              
 LA8                          : 11        : output : 3.3-V LVTTL       :         : 1         : Y              
 LA9                          : 12        : output : 3.3-V LVTTL       :         : 1         : Y              
 LA10                         : 13        : output : 3.3-V LVTTL       :         : 1         : Y              

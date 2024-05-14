@@ -139,3 +139,8 @@ set_location_assignment PIN_31 -to LA14
 set_location_assignment PIN_33 -to LA15
 set_global_assignment -name MISC_FILE "D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1单脉冲版/machine_v1.dpf"
 set_global_assignment -name MISC_FILE "G:/Project/machine_v2单脉冲版第二版灯/machine_v1.dpf"
+set_location_assignment PIN_5 -to LA_4
+set_location_assignment PIN_6 -to LA_5
+set_location_assignment PIN_8 -to LA_6
+set_location_assignment PIN_10 -to LA_7
+set_global_assignment -name MISC_FILE "G:/Project/machine_v5单脉冲版/machine_v1.dpf"

@@ -1,5 +1,5 @@
 Flow report for machine_v1
-Sun May 12 22:18:31 2024
+Tue May 14 21:38:35 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +------------------------------------+-----------------------------------------+
-; Flow Status                        ; Successful - Sun May 12 22:18:31 2024   ;
+; Flow Status                        ; Successful - Tue May 14 21:38:35 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; machine_v1                              ;
 ; Top-level Entity Name              ; machine_v1                              ;
@@ -46,11 +46,11 @@ applicable agreement for further details.
 ; Device                             ; EP2C8Q208C8                             ;
 ; Timing Models                      ; Final                                   ;
 ; Met timing requirements            ; No                                      ;
-; Total logic elements               ; 182 / 8,256 ( 2 % )                     ;
-;     Total combinational functions  ; 179 / 8,256 ( 2 % )                     ;
+; Total logic elements               ; 185 / 8,256 ( 2 % )                     ;
+;     Total combinational functions  ; 183 / 8,256 ( 2 % )                     ;
 ;     Dedicated logic registers      ; 72 / 8,256 ( < 1 % )                    ;
 ; Total registers                    ; 72                                      ;
-; Total pins                         ; 87 / 138 ( 63 % )                       ;
+; Total pins                         ; 91 / 138 ( 66 % )                       ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0 / 165,888 ( 0 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                          ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2024 22:18:18 ;
+; Start date & time ; 05/14/2024 21:38:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; machine_v1          ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+-----------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                                                                     ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+-----------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 171728323259152.171552349824628                                                                           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 109952948962584.171569389705640                                                                           ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                                                                        ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                                                                         ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1/machine_v1.dpf         ; --            ; --          ; --             ;
@@ -82,6 +82,7 @@ applicable agreement for further details.
 ; MISC_FILE                          ; G:/Project/machine_v1单脉冲版/machine_v1.dpf                                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D:/Files/Study/cources/计算机组织与结构课程设计/quartus_project/Project/machine_v1单脉冲版/machine_v1.dpf ; --            ; --          ; --             ;
 ; MISC_FILE                          ; G:/Project/machine_v2单脉冲版第二版灯/machine_v1.dpf                                                      ; --            ; --          ; --             ;
+; MISC_FILE                          ; G:/Project/machine_v5单脉冲版/machine_v1.dpf                                                              ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                                                                                  ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                                                                                    ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                                                                       ; --            ; --          ; eda_blast_fpga ;
@@ -93,11 +94,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 232 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:02     ; 1.0                     ; 240 MB              ; 00:00:01                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 210 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 170 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis    ; 00:00:06     ; 1.0                     ; 200 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:03     ; 1.0                     ; 211 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 189 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 149 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:13     ; --                      ; --                  ; 00:00:05                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +107,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; LAPTOP-9KJGOAKC  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; LAPTOP-9KJGOAKC  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; LAPTOP-9KJGOAKC  ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; LAPTOP-9KJGOAKC  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; 503-27           ; Windows Vista ; 6.1        ; i686           ;
+; Fitter                  ; 503-27           ; Windows Vista ; 6.1        ; i686           ;
+; Assembler               ; 503-27           ; Windows Vista ; 6.1        ; i686           ;
+; Classic Timing Analyzer ; 503-27           ; Windows Vista ; 6.1        ; i686           ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

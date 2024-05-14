@@ -1,5 +1,5 @@
 Assembler report for machine_v1
-Sun May 12 22:20:31 2024
+Tue May 14 19:06:06 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: F:/Project/machine_v5启停电路版/machine_v1.sof
-  6. Assembler Device Options: F:/Project/machine_v5启停电路版/machine_v1.pof
+  5. Assembler Device Options: G:/Project/machine_v5启停电路版/machine_v1.sof
+  6. Assembler Device Options: G:/Project/machine_v5启停电路版/machine_v1.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun May 12 22:20:31 2024 ;
+; Assembler Status      ; Successful - Tue May 14 19:06:06 2024 ;
 ; Revision Name         ; machine_v1                            ;
 ; Top-level Entity Name ; machine_v1                            ;
 ; Family                ; Cyclone II                            ;
@@ -81,30 +81,30 @@ applicable agreement for further details.
 +------------------------------------------------+
 ; File Name                                      ;
 +------------------------------------------------+
-; F:/Project/machine_v5启停电路版/machine_v1.sof ;
-; F:/Project/machine_v5启停电路版/machine_v1.pof ;
+; G:/Project/machine_v5启停电路版/machine_v1.sof ;
+; G:/Project/machine_v5启停电路版/machine_v1.pof ;
 +------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
-; Assembler Device Options: F:/Project/machine_v5启停电路版/machine_v1.sof ;
+; Assembler Device Options: G:/Project/machine_v5启停电路版/machine_v1.sof ;
 +----------------+---------------------------------------------------------+
 ; Option         ; Setting                                                 ;
 +----------------+---------------------------------------------------------+
 ; Device         ; EP2C8Q208C8                                             ;
 ; JTAG usercode  ; 0xFFFFFFFF                                              ;
-; Checksum       ; 0x000EFE7E                                              ;
+; Checksum       ; 0x000ED41B                                              ;
 +----------------+---------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
-; Assembler Device Options: F:/Project/machine_v5启停电路版/machine_v1.pof ;
+; Assembler Device Options: G:/Project/machine_v5启停电路版/machine_v1.pof ;
 +--------------------+-----------------------------------------------------+
 ; Option             ; Setting                                             ;
 +--------------------+-----------------------------------------------------+
 ; Device             ; EPCS4                                               ;
 ; JTAG usercode      ; 0x00000000                                          ;
-; Checksum           ; 0x06EB41E8                                          ;
+; Checksum           ; 0x06EC9515                                          ;
 ; Compression Ratio  ; 3                                                   ;
 +--------------------+-----------------------------------------------------+
 
@@ -115,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sun May 12 22:20:30 2024
+    Info: Processing started: Tue May 14 19:06:02 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off machine_v1 -c machine_v1
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 210 megabytes
-    Info: Processing ended: Sun May 12 22:20:31 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 189 megabytes
+    Info: Processing ended: Tue May 14 19:06:06 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
 
 

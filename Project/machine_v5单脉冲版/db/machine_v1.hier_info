@@ -88,6 +88,10 @@ LD12 <= ripple_counter_256_advanced:pc.Q4
 LD13 <= ripple_counter_256_advanced:pc.Q5
 LD14 <= ripple_counter_256_advanced:pc.Q6
 LD15 <= ripple_counter_256_advanced:pc.Q7
+LA_7 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+LA_6 <= register_4x:inst8.REGQ0_7
+LA_5 <= micro_address_generator:inst12.LOAD
+LA_4 <= micro_address_generator:inst12.LOAD_PC
 
 
 |machine_v1|24_decoder:inst2

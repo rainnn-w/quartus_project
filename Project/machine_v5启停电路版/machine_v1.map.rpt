@@ -1,5 +1,5 @@
 Analysis & Synthesis report for machine_v1
-Sun May 12 22:20:25 2024
+Tue May 14 19:05:56 2024
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 12 22:20:25 2024   ;
+; Analysis & Synthesis Status        ; Successful - Tue May 14 19:05:56 2024   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; machine_v1                              ;
 ; Top-level Entity Name              ; machine_v1                              ;
@@ -53,7 +53,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 185                                     ;
 ;     Dedicated logic registers      ; 73                                      ;
 ; Total registers                    ; 73                                      ;
-; Total pins                         ; 91                                      ;
+; Total pins                         ; 95                                      ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                       ;
@@ -142,25 +142,25 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                    ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+
-; ALU_parallel_8b.bdf              ; yes             ; User Block Diagram/Schematic File        ; F:/Project/machine_v5启停电路版/ALU_parallel_8b.bdf             ;
-; machine_v1.bdf                   ; yes             ; User Block Diagram/Schematic File        ; F:/Project/machine_v5启停电路版/machine_v1.bdf                  ;
-; 24_decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/24_decoder.bdf                  ;
-; register-8_with_CLR.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/register-8_with_CLR.bdf         ;
-; register-4_with_CLR.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/register-4_with_CLR.bdf         ;
-; 38_decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/38_decoder.bdf                  ;
-; start_stop_selection.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/start_stop_selection.bdf        ;
-; 74181.bdf                        ; yes             ; Megafunction                             ; e:/altera/81/quartus/libraries/others/maxplus2/74181.bdf        ;
-; 74182.bdf                        ; yes             ; Megafunction                             ; e:/altera/81/quartus/libraries/others/maxplus2/74182.bdf        ;
-; mux2-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/mux2-8.bdf                      ;
-; ripple_counter_256_advanced.bdf  ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/ripple_counter_256_advanced.bdf ;
-; 74161.tdf                        ; yes             ; Megafunction                             ; e:/altera/81/quartus/libraries/others/maxplus2/74161.tdf        ;
-; aglobal.inc                      ; yes             ; Megafunction                             ; e:/altera/81/quartus/libraries/megafunctions/aglobal.inc        ;
-; f74161.bdf                       ; yes             ; Megafunction                             ; e:/altera/81/quartus/libraries/others/maxplus2/f74161.bdf       ;
-; micro_address_generator.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/micro_address_generator.bdf     ;
-; mux4-8_4inputs.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/mux4-8_4inputs.bdf              ;
-; register_4x.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/register_4x.bdf                 ;
-; mux4-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/mux4-8.bdf                      ;
-; MBR_NEW.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; F:/Project/machine_v5启停电路版/MBR_NEW.bdf                     ;
+; ALU_parallel_8b.bdf              ; yes             ; User Block Diagram/Schematic File        ; G:/Project/machine_v5启停电路版/ALU_parallel_8b.bdf             ;
+; machine_v1.bdf                   ; yes             ; User Block Diagram/Schematic File        ; G:/Project/machine_v5启停电路版/machine_v1.bdf                  ;
+; 24_decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/24_decoder.bdf                  ;
+; register-8_with_CLR.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/register-8_with_CLR.bdf         ;
+; register-4_with_CLR.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/register-4_with_CLR.bdf         ;
+; 38_decoder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/38_decoder.bdf                  ;
+; start_stop_selection.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/start_stop_selection.bdf        ;
+; 74181.bdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74181.bdf        ;
+; 74182.bdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74182.bdf        ;
+; mux2-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/mux2-8.bdf                      ;
+; ripple_counter_256_advanced.bdf  ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/ripple_counter_256_advanced.bdf ;
+; 74161.tdf                        ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74161.tdf        ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/megafunctions/aglobal.inc        ;
+; f74161.bdf                       ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/f74161.bdf       ;
+; micro_address_generator.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/micro_address_generator.bdf     ;
+; mux4-8_4inputs.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/mux4-8_4inputs.bdf              ;
+; register_4x.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/register_4x.bdf                 ;
+; mux4-8.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/mux4-8.bdf                      ;
+; MBR_NEW.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; G:/Project/machine_v5启停电路版/MBR_NEW.bdf                     ;
 +----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------+
 
 
@@ -173,9 +173,9 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; Total combinational functions               ; 185   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 104   ;
-;     -- 3 input functions                    ; 27    ;
-;     -- <=2 input functions                  ; 54    ;
+;     -- 4 input functions                    ; 101   ;
+;     -- 3 input functions                    ; 29    ;
+;     -- <=2 input functions                  ; 55    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
 ;     -- normal mode                          ; 185   ;
@@ -185,11 +185,11 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 73    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 91    ;
+; I/O pins                                    ; 95    ;
 ; Maximum fan-out node                        ; CLR   ;
 ; Maximum fan-out                             ; 67    ;
 ; Total fan-out                               ; 850   ;
-; Average fan-out                             ; 2.44  ;
+; Average fan-out                             ; 2.41  ;
 +---------------------------------------------+-------+
 
 
@@ -198,7 +198,7 @@ applicable agreement for further details.
 +-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
 +-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; |machine_v1                             ; 185 (7)           ; 73 (0)       ; 0           ; 0            ; 0       ; 0         ; 91   ; 0            ; |machine_v1                                                                    ; work         ;
+; |machine_v1                             ; 185 (7)           ; 73 (0)       ; 0           ; 0            ; 0       ; 0         ; 95   ; 0            ; |machine_v1                                                                    ; work         ;
 ;    |24_decoder:inst2|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|24_decoder:inst2                                                   ; work         ;
 ;    |38_decoder:inst11|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|38_decoder:inst11                                                  ; work         ;
 ;    |ALU_parallel_8b:inst4|              ; 44 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ALU_parallel_8b:inst4                                              ; work         ;
@@ -239,10 +239,10 @@ applicable agreement for further details.
 ;       |74161:inst|                      ; 13 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst                      ; work         ;
 ;          |f74161:sub|                   ; 13 (13)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:inst23|74161:inst|f74161:sub           ; work         ;
 ;    |ripple_counter_256_advanced:pc|     ; 14 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc                                     ; work         ;
-;       |74161:inst1|                     ; 6 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst1                         ; work         ;
-;          |f74161:sub|                   ; 6 (6)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst1|f74161:sub              ; work         ;
-;       |74161:inst|                      ; 8 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst                          ; work         ;
-;          |f74161:sub|                   ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst|f74161:sub               ; work         ;
+;       |74161:inst1|                     ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst1                         ; work         ;
+;          |f74161:sub|                   ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst1|f74161:sub              ; work         ;
+;       |74161:inst|                      ; 9 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst                          ; work         ;
+;          |f74161:sub|                   ; 9 (9)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|ripple_counter_256_advanced:pc|74161:inst|f74161:sub               ; work         ;
 ;    |start_stop_selection:inst22|        ; 6 (6)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |machine_v1|start_stop_selection:inst22                                        ; work         ;
 +-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -334,7 +334,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sun May 12 22:20:19 2024
+    Info: Processing started: Tue May 14 19:05:49 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off machine_v1 -c machine_v1
 Info: Found 1 design units, including 1 entities, in source file ALU_parallel_8b.bdf
     Info: Found entity 1: ALU_parallel_8b
@@ -394,15 +394,15 @@ Info: Ignored 46 buffer(s)
     Info: Ignored 30 SOFT buffer(s)
 Warning: Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "start_stop_selection:inst22|inst24" is converted into an equivalent circuit using register "start_stop_selection:inst22|inst24~_emulated" and latch "start_stop_selection:inst22|inst24~latch"
-Info: Implemented 282 device resources after synthesis - the final resource count might be different
+Info: Implemented 286 device resources after synthesis - the final resource count might be different
     Info: Implemented 23 input pins
-    Info: Implemented 60 output pins
+    Info: Implemented 64 output pins
     Info: Implemented 8 bidirectional pins
     Info: Implemented 191 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Sun May 12 22:20:26 2024
+    Info: Peak virtual memory: 200 megabytes
+    Info: Processing ended: Tue May 14 19:05:56 2024
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:03
 
 
