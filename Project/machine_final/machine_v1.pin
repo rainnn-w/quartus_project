@@ -161,7 +161,7 @@ uIR1                         : 90        : input  : 3.3-V LVTTL       :         
 VCCIO4                       : 91        : power  :                   : 3.3V    : 4         :                
 uIR2                         : 92        : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 93        : gnd    :                   :         :           :                
-HALT                         : 94        : input  : 3.3-V LVTTL       :         : 4         : Y              
+halt                         : 94        : input  : 3.3-V LVTTL       :         : 4         : Y              
 uIR4                         : 95        : input  : 3.3-V LVTTL       :         : 4         : Y              
 uIR5                         : 96        : input  : 3.3-V LVTTL       :         : 4         : Y              
 uIR6                         : 97        : input  : 3.3-V LVTTL       :         : 4         : Y              
@@ -198,8 +198,8 @@ GND*                         : 127       :        :                   :         
 LD8                          : 128       : output : 3.3-V LVTTL       :         : 3         : Y              
 GND+                         : 129       :        :                   :         : 3         :                
 GND+                         : 130       :        :                   :         : 3         :                
-CK_consistant                : 131       : input  : 3.3-V LVTTL       :         : 3         : Y              
-CK_single                    : 132       : input  : 3.3-V LVTTL       :         : 3         : Y              
+pc_con                       : 131       : input  : 3.3-V LVTTL       :         : 3         : Y              
+start                        : 132       : input  : 3.3-V LVTTL       :         : 3         : Y              
 LD9                          : 133       : output : 3.3-V LVTTL       :         : 3         : Y              
 LD10                         : 134       : output : 3.3-V LVTTL       :         : 3         : Y              
 LD11                         : 135       : output : 3.3-V LVTTL       :         : 3         : Y              
@@ -273,6 +273,6 @@ VCCIO2                       : 202       : power  :                   : 3.3V    
 GND*                         : 203       :        :                   :         : 2         :                
 GND                          : 204       : gnd    :                   :         :           :                
 GND*                         : 205       :        :                   :         : 2         :                
-CLR                          : 206       : input  : 3.3-V LVTTL       :         : 2         : Y              
+clr                          : 206       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 207       :        :                   :         : 2         :                
 GND*                         : 208       :        :                   :         : 2         :                

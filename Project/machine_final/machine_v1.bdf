@@ -328,9 +328,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -840 -1416 -672 -1400)
+	(rect -728 -1432 -560 -1416)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "HALT" (rect 5 0 32 12)(font "Arial" ))
+	(text "clr" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -341,13 +341,12 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8)(line_width 1))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -888 -1400 -840 -1384))
 )
 (pin
 	(input)
-	(rect -832 -1448 -664 -1432)
+	(rect -728 -1416 -560 -1400)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "CK_consistant" (rect 5 0 76 12)(font "Arial" ))
+	(text "halt" (rect 5 0 22 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -358,13 +357,12 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8)(line_width 1))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -888 -1432 -832 -1416))
 )
 (pin
 	(input)
-	(rect -808 -1432 -640 -1416)
+	(rect -728 -1400 -560 -1384)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "CLR" (rect 5 0 27 12)(font "Arial" ))
+	(text "start" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -375,13 +373,12 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8)(line_width 1))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -864 -1416 -808 -1400))
 )
 (pin
 	(input)
-	(rect -840 -1400 -672 -1384)
+	(rect -728 -1448 -560 -1432)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "CK_single" (rect 5 0 54 12)(font "Arial" ))
+	(text "pc_con" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -392,7 +389,6 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8)(line_width 1))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -896 -1384 -840 -1368))
 )
 (pin
 	(output)
@@ -4138,9 +4134,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -504 -1472 -384 -1344)
+	(rect -496 -1472 -376 -1344)
 	(text "START_STOP_NEW" (rect 5 0 118 14)(font "Arial" (font_size 8)))
-	(text "inst26" (rect 8 112 37 124)(font "Arial" ))
+	(text "inst22" (rect 8 112 37 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -5837,14 +5833,6 @@ applicable agreement for further details.
 	(pt -344 -1544)
 )
 (connector
-	(pt -384 -1440)
-	(pt -344 -1440)
-)
-(connector
-	(pt -344 -1440)
-	(pt -328 -1440)
-)
-(connector
 	(pt -328 -1440)
 	(pt -264 -1440)
 )
@@ -6829,27 +6817,11 @@ applicable agreement for further details.
 	(pt 1496 168)
 )
 (connector
-	(pt -672 -1392)
-	(pt -504 -1392)
-)
-(connector
-	(pt -672 -1408)
-	(pt -504 -1408)
-)
-(connector
 	(pt 1608 -1488)
 	(pt 1608 -968)
 )
 (connector
 	(pt 1944 -968)
-	(pt 1944 -1488)
-)
-(connector
-	(pt -576 -1488)
-	(pt 1608 -1488)
-)
-(connector
-	(pt 1608 -1488)
 	(pt 1944 -1488)
 )
 (connector
@@ -6865,22 +6837,6 @@ applicable agreement for further details.
 	(pt 2880 -1488)
 )
 (connector
-	(pt -576 -1488)
-	(pt -576 -1424)
-)
-(connector
-	(pt -640 -1424)
-	(pt -576 -1424)
-)
-(connector
-	(pt -576 -1424)
-	(pt -504 -1424)
-)
-(connector
-	(pt -504 -1440)
-	(pt -664 -1440)
-)
-(connector
 	(pt 2400 -968)
 	(pt 2400 -1488)
 )
@@ -6891,6 +6847,46 @@ applicable agreement for further details.
 (connector
 	(pt 2400 -1488)
 	(pt 2880 -1488)
+)
+(connector
+	(pt -376 -1440)
+	(pt -344 -1440)
+)
+(connector
+	(pt -344 -1440)
+	(pt -328 -1440)
+)
+(connector
+	(pt -560 -1392)
+	(pt -496 -1392)
+)
+(connector
+	(pt -560 -1408)
+	(pt -496 -1408)
+)
+(connector
+	(pt -560 -1440)
+	(pt -496 -1440)
+)
+(connector
+	(pt -536 -1488)
+	(pt -536 -1424)
+)
+(connector
+	(pt -536 -1488)
+	(pt 1608 -1488)
+)
+(connector
+	(pt 1608 -1488)
+	(pt 1944 -1488)
+)
+(connector
+	(pt -560 -1424)
+	(pt -536 -1424)
+)
+(connector
+	(pt -536 -1424)
+	(pt -496 -1424)
 )
 (junction (pt 1448 -1232))
 (junction (pt 1464 -1216))
@@ -7033,5 +7029,5 @@ applicable agreement for further details.
 (junction (pt 1944 -1488))
 (junction (pt 2088 -1488))
 (junction (pt 2400 -1488))
-(junction (pt -576 -1424))
+(junction (pt -536 -1424))
 (text "." (rect 2744 -848 2747 -834)(font "Arial" (font_size 8)))
