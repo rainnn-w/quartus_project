@@ -228,7 +228,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-START_STOP_NEW:inst26
+START_STOP_NEW:inst22
 }
 # macro_sequence
 
@@ -310,6 +310,43 @@ AUTO
 # hierarchies {
 ripple_counter_256_advanced:pc
 ripple_counter_256_advanced:inst23
+}
+# macro_sequence
+
+# end
+# entity
+start_stop_selection
+# storage
+db|machine_v1.(20).cnf
+db|machine_v1.(20).cnf
+# case_insensitive
+# source_file
+..|start_stop_selection|start_stop_selection.bdf
+76af548f1134fbd35229d31dbe5f4e3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+machine_v1
+# storage
+db|machine_v1.(0).cnf
+db|machine_v1.(0).cnf
+# case_insensitive
+# source_file
+machine_v1.bdf
+afded5a868615a6d7e2dbc4560fcfb9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
@@ -557,7 +594,7 @@ db|machine_v1.(18).cnf
 # case_insensitive
 # source_file
 micro_address_generator.bdf
-9a4fc82d83885d7f729b3a88c149412
+c77b4333a37dc4dbd25d621e52f7aae8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -565,43 +602,6 @@ AUTO
 }
 # hierarchies {
 micro_address_generator:inst12
-}
-# macro_sequence
-
-# end
-# entity
-start_stop_selection
-# storage
-db|machine_v1.(20).cnf
-db|machine_v1.(20).cnf
-# case_insensitive
-# source_file
-..|start_stop_selection|start_stop_selection.bdf
-76af548f1134fbd35229d31dbe5f4e3
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-machine_v1
-# storage
-db|machine_v1.(0).cnf
-db|machine_v1.(0).cnf
-# case_insensitive
-# source_file
-machine_v1.bdf
-c567b573f31d1ebee1ca3dad9d814dd0
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

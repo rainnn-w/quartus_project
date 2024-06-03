@@ -67,14 +67,12 @@ set_location_assignment PIN_61 -to CPuIR
 set_location_assignment PIN_60 -to uRD
 set_location_assignment PIN_63 -to RD_OUT
 set_location_assignment PIN_64 -to WE_OUT
-set_location_assignment PIN_206 -to CLR
 set_location_assignment PIN_108 -to A_PC
 set_location_assignment PIN_110 -to A_R
 set_location_assignment PIN_105 -to B_MDR
 set_location_assignment PIN_106 -to B_R
 set_location_assignment PIN_117 -to C0
 set_location_assignment PIN_112 -to EN
-set_location_assignment PIN_94 -to HALT
 set_location_assignment PIN_103 -to RD
 set_location_assignment PIN_116 -to S0
 set_location_assignment PIN_115 -to S1
@@ -144,6 +142,7 @@ set_global_assignment -name BDF_FILE ../start_stop_selection/start_stop_selectio
 set_global_assignment -name BDF_FILE ALU_parallel_8b.bdf
 set_global_assignment -name BDF_FILE machine_v1.bdf
 set_global_assignment -name MISC_FILE "G:/Project/machine_final/machine_v1.dpf"
-set_location_assignment PIN_131 -to CK_consistant
-set_location_assignment PIN_132 -to CK_single
-set_location_assignment PIN_77 -to start
+set_location_assignment PIN_132 -to start
+set_location_assignment PIN_131 -to pc_con
+set_location_assignment PIN_94 -to halt
+set_location_assignment PIN_206 -to clr
